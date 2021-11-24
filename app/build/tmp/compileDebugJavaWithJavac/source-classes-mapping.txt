@@ -1,0 +1,70 @@
+com/example/arielscupid/databinding/ActivitySetProfileBinding.java
+ com.example.arielscupid.databinding.ActivitySetProfileBinding
+com/example/arielscupid/databinding/FragmentSecondBinding.java
+ com.example.arielscupid.databinding.FragmentSecondBinding
+com/example/arielscupid/databinding/StatusFragmentBinding.java
+ com.example.arielscupid.databinding.StatusFragmentBinding
+com/example/arielscupid/databinding/ActivityMainBinding.java
+ com.example.arielscupid.databinding.ActivityMainBinding
+com/example/arielscupid/FirstFragment.java
+ com.example.arielscupid.FirstFragment
+ com.example.arielscupid.FirstFragment$1
+com/example/arielscupid/databinding/ActivityProfileActicityBinding.java
+ com.example.arielscupid.databinding.ActivityProfileActicityBinding
+com/example/arielscupid/BuildConfig.java
+ com.example.arielscupid.BuildConfig
+com/example/arielscupid/chatActivity.java
+ com.example.arielscupid.chatActivity
+ com.example.arielscupid.chatActivity$1
+com/example/arielscupid/databinding/FragmentFirstBinding.java
+ com.example.arielscupid.databinding.FragmentFirstBinding
+com/example/arielscupid/databinding/MyProfileFragmentBinding.java
+ com.example.arielscupid.databinding.MyProfileFragmentBinding
+com/example/arielscupid/SecondFragment.java
+ com.example.arielscupid.SecondFragment
+ com.example.arielscupid.SecondFragment$1
+com/example/arielscupid/databinding/ActivitySplashScreenBinding.java
+ com.example.arielscupid.databinding.ActivitySplashScreenBinding
+com/example/arielscupid/databinding/ActivityOtpAuthenticationBinding.java
+ com.example.arielscupid.databinding.ActivityOtpAuthenticationBinding
+com/example/arielscupid/PagerAdapter.java
+ com.example.arielscupid.PagerAdapter
+com/example/arielscupid/status_fragment.java
+ com.example.arielscupid.status_fragment
+com/example/arielscupid/databinding/ChatsFragmentBinding.java
+ com.example.arielscupid.databinding.ChatsFragmentBinding
+com/example/arielscupid/ProfileActicity.java
+ com.example.arielscupid.ProfileActicity
+com/example/arielscupid/MyProfileFragment.java
+ com.example.arielscupid.MyProfileFragment
+com/example/arielscupid/ChatsFragment.java
+ com.example.arielscupid.ChatsFragment
+com/example/arielscupid/databinding/ContentMainBinding.java
+ com.example.arielscupid.databinding.ContentMainBinding
+com/example/arielscupid/databinding/ActivityChatBinding.java
+ com.example.arielscupid.databinding.ActivityChatBinding
+com/example/arielscupid/userProfile.java
+ com.example.arielscupid.userProfile
+com/example/arielscupid/setProfile.java
+ com.example.arielscupid.setProfile
+ com.example.arielscupid.setProfile$1
+ com.example.arielscupid.setProfile$2
+ com.example.arielscupid.setProfile$3
+ com.example.arielscupid.setProfile$4
+ com.example.arielscupid.setProfile$4$1
+ com.example.arielscupid.setProfile$4$2
+ com.example.arielscupid.setProfile$5
+ com.example.arielscupid.setProfile$6
+com/example/arielscupid/SplashScreen.java
+ com.example.arielscupid.SplashScreen
+ com.example.arielscupid.SplashScreen$1
+com/example/arielscupid/MainActivity.java
+ com.example.arielscupid.MainActivity
+ com.example.arielscupid.MainActivity$1
+ com.example.arielscupid.MainActivity$2
+ com.example.arielscupid.MainActivity$3
+com/example/arielscupid/otpAuthentication.java
+ com.example.arielscupid.otpAuthentication
+ com.example.arielscupid.otpAuthentication$1
+ com.example.arielscupid.otpAuthentication$2
+ com.example.arielscupid.otpAuthentication$3

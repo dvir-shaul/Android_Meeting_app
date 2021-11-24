@@ -1,0 +1,126 @@
+[
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_chat.xml.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\layout\\activity_chat.xml"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\layout_status_fragment.xml.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\layout\\status_fragment.xml"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_set_profile.xml.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\layout\\activity_set_profile.xml"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\layout_my_profile_fragment.xml.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\layout\\my_profile_fragment.xml"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_otp_authentication.xml.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\layout\\activity_otp_authentication.xml"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_profile_acticity.xml.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\layout\\activity_profile_acticity.xml"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_splash_screen.xml.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\drawable_bubble_out.xml.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\drawable\\bubble_out.xml"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_more_vert_24.xml.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\drawable\\ic_baseline_more_vert_24.xml"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_second.xml.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\layout\\fragment_second.xml"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\drawable_bubble_in.xml.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\drawable\\bubble_in.xml"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_first.xml.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\layout\\fragment_first.xml"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\layout_chats_fragment.xml.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\layout\\chats_fragment.xml"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\menu_menu.xml.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\menu\\menu.xml"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\layout_content_main.xml.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\layout\\content_main.xml"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\navigation_nav_graph.xml.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\navigation\\nav_graph.xml"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
+    }
+]

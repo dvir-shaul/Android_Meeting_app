@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">945610353311-6e1j7ed9eitgr6q7nor2b29o8977g9sg.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://ariel-s-cupid-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">945610353311</string>
+    <string name="google_api_key" translatable="false">AIzaSyDswwAYY92UpXiB-d6Zs4NRawwC1SHqWHE</string>
+    <string name="google_app_id" translatable="false">1:945610353311:android:9737a02144281b3519d0aa</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDswwAYY92UpXiB-d6Zs4NRawwC1SHqWHE</string>
+    <string name="google_storage_bucket" translatable="false">ariel-s-cupid.appspot.com</string>
+    <string name="project_id" translatable="false">ariel-s-cupid</string>
+</resources>

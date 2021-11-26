@@ -60,6 +60,7 @@ public class setProfile extends AppCompatActivity {
 
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseStorage = FirebaseStorage.getInstance();
+
         /**
          * storage reference to store the image
          */
@@ -191,11 +192,12 @@ public class setProfile extends AppCompatActivity {
             }
         });
 
-
     }
 
+
+
     private void sendDataToCloudFirestore() {
-        DocumentReference documentReference = firebaseFirestore.collection("Users").document(firebaseAuth.getUid());
+        DocumentReference documentReference = firebaseFirestore.collection("Users").document((firebaseAuth.getUid()));
         Map<String, Object> userdata = new HashMap<>();
         userdata.put("name",name);
         userdata.put("image",ImageUriAcessToken);
@@ -211,21 +213,20 @@ public class setProfile extends AppCompatActivity {
             @Override
             public void onFailure(@NonNull Exception e) {
                 Toast.makeText(getApplicationContext(),"Data not on Cloud Firestore. didn't send!!", Toast.LENGTH_SHORT).show();
-
             }
         });
     }
 
 
+
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-
         if(requestCode==PICK_IMAGE && resultCode==RESULT_OK)
         {
             imagepath=data.getData();
             mgetuserimageview.setImageURI(imagepath);
         }
-
         super.onActivityResult(requestCode, resultCode, data);
     }
 

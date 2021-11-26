@@ -62,7 +62,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginRight="70dp"
         android:inputType="number"
-        android:text="Enter your number here"
+        android:hint="Enter your number here"
         android:textAlignment="center"
         android:textColor="#00FF0A" />
 
@@ -73,11 +73,11 @@
         android:layout_height="40dp"
         android:layout_below="@id/getphonenumber"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="25dp"
         android:background="#00FF5F"
         android:paddingLeft="40dp"
         android:paddingRight="40dp"
-        android:text="Sent OTP"
+        android:text="Send verification"
         android:textSize="15sp" />
 
 

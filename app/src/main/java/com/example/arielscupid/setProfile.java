@@ -51,6 +51,8 @@ public class setProfile extends AppCompatActivity {
     private String ImageUriAcessToken;
     private FirebaseFirestore firebaseFirestore;
 
+    private DatabaseReference mDatabase;
+
     ProgressBar mprogressbarofsetprofile;
 
     @Override
@@ -120,11 +122,11 @@ public class setProfile extends AppCompatActivity {
 
         name=mgetusername.getText().toString().trim();
         FirebaseDatabase firebaseDatabase= FirebaseDatabase.getInstance();
-        DatabaseReference databaseReference = firebaseDatabase.getReference(Objects.requireNonNull(firebaseAuth.getUid()));
+        DatabaseReference databaseReference = firebaseDatabase.getReference(firebaseAuth.getUid());
         /**
          * create reference to the userprofile java file we create and their public objects
          */
-        userProfile muserprofile = new userProfile(name,firebaseAuth.getUid());
+        userprofile muserprofile = new userprofile(name,firebaseAuth.getUid());
         databaseReference.setValue(muserprofile);
         Toast.makeText(getApplicationContext(),"User Profile Added Successfully", Toast.LENGTH_SHORT).show();
         sendImagetoStoarge();
@@ -151,7 +153,7 @@ public class setProfile extends AppCompatActivity {
         }
 
         ByteArrayOutputStream byteArrayOutputStream=new ByteArrayOutputStream();
-        //bitmap.compress(Bitmap.CompressFormat.JPEG,25,byteArrayOutputStream);
+        bitmap.compress(Bitmap.CompressFormat.JPEG,25,byteArrayOutputStream);
         byte[] data= byteArrayOutputStream.toByteArray();
 
         // upload image to storage

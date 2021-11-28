@@ -47,16 +47,15 @@
         android:layout_marginRight="70dp"/>
 
     <android.widget.Button
+        android:id="@+id/saveprofile"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_below="@id/getusername"
-        android:id="@+id/saveprofile"
-        android:textColor="@color/white"
-
-        android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:background="#25d366"
-        android:text="Save Profile"/>
+        android:text="Save Profile"
+        android:textColor="#5D4037" />
 
 
     <ProgressBar

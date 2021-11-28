@@ -1,13 +1,13 @@
 package com.example.arielscupid;
 
-public class userProfile {
+public class userprofile {
 
-    public String username, UserUID;
+    private String username, UserUID;
 
-    public userProfile() {
+    public userprofile() {
     }
 
-    public userProfile(String username, String userUID) {
+    public userprofile(String username, String userUID) {
         this.username = username;
         this.UserUID = userUID;
     }

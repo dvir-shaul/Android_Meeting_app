@@ -4,12 +4,12 @@
         "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\layout\\activity_set_profile.xml"
     },
     {
-        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash_screen.xml",
-        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
-    },
-    {
         "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_first.xml",
         "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\layout\\fragment_first.xml"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash_screen.xml",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
     },
     {
         "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_chat.xml",

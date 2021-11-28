@@ -8,12 +8,20 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:945610353311:android:9737a02144281b3519d0aa",
+        "mobilesdk_app_id": "1:945610353311:android:c390006338092df619d0aa",
         "android_client_info": {
           "package_name": "com.example.arielscupid"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "945610353311-ri7u6cg8t1pncqv76krbgrkgtm2n1076.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.arielscupid",
+            "certificate_hash": "6fdc55b69f83673c5eeda4c2b4cc41a92fdb6d3b"
+          }
+        },
         {
           "client_id": "945610353311-6e1j7ed9eitgr6q7nor2b29o8977g9sg.apps.googleusercontent.com",
           "client_type": 3

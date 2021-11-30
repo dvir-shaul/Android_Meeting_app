@@ -24,7 +24,10 @@
         android:testOnly="true"
         android:theme="@style/Theme.ArielsCupid" >
         <activity
-            android:name="com.example.arielscupid.ProfileActicity"
+            android:name="com.example.arielscupid.UpdateProfile"
+            android:exported="false" />
+        <activity
+            android:name="com.example.arielscupid.ProfileActivity"
             android:exported="false" />
         <activity
             android:name="com.example.arielscupid.chatActivity"
@@ -155,6 +158,18 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.example.arielscupid.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+        </provider>
     </application>
 
 </manifest>

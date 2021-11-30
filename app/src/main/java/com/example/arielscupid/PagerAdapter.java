@@ -24,13 +24,13 @@ public class PagerAdapter extends FragmentPagerAdapter {
         switch (position)
         {
             case 0:
-            return new ChatsFragment ();
+            return new MyProfileFragment();
 
             case 1:
-                return new status_fragment();
+                return new ChatsFragment();
 
             case 2:
-                return new MyProfileFragment();
+                return new status_fragment();
 
 
             default:

@@ -11,7 +11,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.TableLayout;
 import android.widget.Toast;
 
 import com.google.android.material.tabs.TabItem;
@@ -86,7 +85,7 @@ public class chatActivity extends AppCompatActivity {
         switch (item.getItemId())
         {
             case R.id.profile:
-                Intent intent = new Intent(chatActivity.this,ProfileActicity.class);
+                Intent intent = new Intent(chatActivity.this, ProfileActivity.class);
                 startActivity(intent);
                 break;
             case R.id.setting:

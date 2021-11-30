@@ -124,10 +124,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         if(FirebaseAuth.getInstance().getCurrentUser()!=null){
-//            FirebaseAuth.getInstance().getCurrentUser().delete();
-            Intent intent = new Intent(MainActivity.this,chatActivity.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-            startActivity(intent);
+            //FirebaseAuth.getInstance().getCurrentUser().delete();
+//            Intent intent = new Intent(MainActivity.this,chatActivity.class);
+//            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//            startActivity(intent);
         }
     }
 }

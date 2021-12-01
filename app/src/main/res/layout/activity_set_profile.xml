@@ -9,13 +9,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text="Save your profile"
         android:layout_above="@+id/getuserimage"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
+        android:text="Save your profile"
         android:textColor="#25d366"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"/>
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="130dp"
@@ -36,15 +36,16 @@
 
     </androidx.cardview.widget.CardView>
 
+
     <EditText
+        android:id="@+id/getusername"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:inputType="textCapWords"
-        android:hint="Enter your name here"
         android:layout_centerInParent="true"
-        android:id="@+id/getusername"
         android:layout_marginLeft="70dp"
-        android:layout_marginRight="70dp"/>
+        android:layout_marginRight="70dp"
+        android:hint="Enter your name here"
+        android:inputType="textCapWords" />
 
     <android.widget.Button
         android:id="@+id/saveprofile"
@@ -59,13 +60,13 @@
 
 
     <ProgressBar
+        android:id="@+id/progressbarofsetprofile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/saveprofile"
-        android:id="@+id/progressbarofsetprofile"
-        android:visibility="invisible"
-        android:layout_marginTop="30dp"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:visibility="invisible" />
 
 
 

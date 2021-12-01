@@ -12,7 +12,6 @@
         android:layout_height="150dp"
         android:layout_centerInParent="true"
         android:src="@drawable/ic_launcher_background">
-
     </ImageView>
 
     <TextView
@@ -22,37 +21,21 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="5dp"
         android:text="from"
-        android:textColor="#00BCD4">
-    </TextView>
+        android:textColor="#00BCD4"></TextView>
 
     <TextView
         android:id="@+id/maintext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:textSize="20sp"
+        android:layout_marginBottom="30dp"
         android:text="Adi, Hodaya, Dvir"
-        android:textStyle="normal"
-        android:textColor="#FF5722">
+        android:textColor="#FF5722"
+        android:textSize="20sp"
+        android:textStyle="normal">
 
     </TextView>
-
-    <!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_alignParentBottom="true"-->
-<!--        android:layout_centerHorizontal="true"-->
-<!--        android:layout_marginBottom="30dp"-->
-<!--        android:textColor="25d366"-->
-<!--        android:textSize="18sp"-->
-<!--        android:textStyle="bold"-->
-<!--        android:text="@string/tech_projects"-->
-<!--        android:id="@+id/maintext">-->
-<!--    </TextView>-->
-
-
 
 
 

@@ -61,8 +61,8 @@
         android:layout_marginLeft="70dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="70dp"
-        android:inputType="number"
         android:hint="Enter your number here"
+        android:inputType="number"
         android:textAlignment="center"
         android:textColor="#00FF0A" />
 
@@ -82,13 +82,13 @@
 
 
     <ProgressBar
+        android:id="@+id/progressbarofmain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/sendotpbutton"
-        android:id="@+id/progressbarofmain"
-        android:visibility="invisible"
-        android:layout_marginTop="30dp"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:visibility="invisible" />
 
 
 

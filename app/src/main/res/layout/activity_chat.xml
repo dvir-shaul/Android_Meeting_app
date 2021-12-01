@@ -26,7 +26,7 @@
                 android:text="Ariel's Cupid"
                 android:textSize="25sp"
                 android:textStyle="bold"
-                android:textColor="#FF0057"
+                android:textColor="#F44336"
                 android:layout_centerHorizontal="true"
                 android:id="@+id/myapptext">
 
@@ -53,45 +53,29 @@
             android:id="@+id/myprofile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="My Profile">
-        </com.google.android.material.tabs.TabItem>
+            android:text="My Profile"></com.google.android.material.tabs.TabItem>
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/chat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Chats">
-        </com.google.android.material.tabs.TabItem>
+            android:text="Chats"></com.google.android.material.tabs.TabItem>
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/status"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="status">
-        </com.google.android.material.tabs.TabItem>
+            android:text="status"></com.google.android.material.tabs.TabItem>
 
     </com.google.android.material.tabs.TabLayout>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     <androidx.viewpager.widget.ViewPager
+        android:id="@+id/fragmentcontainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/include"
-        android:layout_marginTop="0dp"
-        android:id="@+id/fragmentcontainer">
-    </androidx.viewpager.widget.ViewPager>
+        android:layout_marginTop="0dp"></androidx.viewpager.widget.ViewPager>
 
 
 

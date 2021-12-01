@@ -48,37 +48,37 @@
         android:textColor="@color/black" />
 
     <TextView
+        android:id="@+id/changenumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Didn't recive? change ur number"
-        android:id="@+id/changenumber"
         android:layout_below="@id/getotp"
-        android:layout_marginTop="15dp"
         android:layout_centerHorizontal="true"
-        android:textSize="18sp"/>
+        android:layout_marginTop="15dp"
+        android:text="Didn't recive? change ur number"
+        android:textSize="18sp" />
 
     <android.widget.Button
+        android:id="@+id/verifyotp"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_below="@id/changenumber"
-        android:id="@+id/verifyotp"
-        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="#25d366"
         android:paddingLeft="40dp"
         android:paddingRight="40dp"
-        android:layout_marginTop="50dp"
-        android:layout_centerHorizontal="true"
-        android:background="#25d366"
-        android:text="verify OTP"/>
+        android:text="verify OTP"
+        android:textColor="@color/white" />
 
 
     <ProgressBar
+        android:id="@+id/progressbarofotpauth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/verifyotp"
-        android:id="@+id/progressbarofotpauth"
-        android:visibility="invisible"
-        android:layout_marginTop="30dp"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:visibility="invisible" />
 
 
 

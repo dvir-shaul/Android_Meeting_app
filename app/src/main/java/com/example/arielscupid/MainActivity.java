@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Please Enter Your Number",Toast.LENGTH_SHORT).show();
                 }
                 else if(number.length()<10){
-                    Toast.makeText(getApplicationContext(),"Please Enter Your Number",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"wrong input, try again to Enter Your Number",Toast.LENGTH_SHORT).show();
                 }
                 else{
                     mprogressbarofmain.setVisibility(View.VISIBLE);
@@ -125,9 +125,9 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
         if(FirebaseAuth.getInstance().getCurrentUser()!=null){
             //FirebaseAuth.getInstance().getCurrentUser().delete();
-//            Intent intent = new Intent(MainActivity.this,chatActivity.class);
-//            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-//            startActivity(intent);
+            Intent intent = new Intent(MainActivity.this,chatActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
         }
     }
 }

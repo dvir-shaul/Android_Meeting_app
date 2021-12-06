@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E4C8A8"
+    android:background="#E2F2F4"
     tools:context=".specificchat">
 
 
@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_marginTop="0dp"
-        android:background="#075e54"
+        android:background="#13A4B5"
         android:id="@+id/toolbarOfspecificchat">
 
         <RelativeLayout
@@ -107,7 +107,7 @@
         android:layout_toRightOf="@id/getmessage"
         android:layout_marginLeft="-50dp"
         android:layout_marginBottom="5dp"
-        android:backgroundTint="#0D8F80"
+        android:backgroundTint="#13A4B5"
         android:layout_alignParentBottom="true"
 
         app:cardCornerRadius="45dp"

@@ -19,7 +19,6 @@
 
     <EditText
         android:id="@+id/etMail"
-        android:drawableLeft="@drawable/ic_baseline_email_24"
         style="@style/Widget.AppCompat.AutoCompleteTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -29,14 +28,13 @@
         android:layout_marginStart="89dp"
         android:layout_marginEnd="92dp"
         android:layout_marginBottom="475dp"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
         android:ems="10"
         android:hint=" Enter email:"
         android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/etPassword"
-        android:drawableLeft="@drawable/ic_sharp_security_24"
-
         style="@style/Widget.AppCompat.AutoCompleteTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -46,6 +44,7 @@
         android:layout_marginStart="93dp"
         android:layout_marginEnd="88dp"
         android:layout_marginBottom="401dp"
+        android:drawableLeft="@drawable/ic_sharp_security_24"
         android:ems="10"
         android:hint=" Enter password:"
         android:inputType="textPassword" />

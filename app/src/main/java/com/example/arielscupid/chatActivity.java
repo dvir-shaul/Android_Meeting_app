@@ -47,11 +47,8 @@ public class chatActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat);
 
-
-
         firebaseAuth=FirebaseAuth.getInstance();
         firebaseFirestore=FirebaseFirestore.getInstance();
-
 
         tabLayout = findViewById(R.id.include);
         mchat = findViewById(R.id.chat);
@@ -72,7 +69,6 @@ public class chatActivity extends AppCompatActivity {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 viewPager.setCurrentItem(tab.getPosition());
-
                 if(tab.getPosition()==0 || tab.getPosition()==1 || tab.getPosition()==2)
                 {
                     pagerAdapter.notifyDataSetChanged();
@@ -81,7 +77,6 @@ public class chatActivity extends AppCompatActivity {
 
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
-
             }
 
             @Override
@@ -115,7 +110,6 @@ public class chatActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
         menuInflater.inflate(R.menu.menu,menu);
-
         return super.onCreateOptionsMenu(menu);
     }
 

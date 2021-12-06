@@ -43,6 +43,7 @@ public class otpAuthentication extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_otp_authentication);
+
         goBack=findViewById(R.id.gobacktohomepage);
         btnRegister=findViewById(R.id.verifyotp);
         inputEmail=findViewById(R.id.getEmail);

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/white"
+    android:background="#B3E7ED"
     tools:context=".ProfileActivity"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_marginTop="0dp"
-        android:background="#075e54"
+        android:background="#13A4B5"
         android:id="@+id/toolbarOfViewProfileActivity">
 
         <RelativeLayout
@@ -34,18 +34,16 @@
 
 
             <TextView
+                android:id="@+id/myapptext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="My profile"
-                android:layout_toRightOf="@+id/backbuttonofviewprofile"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                android:textColor="#FF0057"
-                android:layout_centerHorizontal="true"
-                android:id="@+id/myapptext"
+                android:layout_centerInParent="true"
                 android:layout_marginLeft="10dp"
-                android:layout_centerVertical="true"
-                />
+                android:layout_toRightOf="@+id/backbuttonofviewprofile"
+                android:text="My profile"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
 
 
@@ -110,7 +108,6 @@
         android:layout_below="@id/viewusername"
         android:layout_centerInParent="true"
         android:layout_marginTop="50dp"
-        android:clickable="false"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="20dp"

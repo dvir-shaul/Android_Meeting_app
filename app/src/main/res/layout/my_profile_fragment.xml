@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#31559C">
+    android:background="#CBF3F8">
 
 
     <TextView
@@ -11,7 +11,7 @@
         android:text="My Profile"
         android:textSize="40sp"
         android:textStyle="bold"
-        android:textColor="@color/white"
+        android:textColor="#014A53"
         android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>

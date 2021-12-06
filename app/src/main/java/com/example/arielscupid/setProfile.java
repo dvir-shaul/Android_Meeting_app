@@ -105,6 +105,7 @@ public class setProfile extends AppCompatActivity {
                 {
                     mprogressbarofsetprofile.setVisibility(View.VISIBLE);
                     sendDataForNewUser();
+
                     mprogressbarofsetprofile.setVisibility(View.INVISIBLE);
                     Intent intent = new Intent(setProfile.this, chatActivity.class);
                     startActivity(intent);
@@ -178,17 +179,14 @@ public class setProfile extends AppCompatActivity {
                         ImageUriAcessToken = uri.toString();
                         Toast.makeText(getApplicationContext(),"URI get success", Toast.LENGTH_SHORT).show();
                         sendDataToCloudFirestore();
-
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
                         Toast.makeText(getApplicationContext(),"URI get Failed", Toast.LENGTH_SHORT).show();
-
                     }
                 });
                 Toast.makeText(getApplicationContext(),"Image is Uploaded", Toast.LENGTH_SHORT).show();
-
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override

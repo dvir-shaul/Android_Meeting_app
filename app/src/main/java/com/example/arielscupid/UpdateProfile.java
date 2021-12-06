@@ -38,6 +38,7 @@ public class UpdateProfile extends AppCompatActivity {
 
 
     private EditText mnewusername;
+
     private FirebaseAuth firebaseAuth;
     private FirebaseDatabase firebaseDatabase;
 
@@ -110,9 +111,7 @@ public class UpdateProfile extends AppCompatActivity {
                     mprogressBar.setVisibility(View.VISIBLE);
                     userprofile muserprofile = new userprofile(newName,firebaseAuth.getUid());
                     databaseReference.setValue(muserprofile);
-
                     updateimagetostoarge();
-
                     Toast.makeText(getApplicationContext(),"Updated",Toast.LENGTH_SHORT).show();
                     mprogressBar.setVisibility(View.VISIBLE);
                     Intent intent = new Intent(UpdateProfile.this,chatActivity.class);
@@ -148,7 +147,7 @@ public class UpdateProfile extends AppCompatActivity {
         });
 
         storageReference=firebaseStorage.getReference();
-        storageReference.child("Images").child(firebaseAuth.getUid()).child("Profile Pic").getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+        storageReference.child("Images").child(firebaseAuth.getUid()).child("Profile Picture").getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
             public void onSuccess(Uri uri) {
                 ImageURIaccestoken=uri.toString();
@@ -183,13 +182,13 @@ public class UpdateProfile extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),"Data not on Cloud Firestore. didn't send!!", Toast.LENGTH_SHORT).show();
             }
         });
-
     }
+
 
     private void updateimagetostoarge() {
 
 
-        StorageReference imageref=storageReference.child("Images").child(firebaseAuth.getUid()).child("Profile Pic");
+        StorageReference imageref=storageReference.child("Images").child(firebaseAuth.getUid()).child("Profile Picture");
 
 
 
@@ -267,6 +266,7 @@ public class UpdateProfile extends AppCompatActivity {
             }
         });
     }
+
 
     @Override
     protected void onStart() {

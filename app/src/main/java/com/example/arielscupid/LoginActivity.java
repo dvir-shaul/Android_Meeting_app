@@ -20,15 +20,15 @@ import com.google.firebase.auth.FirebaseUser;
 public class LoginActivity extends AppCompatActivity {
 
 
-    FirebaseAuth auth = FirebaseAuth.getInstance();
-
     EditText eMail;
     EditText ePassword;
     android.widget.Button eLogin;
 
     FirebaseAuth firebaseAuth;
     FirebaseUser firebaseUser;
+
     ProgressDialog progressDialog;
+
     String emailPattern = "^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$" ;
     
 
@@ -42,7 +42,9 @@ public class LoginActivity extends AppCompatActivity {
         eLogin = findViewById(R.id.btnLogin);
 
         progressDialog = new ProgressDialog(this);
+
         firebaseAuth=FirebaseAuth.getInstance();
+
         firebaseUser=firebaseAuth.getCurrentUser();
 
 
@@ -87,7 +89,6 @@ public class LoginActivity extends AppCompatActivity {
                         else {
                             progressDialog.dismiss();
                             Toast.makeText(LoginActivity.this, ""+task.getException(), Toast.LENGTH_SHORT).show();
-
                         }
                     }
             });

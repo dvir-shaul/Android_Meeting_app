@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#B3E7ED"
     tools:context=".setProfile">
 
     <TextView
@@ -13,7 +14,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
         android:text="Save your profile"
-        android:textColor="#25d366"
+        android:textColor="#0E646C"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -27,12 +28,12 @@
         android:layout_centerHorizontal="true"
         app:cardCornerRadius="130dp">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/ic_launcher_background"
-        android:id="@+id/getuserimageinimageview"
-        android:scaleType="centerCrop"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher_background"
+            android:id="@+id/getuserimageinimageview"
+            android:scaleType="centerCrop"/>
 
     </androidx.cardview.widget.CardView>
 
@@ -54,9 +55,9 @@
         android:layout_below="@id/getusername"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:background="#25d366"
+        android:background="#0E646C"
         android:text="Save Profile"
-        android:textColor="#5D4037" />
+        android:textColor="#F3F7F8" />
 
 
     <ProgressBar

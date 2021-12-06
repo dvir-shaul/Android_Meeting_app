@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="#B3E7ED"
     tools:context=".SplashScreen">
 
     <ImageView
@@ -21,9 +21,9 @@
         android:layout_above="@+id/maintext"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="5dp"
-        android:text="from"
         android:fontFamily="@font/raleway"
-        android:textColor="#00BCD4">
+        android:text="from"
+        android:textColor="#13A4B5">
 
     </TextView>
 
@@ -34,10 +34,10 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
-        android:text="Adi, Hodaya, Dvir"
-        android:textColor="#FF5722"
-        android:textSize="20sp"
         android:fontFamily="@font/raleway"
+        android:text="Adi, Hodaya, Dvir"
+        android:textColor="#056B78"
+        android:textSize="20sp"
         android:textStyle="normal">
 
     </TextView>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#B3E7ED"
     tools:context=".UpdateProfile">
 
 
@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_marginTop="0dp"
-        android:background="#075e54"
+        android:background="#0E646C"
         android:id="@+id/toolbarOfUpdateProfileActivity">
 
         <RelativeLayout
@@ -39,7 +39,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_toRightOf="@+id/backbuttonofUpdateProfile"
                 android:text="Update Profile"
-                android:textColor="#FF0057"
+                android:textColor="@color/white"
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
@@ -98,7 +98,7 @@
         android:layout_below="@id/getnewusername"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:background="#25d366"
+        android:background="#0E646C"
         android:text="update profile"
         android:textColor="@color/white" />
 

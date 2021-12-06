@@ -24,10 +24,16 @@ public final class ActivityOtpAuthenticationBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final TextView changenumber;
+  public final EditText getEmail;
 
   @NonNull
-  public final EditText getotp;
+  public final EditText getpass;
+
+  @NonNull
+  public final EditText getpass2;
+
+  @NonNull
+  public final Button gobacktohomepage;
 
   @NonNull
   public final ImageView logo;
@@ -42,12 +48,15 @@ public final class ActivityOtpAuthenticationBinding implements ViewBinding {
   public final Button verifyotp;
 
   private ActivityOtpAuthenticationBinding(@NonNull RelativeLayout rootView,
-      @NonNull TextView changenumber, @NonNull EditText getotp, @NonNull ImageView logo,
+      @NonNull EditText getEmail, @NonNull EditText getpass, @NonNull EditText getpass2,
+      @NonNull Button gobacktohomepage, @NonNull ImageView logo,
       @NonNull ProgressBar progressbarofotpauth, @NonNull TextView textheading,
       @NonNull Button verifyotp) {
     this.rootView = rootView;
-    this.changenumber = changenumber;
-    this.getotp = getotp;
+    this.getEmail = getEmail;
+    this.getpass = getpass;
+    this.getpass2 = getpass2;
+    this.gobacktohomepage = gobacktohomepage;
     this.logo = logo;
     this.progressbarofotpauth = progressbarofotpauth;
     this.textheading = textheading;
@@ -81,15 +90,27 @@ public final class ActivityOtpAuthenticationBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.changenumber;
-      TextView changenumber = ViewBindings.findChildViewById(rootView, id);
-      if (changenumber == null) {
+      id = R.id.getEmail;
+      EditText getEmail = ViewBindings.findChildViewById(rootView, id);
+      if (getEmail == null) {
         break missingId;
       }
 
-      id = R.id.getotp;
-      EditText getotp = ViewBindings.findChildViewById(rootView, id);
-      if (getotp == null) {
+      id = R.id.getpass;
+      EditText getpass = ViewBindings.findChildViewById(rootView, id);
+      if (getpass == null) {
+        break missingId;
+      }
+
+      id = R.id.getpass2;
+      EditText getpass2 = ViewBindings.findChildViewById(rootView, id);
+      if (getpass2 == null) {
+        break missingId;
+      }
+
+      id = R.id.gobacktohomepage;
+      Button gobacktohomepage = ViewBindings.findChildViewById(rootView, id);
+      if (gobacktohomepage == null) {
         break missingId;
       }
 
@@ -117,8 +138,8 @@ public final class ActivityOtpAuthenticationBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityOtpAuthenticationBinding((RelativeLayout) rootView, changenumber, getotp,
-          logo, progressbarofotpauth, textheading, verifyotp);
+      return new ActivityOtpAuthenticationBinding((RelativeLayout) rootView, getEmail, getpass,
+          getpass2, gobacktohomepage, logo, progressbarofotpauth, textheading, verifyotp);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

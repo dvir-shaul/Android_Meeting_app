@@ -76,6 +76,9 @@ public class setProfile extends AppCompatActivity {
         msaveprofile = findViewById(R.id.saveprofile);
         mprogressbarofsetprofile = findViewById(R.id.progressbarofsetprofile);
 
+
+
+          //pick a picture from photos on your phone
         mgetuserimage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -20,8 +20,16 @@
         "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\layout\\activity_otp_authentication.xml"
     },
     {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_whatshot_24.xml.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\drawable\\ic_baseline_whatshot_24.xml"
+    },
+    {
         "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\layout_chatviewlayout.xml.flat",
         "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\layout\\chatviewlayout.xml"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\font_raleway.ttf.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\font\\raleway.ttf"
     },
     {
         "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -52,12 +60,28 @@
         "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_sharp_security_24.xml.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\drawable\\ic_sharp_security_24.xml"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_login.xml.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
         "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_email_24.xml.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\drawable\\ic_baseline_email_24.xml"
+    },
+    {
         "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\drawable_bubble_in.xml.flat",
         "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\drawable\\bubble_in.xml"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_defaultprofile.png.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\drawable-xxxhdpi\\defaultprofile.png"
     },
     {
         "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
@@ -70,6 +94,10 @@
     {
         "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
         "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\font_playlist.ttf.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\font\\playlist.ttf"
     },
     {
         "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_update_profile.xml.flat",
@@ -88,6 +116,10 @@
         "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_arrow_forward_24.xml.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\drawable\\ic_baseline_arrow_forward_24.xml"
+    },
+    {
         "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
@@ -104,6 +136,10 @@
         "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\layout\\chats_fragment.xml"
     },
     {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\drawable_messagebackground.xml.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\drawable\\messagebackground.xml"
+    },
+    {
         "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_person_24.xml.flat",
         "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\drawable\\ic_baseline_person_24.xml"
     },
@@ -116,8 +152,16 @@
         "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\menu\\menu.xml"
     },
     {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_specificchat.xml.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\layout\\activity_specificchat.xml"
+    },
+    {
         "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\navigation_nav_graph.xml.flat",
         "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\navigation\\nav_graph.xml"
+    },
+    {
+        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_mychatapplogo.png.flat",
+        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\drawable-xxxhdpi\\mychatapplogo.png"
     },
     {
         "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",

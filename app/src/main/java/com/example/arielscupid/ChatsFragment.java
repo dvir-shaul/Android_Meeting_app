@@ -2,6 +2,7 @@ package com.example.arielscupid;
 
 import static android.graphics.Color.*;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -51,7 +52,9 @@ public class ChatsFragment extends Fragment {
         mrecyclerView=v.findViewById(R.id.recyclerview);
 
 
-        Query query=firebaseFirestore.collection("Users");
+        //Query query=firebaseFirestore.collection("Users");   // show everyone on app
+        Query query=firebaseFirestore.collection("Users").whereNotEqualTo("uid",firebaseAuth.getUid()); // except me
+
         FirestoreRecyclerOptions<firebasemodel> allUsername = new FirestoreRecyclerOptions.Builder<firebasemodel>().setQuery(query,firebasemodel.class).build();
 
         chatAdapter=new FirestoreRecyclerAdapter<firebasemodel, NoteViewHolder>(allUsername) {
@@ -70,10 +73,15 @@ public class ChatsFragment extends Fragment {
                 {
                     noteViewHolder.statusofuser.setText(firebasemodel.getStatus());
                 }
+
                 noteViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Toast.makeText(getActivity(),"Item is clicked",Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(getActivity(),specificchat.class);
+                        intent.putExtra("name",firebasemodel.getName());
+                        intent.putExtra("reciveruid",firebasemodel.getUid());
+                        intent.putExtra("imageuri",firebasemodel.getImage());
+                        startActivity(intent);
                     }
                 });
 

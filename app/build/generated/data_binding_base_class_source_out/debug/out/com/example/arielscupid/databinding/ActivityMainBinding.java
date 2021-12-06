@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
@@ -15,7 +14,6 @@ import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.arielscupid.R;
-import com.hbb20.CountryCodePicker;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -25,39 +23,42 @@ public final class ActivityMainBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
+  public final Button LoginButton;
+
+  @NonNull
   public final RelativeLayout centerhorizontalline;
-
-  @NonNull
-  public final CountryCodePicker countrycodepicker;
-
-  @NonNull
-  public final EditText getphonenumber;
 
   @NonNull
   public final ImageView logo;
 
   @NonNull
+  public final ImageView logo2;
+
+  @NonNull
   public final ProgressBar progressbarofmain;
 
   @NonNull
-  public final Button sendotpbutton;
+  public final Button signupbutton;
 
   @NonNull
   public final TextView textheading;
 
-  private ActivityMainBinding(@NonNull RelativeLayout rootView,
-      @NonNull RelativeLayout centerhorizontalline, @NonNull CountryCodePicker countrycodepicker,
-      @NonNull EditText getphonenumber, @NonNull ImageView logo,
-      @NonNull ProgressBar progressbarofmain, @NonNull Button sendotpbutton,
-      @NonNull TextView textheading) {
+  @NonNull
+  public final TextView textheading2;
+
+  private ActivityMainBinding(@NonNull RelativeLayout rootView, @NonNull Button LoginButton,
+      @NonNull RelativeLayout centerhorizontalline, @NonNull ImageView logo,
+      @NonNull ImageView logo2, @NonNull ProgressBar progressbarofmain,
+      @NonNull Button signupbutton, @NonNull TextView textheading, @NonNull TextView textheading2) {
     this.rootView = rootView;
+    this.LoginButton = LoginButton;
     this.centerhorizontalline = centerhorizontalline;
-    this.countrycodepicker = countrycodepicker;
-    this.getphonenumber = getphonenumber;
     this.logo = logo;
+    this.logo2 = logo2;
     this.progressbarofmain = progressbarofmain;
-    this.sendotpbutton = sendotpbutton;
+    this.signupbutton = signupbutton;
     this.textheading = textheading;
+    this.textheading2 = textheading2;
   }
 
   @Override
@@ -87,21 +88,15 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.LoginButton;
+      Button LoginButton = ViewBindings.findChildViewById(rootView, id);
+      if (LoginButton == null) {
+        break missingId;
+      }
+
       id = R.id.centerhorizontalline;
       RelativeLayout centerhorizontalline = ViewBindings.findChildViewById(rootView, id);
       if (centerhorizontalline == null) {
-        break missingId;
-      }
-
-      id = R.id.countrycodepicker;
-      CountryCodePicker countrycodepicker = ViewBindings.findChildViewById(rootView, id);
-      if (countrycodepicker == null) {
-        break missingId;
-      }
-
-      id = R.id.getphonenumber;
-      EditText getphonenumber = ViewBindings.findChildViewById(rootView, id);
-      if (getphonenumber == null) {
         break missingId;
       }
 
@@ -111,15 +106,21 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.logo2;
+      ImageView logo2 = ViewBindings.findChildViewById(rootView, id);
+      if (logo2 == null) {
+        break missingId;
+      }
+
       id = R.id.progressbarofmain;
       ProgressBar progressbarofmain = ViewBindings.findChildViewById(rootView, id);
       if (progressbarofmain == null) {
         break missingId;
       }
 
-      id = R.id.sendotpbutton;
-      Button sendotpbutton = ViewBindings.findChildViewById(rootView, id);
-      if (sendotpbutton == null) {
+      id = R.id.signupbutton;
+      Button signupbutton = ViewBindings.findChildViewById(rootView, id);
+      if (signupbutton == null) {
         break missingId;
       }
 
@@ -129,8 +130,14 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((RelativeLayout) rootView, centerhorizontalline,
-          countrycodepicker, getphonenumber, logo, progressbarofmain, sendotpbutton, textheading);
+      id = R.id.textheading2;
+      TextView textheading2 = ViewBindings.findChildViewById(rootView, id);
+      if (textheading2 == null) {
+        break missingId;
+      }
+
+      return new ActivityMainBinding((RelativeLayout) rootView, LoginButton, centerhorizontalline,
+          logo, logo2, progressbarofmain, signupbutton, textheading, textheading2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

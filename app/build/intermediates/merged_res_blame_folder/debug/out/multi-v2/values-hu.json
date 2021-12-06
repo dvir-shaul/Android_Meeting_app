@@ -40,20 +40,20 @@
                     }
                 },
                 {
-                    "source": "D:\\Android_Projects\\pic\\caches\\transforms-3\\2f60e652d28c97ee83adc81cc294019c\\transformed\\jetified-play-services-basement-17.1.0\\res\\values-hu\\values.xml",
+                    "source": "D:\\Android_Projects\\pic\\caches\\transforms-3\\3fba89c9355ff4a4d3d1bf081ee1e4d2\\transformed\\jetified-play-services-base-17.5.0\\res\\values-hu\\values.xml",
                     "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "235",
-                        "endOffsets": "482"
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "245,354,570,706,813,1040,1176,1324,1459,1688,1794,2010,2145,2376,2574,2671,2765",
+                        "endColumns": "108,215,135,106,226,135,147,134,228,105,215,134,230,197,96,93,112",
+                        "endOffsets": "353,569,705,812,1039,1175,1323,1458,1687,1793,2009,2144,2375,2573,2670,2764,2877"
                     },
                     "to": {
-                        "startLines": "45",
-                        "startColumns": "4",
-                        "startOffsets": "4639",
-                        "endColumns": "235",
-                        "endOffsets": "4870"
+                        "startLines": "37,38,39,40,41,42,43,44,46,47,48,49,50,51,52,53,54",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "3401,3514,3730,3870,3981,4208,4348,4500,4875,5104,5214,5430,5569,5800,6002,6103,6201",
+                        "endColumns": "112,215,139,110,226,139,151,138,228,109,215,138,230,201,100,97,116",
+                        "endOffsets": "3509,3725,3865,3976,4203,4343,4495,4634,5099,5209,5425,5564,5795,5997,6098,6196,6313"
                     }
                 },
                 {
@@ -108,20 +108,20 @@
                     }
                 },
                 {
-                    "source": "D:\\Android_Projects\\pic\\caches\\transforms-3\\61327252b97b04f60e697e9245a0fce3\\transformed\\jetified-play-services-base-17.1.0\\res\\values-hu\\values.xml",
+                    "source": "D:\\Android_Projects\\pic\\caches\\transforms-3\\8af45b3c4bfca56d649743056fa4aec9\\transformed\\jetified-play-services-basement-17.5.0\\res\\values-hu\\values.xml",
                     "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "245,354,570,706,813,1040,1176,1324,1459,1688,1794,2010,2145,2376,2574,2671,2765",
-                        "endColumns": "108,215,135,106,226,135,147,134,228,105,215,134,230,197,96,93,112",
-                        "endOffsets": "353,569,705,812,1039,1175,1323,1458,1687,1793,2009,2144,2375,2573,2670,2764,2877"
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "235",
+                        "endOffsets": "482"
                     },
                     "to": {
-                        "startLines": "37,38,39,40,41,42,43,44,46,47,48,49,50,51,52,53,54",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "3401,3514,3730,3870,3981,4208,4348,4500,4875,5104,5214,5430,5569,5800,6002,6103,6201",
-                        "endColumns": "112,215,139,110,226,139,151,138,228,109,215,138,230,201,100,97,116",
-                        "endOffsets": "3509,3725,3865,3976,4203,4343,4495,4634,5099,5209,5425,5564,5795,5997,6098,6196,6313"
+                        "startLines": "45",
+                        "startColumns": "4",
+                        "startOffsets": "4639",
+                        "endColumns": "235",
+                        "endOffsets": "4870"
                     }
                 }
             ]

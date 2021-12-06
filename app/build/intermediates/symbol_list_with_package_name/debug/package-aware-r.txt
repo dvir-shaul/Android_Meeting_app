@@ -1933,6 +1933,7 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable defaultprofile
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -2191,8 +2192,11 @@ drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_backspace_black_24dp
 drawable ic_baseline_arrow_back_24
+drawable ic_baseline_arrow_forward_24
+drawable ic_baseline_email_24
 drawable ic_baseline_more_vert_24
 drawable ic_baseline_person_24
+drawable ic_baseline_whatshot_24
 drawable ic_clear_black_24dp
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
@@ -2202,6 +2206,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_sharp_security_24
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -2212,6 +2217,7 @@ drawable material_ic_keyboard_arrow_previous_black_24dp
 drawable material_ic_keyboard_arrow_right_black_24dp
 drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
+drawable messagebackground
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -2222,6 +2228,7 @@ drawable mtrl_navigation_bar_item_background
 drawable mtrl_popupmenu_background
 drawable mtrl_popupmenu_background_dark
 drawable mtrl_tabs_default_indicator
+drawable mychatapplogo
 drawable navigation_empty_icon
 drawable notification_action_background
 drawable notification_bg
@@ -2239,6 +2246,8 @@ drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font playlist
+font raleway
 id AFRIKAANS
 id ALT
 id ARABIC
@@ -2275,6 +2284,7 @@ id LOCALE_NETWORK_SIM
 id LOCALE_ONLY
 id LOCALE_SIM
 id LOCALE_SIM_NETWORK
+id LoginButton
 id MARATHI
 id META
 id MOBILE
@@ -2284,6 +2294,7 @@ id NETWORK_ONLY
 id NETWORK_SIM
 id NETWORK_SIM_LOCALE
 id NO_DEBUG
+id Nameofspecificuser
 id PAGER
 id PERSONAL_NUMBER
 id POLISH
@@ -2400,6 +2411,8 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id backbuttonofUpdateProfile
+id backbuttonofspecificchat
 id backbuttonofviewprofile
 id barrier
 id baseline
@@ -2417,12 +2430,15 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btnLogin
 id buttonPanel
 id cache_measures
 id callMeasure
 id cancel_action
 id cancel_button
 id cardViewRoot
+id cardviewofsendmessage
+id cardviewofspecificuser
 id cardviewofuser
 id carryVelocity
 id center
@@ -2431,7 +2447,6 @@ id center_vertical
 id centerhorizontalline
 id chain
 id chains
-id changenumber
 id chat
 id checkbox
 id checked
@@ -2459,7 +2474,6 @@ id coordinator
 id cos
 id counterclockwise
 id countryCodeHolder
-id countrycodepicker
 id currentState
 id custom
 id customPanel
@@ -2506,6 +2520,8 @@ id endToStart
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
+id etMail
+id etPassword
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -2523,13 +2539,18 @@ id forever
 id fragment_container_view_tag
 id fragmentcontainer
 id frost
-id getotp
-id getphonenumber
+id getEmail
+id getNetUserImage
+id getmessage
+id getnewusername
+id getpass
+id getpass2
 id getuserimage
 id getuserimageinimageview
 id getusername
 id ghost_view
 id ghost_view_holder
+id gobacktohomepage
 id gone
 id graph
 id graph_wrap
@@ -2583,6 +2604,7 @@ id linear_flag_holder
 id listMode
 id list_item
 id logo
+id logo2
 id logoofviewprofile
 id maintext
 id masked
@@ -2618,7 +2640,7 @@ id month_navigation_next
 id month_navigation_previous
 id month_title
 id motion_base
-id movetoupdaterprofile
+id movetoupdateprofile
 id mtrl_anchor_parent
 id mtrl_calendar_day_selector_frame
 id mtrl_calendar_days_of_week
@@ -2687,6 +2709,7 @@ id position
 id postLayout
 id preferenceDivider
 id profile
+id progresbarofupdateimage
 id progress_circular
 id progress_horizontal
 id progressbarofmain
@@ -2697,6 +2720,7 @@ id ratio
 id rectangles
 id recycler_countryDialog
 id recyclerview
+id recyclerviewofspecific
 id reverseSawtooth
 id right
 id rightToLeft
@@ -2731,7 +2755,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
-id sendotpbutton
+id sendmessage
 id setting
 id sharedValueSet
 id sharedValueUnset
@@ -2739,6 +2763,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id signupbutton
 id sin
 id skipCollapsed
 id skipped
@@ -2750,6 +2775,7 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id specificuserinimageview
 id spline
 id split_action_bar
 id spread
@@ -2808,6 +2834,7 @@ id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
 id textheading
+id textheading2
 id textinput_counter
 id textinput_error
 id textinput_helper_text
@@ -2820,7 +2847,9 @@ id titleDividerNoCustom
 id title_template
 id toggle
 id toolbar
+id toolbarOfUpdateProfileActivity
 id toolbarOfViewProfileActivity
+id toolbarOfspecificchat
 id top
 id topPanel
 id touch_outside
@@ -2836,6 +2865,7 @@ id unchecked
 id uniform
 id unlabeled
 id up
+id updateprofilebutton
 id useLogo
 id verifyotp
 id vertical_only
@@ -2929,10 +2959,12 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_chat
+layout activity_login
 layout activity_main
 layout activity_otp_authentication
 layout activity_profile
 layout activity_set_profile
+layout activity_specificchat
 layout activity_splash_screen
 layout activity_update_profile
 layout browser_actions_context_menu_page
@@ -3983,7 +4015,7 @@ styleable AppCompatEmojiHelper
 styleable AppCompatImageView android_src srcCompat tint tintMode
 styleable AppCompatSeekBar android_thumb tickMark tickMarkTint tickMarkTintMode
 styleable AppCompatTextHelper android_textAppearance android_drawableTop android_drawableBottom android_drawableLeft android_drawableRight android_drawableStart android_drawableEnd
-styleable AppCompatTextView android_textAppearance autoSizeMaxTextSize autoSizeMinTextSize autoSizePresetSizes autoSizeStepGranularity autoSizeTextType drawableBottomCompat drawableEndCompat drawableLeftCompat drawableRightCompat drawableStartCompat drawableTint drawableTintMode drawableTopCompat firstBaselineToTopHeight fontFamily fontVariationSettings lastBaselineToBottomHeight lineHeight textAllCaps textLocale emojiCompatEnabled
+styleable AppCompatTextView android_textAppearance autoSizeMaxTextSize autoSizeMinTextSize autoSizePresetSizes autoSizeStepGranularity autoSizeTextType drawableBottomCompat drawableEndCompat drawableLeftCompat drawableRightCompat drawableStartCompat drawableTint drawableTintMode drawableTopCompat emojiCompatEnabled firstBaselineToTopHeight fontFamily fontVariationSettings lastBaselineToBottomHeight lineHeight textAllCaps textLocale
 styleable AppCompatTheme android_windowIsFloating android_windowAnimationStyle actionBarDivider actionBarItemBackground actionBarPopupTheme actionBarSize actionBarSplitStyle actionBarStyle actionBarTabBarStyle actionBarTabStyle actionBarTabTextStyle actionBarTheme actionBarWidgetTheme actionButtonStyle actionDropDownStyle actionMenuTextAppearance actionMenuTextColor actionModeBackground actionModeCloseButtonStyle actionModeCloseContentDescription actionModeCloseDrawable actionModeCopyDrawable actionModeCutDrawable actionModeFindDrawable actionModePasteDrawable actionModePopupWindowStyle actionModeSelectAllDrawable actionModeShareDrawable actionModeSplitBackground actionModeStyle actionModeTheme actionModeWebSearchDrawable actionOverflowButtonStyle actionOverflowMenuStyle activityChooserViewStyle alertDialogButtonGroupStyle alertDialogCenterButtons alertDialogStyle alertDialogTheme autoCompleteTextViewStyle borderlessButtonStyle buttonBarButtonStyle buttonBarNegativeButtonStyle buttonBarNeutralButtonStyle buttonBarPositiveButtonStyle buttonBarStyle buttonStyle buttonStyleSmall checkboxStyle checkedTextViewStyle colorAccent colorBackgroundFloating colorButtonNormal colorControlActivated colorControlHighlight colorControlNormal colorError colorPrimary colorPrimaryDark colorSwitchThumbNormal controlBackground dialogCornerRadius dialogPreferredPadding dialogTheme dividerHorizontal dividerVertical dropDownListViewStyle dropdownListPreferredItemHeight editTextBackground editTextColor editTextStyle homeAsUpIndicator imageButtonStyle listChoiceBackgroundIndicator listChoiceIndicatorMultipleAnimated listChoiceIndicatorSingleAnimated listDividerAlertDialog listMenuViewStyle listPopupWindowStyle listPreferredItemHeight listPreferredItemHeightLarge listPreferredItemHeightSmall listPreferredItemPaddingEnd listPreferredItemPaddingLeft listPreferredItemPaddingRight listPreferredItemPaddingStart panelBackground panelMenuListTheme panelMenuListWidth popupMenuStyle popupWindowStyle radioButtonStyle ratingBarStyle ratingBarStyleIndicator ratingBarStyleSmall searchViewStyle seekBarStyle selectableItemBackground selectableItemBackgroundBorderless spinnerDropDownItemStyle spinnerStyle switchStyle textAppearanceLargePopupMenu textAppearanceListItem textAppearanceListItemSecondary textAppearanceListItemSmall textAppearancePopupMenuHeader textAppearanceSearchResultSubtitle textAppearanceSearchResultTitle textAppearanceSmallPopupMenu textColorAlertDialogListItem textColorSearchUrl toolbarNavigationButtonStyle toolbarStyle tooltipForegroundColor tooltipFrameBackground viewInflaterClass windowActionBar windowActionBarOverlay windowActionModeOverlay windowFixedHeightMajor windowFixedHeightMinor windowFixedWidthMajor windowFixedWidthMinor windowMinWidthMajor windowMinWidthMinor windowNoTitle
 styleable Badge backgroundColor badgeGravity badgeTextColor horizontalOffset maxCharacterCount number verticalOffset
 styleable BaseProgressIndicator android_indeterminate hideAnimationBehavior indicatorColor minHideDelay showAnimationBehavior showDelay trackColor trackCornerRadius trackThickness

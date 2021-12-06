@@ -13,8 +13,14 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.storage.FirebaseStorage;
 
 public class chatActivity extends AppCompatActivity {
 
@@ -30,12 +36,22 @@ public class chatActivity extends AppCompatActivity {
     androidx.appcompat.widget.Toolbar mtoolbar;
 
 
+    private FirebaseAuth firebaseAuth;
+
+    private FirebaseFirestore firebaseFirestore;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat);
+
+
+
+        firebaseAuth=FirebaseAuth.getInstance();
+        firebaseFirestore=FirebaseFirestore.getInstance();
+
 
         tabLayout = findViewById(R.id.include);
         mchat = findViewById(R.id.chat);
@@ -102,4 +118,43 @@ public class chatActivity extends AppCompatActivity {
 
         return super.onCreateOptionsMenu(menu);
     }
+
+
+
+
+
+
+
+
+
+
+
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        DocumentReference documentReference=firebaseFirestore.collection("Users").document(firebaseAuth.getUid());
+        documentReference.update("status","Offline").addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                Toast.makeText(getApplicationContext(),"Now User is Offline",Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        DocumentReference documentReference=firebaseFirestore.collection("Users").document(firebaseAuth.getUid());
+        documentReference.update("status","Online").addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                Toast.makeText(getApplicationContext(),"Now User is Online",Toast.LENGTH_SHORT).show();
+            }
+        });
+
+    }
+
+
+
 }

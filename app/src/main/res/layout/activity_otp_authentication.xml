@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/white"
+    android:background="#93CBD3"
     android:layout_height="match_parent"
     tools:context=".otpAuthentication">
 
@@ -11,7 +11,7 @@
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/ic_launcher_background"
+        android:src="@drawable/ic_baseline_whatshot_24"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:id="@+id/logo">
@@ -21,7 +21,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Enter the OTP u got"
+        android:text="Please register using Email and Password"
         android:textSize="20sp"
         android:textAlignment="center"
         android:textStyle="bold"
@@ -35,39 +35,69 @@
 
 
     <EditText
-        android:id="@+id/getotp"
+        android:id="@+id/getEmail"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_below="@id/textheading"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="120dp"
         android:layout_marginRight="120dp"
-        android:hint="Enter the otp here..."
-        android:inputType="number"
+        android:hint="Enter Email"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+    <EditText
+        android:id="@+id/getpass"
+        android:drawableLeft="@drawable/ic_sharp_security_24"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/getEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:hint="Enter Password"
+        android:inputType="text"
         android:textAlignment="center"
         android:textColor="@color/black" />
 
-    <TextView
-        android:id="@+id/changenumber"
+    <EditText
+        android:id="@+id/getpass2"
+        android:drawableLeft="@drawable/ic_sharp_security_24"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/getpass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:hint="Confirm Password"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+    <android.widget.Button
+        android:id="@+id/gobacktohomepage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/getotp"
+        android:layout_below="@id/getpass2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:text="Didn't recive? change ur number"
-        android:textSize="18sp" />
+        android:layout_marginTop="20dp"
+        android:background="#25d366"
+        android:text="Already Have an account?"
+        android:textSize="12sp" />
+
 
     <android.widget.Button
         android:id="@+id/verifyotp"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_below="@id/changenumber"
+        android:layout_below="@id/gobacktohomepage"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:background="#25d366"
         android:paddingLeft="40dp"
         android:paddingRight="40dp"
-        android:text="verify OTP"
+        android:text="Register to app"
         android:textColor="@color/white" />
 
 
@@ -79,10 +109,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:visibility="invisible" />
-
-
-
-
 
 
 

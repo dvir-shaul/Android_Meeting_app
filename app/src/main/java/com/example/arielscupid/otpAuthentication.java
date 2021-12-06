@@ -3,6 +3,7 @@ package com.example.arielscupid;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
@@ -17,82 +18,107 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class otpAuthentication extends AppCompatActivity {
 
-    TextView mchangenumber;
-    EditText mgetotp;
-    android.widget.Button mverifyotp;
-    String enterotp;
+    EditText inputEmail,inputPasswrod,inputConfirmPasword;
+    android.widget.Button btnRegister;
+    android.widget.Button goBack;
+
+    String emailPattern = "^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$" ;
+    ProgressDialog progressDialog;
+
+
 
     FirebaseAuth firebaseAuth;
-    ProgressBar mprogressbarofothauth;
+    FirebaseUser firebaseUser;
 
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_otp_authentication);
-
-        mchangenumber=findViewById(R.id.changenumber);
-        mverifyotp=findViewById(R.id.verifyotp);
-        mgetotp=findViewById(R.id.getotp);
-        mprogressbarofothauth=findViewById(R.id.progressbarofotpauth);
+        goBack=findViewById(R.id.gobacktohomepage);
+        btnRegister=findViewById(R.id.verifyotp);
+        inputEmail=findViewById(R.id.getEmail);
+        inputPasswrod=findViewById(R.id.getpass);
+        inputConfirmPasword=findViewById(R.id.getpass2);
 
         firebaseAuth=FirebaseAuth.getInstance();
-        mchangenumber.setOnClickListener(new View.OnClickListener() {
+        firebaseUser=firebaseAuth.getCurrentUser();
+
+
+        progressDialog = new ProgressDialog(this);
+
+        goBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(otpAuthentication.this,MainActivity.class);
-                startActivity(intent);
+                goBackFunc();
             }
         });
 
-        mverifyotp.setOnClickListener(new View.OnClickListener() {
+
+
+        btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                enterotp=mgetotp.getText().toString();
-                if(enterotp.isEmpty()){
-                    Toast.makeText(getApplicationContext(),"Enter your otp first",Toast.LENGTH_SHORT).show();
-                }
-                else
-                {
-                    mprogressbarofothauth.setVisibility(View.VISIBLE);
-                    String coderecived=getIntent().getStringExtra("otp");
-
-                    PhoneAuthCredential credential= PhoneAuthProvider.getCredential(coderecived,enterotp);
-                    signInWithPhoneAuthCredential(credential);
-                }
+                PergorAuth();
             }
         });
     }
 
+    private void goBackFunc() {
+        Intent intent = new Intent(otpAuthentication.this,MainActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+    }
 
-    private void signInWithPhoneAuthCredential(PhoneAuthCredential credential){
-        firebaseAuth.signInWithCredential(credential).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful())
-                    {
-                    mprogressbarofothauth.setVisibility(View.VISIBLE);
-                    Toast.makeText(getApplicationContext(),"Login Success", Toast.LENGTH_SHORT).show();
-                    Intent intent= new Intent(otpAuthentication.this, setProfile.class);
-                    startActivity(intent);
-                    finish();
+
+    private void PergorAuth() {
+        String email = inputEmail.getText().toString();
+        String password = inputPasswrod.getText().toString();
+        String confirmPassword = inputConfirmPasword.getText().toString();
+
+        if(email.matches(emailPattern))
+        {
+            inputEmail.setError("Enter correct email pattern");
+        }
+        else if(password.isEmpty() || password.length()<6)
+        {
+            inputPasswrod.setError("Enter at least 6 digits to password");
+        }
+        else if(!password.equals(confirmPassword))
+        {
+            inputConfirmPasword.setError("Password Not match");
+        }
+        else{
+            progressDialog.setMessage("Please wait while Registration...");
+            progressDialog.setTitle("Registration");
+            progressDialog.setCanceledOnTouchOutside(false);
+            progressDialog.show();
+
+            firebaseAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                @Override
+                public void onComplete(@NonNull Task<AuthResult> task) {
+                    if(task.isSuccessful()){
+                        progressDialog.dismiss();
+                        Toast.makeText(otpAuthentication.this, "Registration successfully", Toast.LENGTH_SHORT).show();
+                        Intent intent= new Intent(otpAuthentication.this, setProfile.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intent);
                     }
-                else{
-                    if(task.getException() instanceof FirebaseAuthInvalidCredentialsException)
-                        {
-                            mprogressbarofothauth.setVisibility(View.VISIBLE);
-                            Toast.makeText(getApplicationContext(),"Login Failed", Toast.LENGTH_SHORT).show();
-                        }
+                    else {
+                        progressDialog.dismiss();
+                        Toast.makeText(otpAuthentication.this, ""+task.getException(), Toast.LENGTH_SHORT).show();
+
+                    }
                 }
-            }
-        });
+            });
+        }
     }
-
-
-
-
 }

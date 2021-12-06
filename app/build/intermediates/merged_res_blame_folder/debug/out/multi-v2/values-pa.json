@@ -40,23 +40,6 @@
                     }
                 },
                 {
-                    "source": "D:\\Android_Projects\\pic\\caches\\transforms-3\\61327252b97b04f60e697e9245a0fce3\\transformed\\jetified-play-services-base-17.1.0\\res\\values-pa\\values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "245,350,555,683,790,996,1123,1262,1391,1612,1719,1923,2053,2265,2452,2544,2636",
-                        "endColumns": "104,204,127,106,205,126,138,128,220,106,203,129,211,186,91,91,106",
-                        "endOffsets": "349,554,682,789,995,1122,1261,1390,1611,1718,1922,2052,2264,2451,2543,2635,2742"
-                    },
-                    "to": {
-                        "startLines": "37,38,39,40,41,42,43,44,46,47,48,49,50,51,52,53,54",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "3314,3423,3628,3760,3871,4077,4208,4351,4694,4915,5026,5230,5364,5576,5767,5863,5959",
-                        "endColumns": "108,204,131,110,205,130,142,132,220,110,203,133,211,190,95,95,110",
-                        "endOffsets": "3418,3623,3755,3866,4072,4203,4346,4479,4910,5021,5225,5359,5571,5762,5858,5954,6065"
-                    }
-                },
-                {
                     "source": "D:\\Android_Projects\\pic\\caches\\transforms-3\\d0efba013e8c99aa7256fd00fe48d931\\transformed\\browser-1.4.0\\res\\values-pa\\values-pa.xml",
                     "from": {
                         "startLines": "2,3,4,5",
@@ -74,7 +57,24 @@
                     }
                 },
                 {
-                    "source": "D:\\Android_Projects\\pic\\caches\\transforms-3\\2f60e652d28c97ee83adc81cc294019c\\transformed\\jetified-play-services-basement-17.1.0\\res\\values-pa\\values.xml",
+                    "source": "D:\\Android_Projects\\pic\\caches\\transforms-3\\3fba89c9355ff4a4d3d1bf081ee1e4d2\\transformed\\jetified-play-services-base-17.5.0\\res\\values-pa\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "245,350,555,683,790,996,1123,1262,1391,1612,1719,1923,2053,2265,2452,2544,2636",
+                        "endColumns": "104,204,127,106,205,126,138,128,220,106,203,129,211,186,91,91,106",
+                        "endOffsets": "349,554,682,789,995,1122,1261,1390,1611,1718,1922,2052,2264,2451,2543,2635,2742"
+                    },
+                    "to": {
+                        "startLines": "37,38,39,40,41,42,43,44,46,47,48,49,50,51,52,53,54",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "3314,3423,3628,3760,3871,4077,4208,4351,4694,4915,5026,5230,5364,5576,5767,5863,5959",
+                        "endColumns": "108,204,131,110,205,130,142,132,220,110,203,133,211,190,95,95,110",
+                        "endOffsets": "3418,3623,3755,3866,4072,4203,4346,4479,4910,5021,5225,5359,5571,5762,5858,5954,6065"
+                    }
+                },
+                {
+                    "source": "D:\\Android_Projects\\pic\\caches\\transforms-3\\8af45b3c4bfca56d649743056fa4aec9\\transformed\\jetified-play-services-basement-17.5.0\\res\\values-pa\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

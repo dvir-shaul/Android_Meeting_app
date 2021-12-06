@@ -11,7 +11,8 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_centerInParent="true"
-        android:src="@drawable/ic_launcher_background">
+        android:src="@drawable/mychatapplogo">
+
     </ImageView>
 
     <TextView
@@ -21,7 +22,10 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="5dp"
         android:text="from"
-        android:textColor="#00BCD4"></TextView>
+        android:fontFamily="@font/raleway"
+        android:textColor="#00BCD4">
+
+    </TextView>
 
     <TextView
         android:id="@+id/maintext"
@@ -33,6 +37,7 @@
         android:text="Adi, Hodaya, Dvir"
         android:textColor="#FF5722"
         android:textSize="20sp"
+        android:fontFamily="@font/raleway"
         android:textStyle="normal">
 
     </TextView>

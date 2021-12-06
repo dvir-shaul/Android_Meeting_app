@@ -49,6 +49,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation 'androidx.browser:browser:1.4.0'
 
+    implementation 'com.google.android.gms:play-services-auth:19.2.0'
 
     implementation 'com.firebaseui:firebase-ui-firestore:4.1.0'
     implementation 'com.hbb20:ccp:2.5.1'

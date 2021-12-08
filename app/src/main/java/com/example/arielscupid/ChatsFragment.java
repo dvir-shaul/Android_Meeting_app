@@ -74,6 +74,11 @@ public class ChatsFragment extends Fragment {
                     noteViewHolder.statusofuser.setText(firebasemodel.getStatus());
                 }
 
+                /**
+                 * to start chatting with 1 person
+                 */
+
+
                 noteViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -86,6 +91,8 @@ public class ChatsFragment extends Fragment {
                 });
 
             }
+
+
 
             @NonNull
             @Override

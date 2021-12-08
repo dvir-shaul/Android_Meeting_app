@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable-xxhdpi/reciverchatdrawable.xml" value="0.3263888888888889" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/ic_baseline_more_vert_24.xml" value="0.3356164383561644" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/messagebackground.xml" value="0.19583333333333333" />
+        <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/senderchatdrawable.xml" value="0.3263888888888889" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/activity_chat.xml" value="0.33" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/activity_home_page.xml" value="0.32592592592592595" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/activity_login.xml" value="0.33" />
@@ -23,6 +25,8 @@
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/fragment_first.xml" value="0.16944444444444445" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/fragment_second.xml" value="0.16944444444444445" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/my_profile_fragment.xml" value="0.16944444444444445" />
+        <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/reciverchatlayout.xml" value="0.31203703703703706" />
+        <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/senderchatlayout.xml" value="0.31203703703703706" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/status_fragment.xml" value="0.16944444444444445" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/menu/menu.xml" value="0.32592592592592595" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3402777777777778" />

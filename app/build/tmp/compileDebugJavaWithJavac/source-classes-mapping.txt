@@ -1,9 +1,13 @@
+com/example/arielscupid/Messages.java
+ com.example.arielscupid.Messages
+com/example/arielscupid/userprofile.java
+ com.example.arielscupid.userprofile
 com/example/arielscupid/firebasemodel.java
  com.example.arielscupid.firebasemodel
 com/example/arielscupid/BuildConfig.java
  com.example.arielscupid.BuildConfig
-com/example/arielscupid/userprofile.java
- com.example.arielscupid.userprofile
+com/example/arielscupid/PagerAdapter.java
+ com.example.arielscupid.PagerAdapter
 com/example/arielscupid/databinding/ActivitySetProfileBinding.java
  com.example.arielscupid.databinding.ActivitySetProfileBinding
 com/example/arielscupid/databinding/StatusFragmentBinding.java
@@ -43,14 +47,14 @@ com/example/arielscupid/databinding/ActivitySplashScreenBinding.java
  com.example.arielscupid.databinding.ActivitySplashScreenBinding
 com/example/arielscupid/databinding/ActivityOtpAuthenticationBinding.java
  com.example.arielscupid.databinding.ActivityOtpAuthenticationBinding
-com/example/arielscupid/PagerAdapter.java
- com.example.arielscupid.PagerAdapter
 com/example/arielscupid/databinding/ChatviewlayoutBinding.java
  com.example.arielscupid.databinding.ChatviewlayoutBinding
 com/example/arielscupid/LoginActivity.java
  com.example.arielscupid.LoginActivity
  com.example.arielscupid.LoginActivity$1
  com.example.arielscupid.LoginActivity$2
+com/example/arielscupid/databinding/SenderchatlayoutBinding.java
+ com.example.arielscupid.databinding.SenderchatlayoutBinding
 com/example/arielscupid/status_fragment.java
  com.example.arielscupid.status_fragment
 com/example/arielscupid/ProfileActivity.java
@@ -65,6 +69,14 @@ com/example/arielscupid/databinding/ChatsFragmentBinding.java
  com.example.arielscupid.databinding.ChatsFragmentBinding
 com/example/arielscupid/specificchat.java
  com.example.arielscupid.specificchat
+ com.example.arielscupid.specificchat$1
+ com.example.arielscupid.specificchat$2
+ com.example.arielscupid.specificchat$3
+ com.example.arielscupid.specificchat$4
+ com.example.arielscupid.specificchat$4$1
+ com.example.arielscupid.specificchat$4$1$1
+com/example/arielscupid/databinding/ReciverchatlayoutBinding.java
+ com.example.arielscupid.databinding.ReciverchatlayoutBinding
 com/example/arielscupid/MyProfileFragment.java
  com.example.arielscupid.MyProfileFragment
 com/example/arielscupid/ChatsFragment.java
@@ -77,6 +89,10 @@ com/example/arielscupid/SplashScreen.java
  com.example.arielscupid.SplashScreen$1
 com/example/arielscupid/databinding/ActivityMainBinding.java
  com.example.arielscupid.databinding.ActivityMainBinding
+com/example/arielscupid/MessagesAdapter.java
+ com.example.arielscupid.MessagesAdapter
+ com.example.arielscupid.MessagesAdapter$RecieverViewHolder
+ com.example.arielscupid.MessagesAdapter$SenderViewHolder
 com/example/arielscupid/databinding/ActivitySpecificchatBinding.java
  com.example.arielscupid.databinding.ActivitySpecificchatBinding
 com/example/arielscupid/chatActivity.java

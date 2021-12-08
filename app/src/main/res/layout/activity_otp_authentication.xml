@@ -9,9 +9,9 @@
 
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/ic_baseline_whatshot_24"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/main_logo"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:id="@+id/logo">
@@ -37,41 +37,36 @@
     <EditText
         android:id="@+id/getEmail"
         android:drawableLeft="@drawable/ic_baseline_email_24"
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_below="@id/textheading"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="120dp"
-        android:layout_marginRight="120dp"
-        android:hint="Enter Email"
-        android:inputType="text"
-        android:textAlignment="center"
-        android:textColor="@color/black" />
-    <EditText
-        android:id="@+id/getpass"
-        android:drawableLeft="@drawable/ic_sharp_security_24"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_below="@id/getEmail"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="120dp"
-        android:layout_marginRight="120dp"
-        android:hint="Enter Password"
+        android:hint="Enter Email                            "
         android:inputType="text"
         android:textAlignment="center"
         android:textColor="@color/black" />
 
     <EditText
-        android:id="@+id/getpass2"
+        android:id="@+id/getpass"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/getEmail"
+        android:layout_centerHorizontal="true"
         android:drawableLeft="@drawable/ic_sharp_security_24"
-        android:layout_width="150dp"
+        android:hint="Enter Password                  "
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/getpass2"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_below="@id/getpass"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="120dp"
-        android:layout_marginRight="120dp"
-        android:hint="Confirm Password"
-        android:inputType="text"
+        android:drawableLeft="@drawable/ic_sharp_security_24"
+        android:hint="Confirm Password              "
+        android:inputType="textPassword"
         android:textAlignment="center"
         android:textColor="@color/black" />
 

@@ -2192,6 +2192,7 @@ int drawable googleg_standard_color_18 0x7f070175
 int drawable ic_backspace_black_24dp 0x7f070176
 int drawable ic_baseline_arrow_back_24 0x7f070177
 int drawable ic_baseline_arrow_forward_24 0x7f0701ad
+int drawable ic_baseline_done_all_24 0x7f0701af
 int drawable ic_baseline_email_24 0x7f0701a9
 int drawable ic_baseline_more_vert_24 0x7f070178
 int drawable ic_baseline_person_24 0x7f070179
@@ -2206,6 +2207,8 @@ int drawable ic_mtrl_chip_checked_black 0x7f070181
 int drawable ic_mtrl_chip_checked_circle 0x7f070182
 int drawable ic_mtrl_chip_close_circle 0x7f070183
 int drawable ic_sharp_security_24 0x7f0701aa
+int drawable love_background 0x7f0701b0
+int drawable main_logo 0x7f0701b3
 int drawable material_cursor_drawable 0x7f070184
 int drawable material_ic_calendar_black_24dp 0x7f070185
 int drawable material_ic_clear_black_24dp 0x7f070186
@@ -2241,6 +2244,8 @@ int drawable notification_template_icon_bg 0x7f0701a1
 int drawable notification_template_icon_low_bg 0x7f0701a2
 int drawable notification_tile_bg 0x7f0701a3
 int drawable notify_panel_notification_icon_bg 0x7f0701a4
+int drawable reciverchatdrawable 0x7f0701b1
+int drawable senderchatdrawable 0x7f0701b2
 int drawable test_custom_background 0x7f0701a5
 int drawable test_level_drawable 0x7f0701a6
 int drawable tooltip_frame_dark 0x7f0701a7
@@ -2591,6 +2596,7 @@ int id jumpToEnd 0x7f08014c
 int id jumpToStart 0x7f08014d
 int id labeled 0x7f08014e
 int id layout 0x7f08014f
+int id layoutformessage 0x7f080282
 int id left 0x7f080150
 int id leftToRight 0x7f080151
 int id legacy 0x7f080152
@@ -2754,6 +2760,7 @@ int id search_voice_btn 0x7f0801ec
 int id select_dialog_listview 0x7f0801ed
 int id selected 0x7f0801ee
 int id selection_type 0x7f0801ef
+int id sendermessage 0x7f080283
 int id sendmessage 0x7f08027f
 int id setting 0x7f0801f0
 int id sharedValueSet 0x7f0801f1
@@ -2841,6 +2848,7 @@ int id textinput_placeholder 0x7f080241
 int id textinput_prefix_text 0x7f080242
 int id textinput_suffix_text 0x7f080243
 int id time 0x7f080244
+int id timeofmessage 0x7f080284
 int id title 0x7f080245
 int id titleDividerNoCustom 0x7f080246
 int id title_template 0x7f080247
@@ -2848,7 +2856,7 @@ int id toggle 0x7f080248
 int id toolbar 0x7f080249
 int id toolbarOfUpdateProfileActivity 0x7f080276
 int id toolbarOfViewProfileActivity 0x7f08024a
-int id toolbarOfspecificchat 0x7f080281
+int id toolbarofspecificchat 0x7f080285
 int id top 0x7f08024b
 int id topPanel 0x7f08024c
 int id touch_outside 0x7f08024d
@@ -3050,9 +3058,11 @@ int layout notification_template_media 0x7f0b0074
 int layout notification_template_media_custom 0x7f0b0075
 int layout notification_template_part_chronometer 0x7f0b0076
 int layout notification_template_part_time 0x7f0b0077
+int layout reciverchatlayout 0x7f0b008d
 int layout select_dialog_item_material 0x7f0b0078
 int layout select_dialog_multichoice_material 0x7f0b0079
 int layout select_dialog_singlechoice_material 0x7f0b007a
+int layout senderchatlayout 0x7f0b008e
 int layout status_fragment 0x7f0b007b
 int layout support_simple_spinner_dropdown_item 0x7f0b007c
 int layout test_action_chip 0x7f0b007d

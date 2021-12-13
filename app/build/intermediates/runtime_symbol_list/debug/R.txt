@@ -2194,6 +2194,7 @@ int drawable ic_baseline_arrow_back_24 0x7f070177
 int drawable ic_baseline_arrow_forward_24 0x7f0701ad
 int drawable ic_baseline_done_all_24 0x7f0701af
 int drawable ic_baseline_email_24 0x7f0701a9
+int drawable ic_baseline_info_24 0x7f0701b4
 int drawable ic_baseline_more_vert_24 0x7f070178
 int drawable ic_baseline_person_24 0x7f070179
 int drawable ic_baseline_whatshot_24 0x7f07017a
@@ -2441,8 +2442,9 @@ int id callMeasure 0x7f0800b6
 int id cancel_action 0x7f0800b7
 int id cancel_button 0x7f0800b8
 int id cardViewRoot 0x7f0800b9
+int id card_quetion 0x7f08028d
 int id cardviewofsendmessage 0x7f08027b
-int id cardviewofspecificuser 0x7f08027c
+int id cardviewofspeficuser 0x7f08028a
 int id cardviewofuser 0x7f0800ba
 int id carryVelocity 0x7f0800bb
 int id center 0x7f0800bc
@@ -2572,6 +2574,15 @@ int id horizontal_only 0x7f080133
 int id icon 0x7f080134
 int id icon_group 0x7f080135
 int id icon_only 0x7f080136
+int id idBackQuiz 0x7f08028e
+int id idButtonOption1 0x7f08028f
+int id idButtonOption2 0x7f080290
+int id idButtonOption3 0x7f080291
+int id idButtonOption4 0x7f080292
+int id idLLScore 0x7f080293
+int id idQuest 0x7f080294
+int id idQuestions 0x7f080295
+int id idScore 0x7f080296
 int id ifRoom 0x7f080137
 int id ignore 0x7f080138
 int id ignoreRequest 0x7f080139
@@ -2672,7 +2683,6 @@ int id mtrl_picker_title_text 0x7f080195
 int id mtrl_view_tag_bottom_padding 0x7f080196
 int id multiply 0x7f080197
 int id myapptext 0x7f080198
-int id myprofile 0x7f080199
 int id nameofuser 0x7f08019a
 int id nav_controller_view_tag 0x7f08019b
 int id nav_graph 0x7f08019c
@@ -2782,7 +2792,7 @@ int id snapMargins 0x7f0801ff
 int id south 0x7f080200
 int id spacer 0x7f080201
 int id special_effects_controller_view_tag 0x7f080202
-int id specificuserinimageview 0x7f080280
+int id specificuserimageinimageview 0x7f08028b
 int id spline 0x7f080203
 int id split_action_bar 0x7f080204
 int id spread 0x7f080205
@@ -2795,6 +2805,7 @@ int id src_over 0x7f08020b
 int id standard 0x7f08020c
 int id start 0x7f08020d
 int id startHorizontal 0x7f08020e
+int id startQuizButton 0x7f080297
 int id startToEnd 0x7f08020f
 int id startVertical 0x7f080210
 int id staticLayout 0x7f080211
@@ -2878,6 +2889,7 @@ int id useLogo 0x7f08025a
 int id verifyotp 0x7f08025b
 int id vertical_only 0x7f08025c
 int id viewAbout 0x7f080287
+int id viewRefernce 0x7f080289
 int id view_offset_helper 0x7f08025d
 int id view_transition 0x7f08025e
 int id view_tree_lifecycle_owner 0x7f08025f
@@ -2972,10 +2984,12 @@ int layout activity_login 0x7f0b001d
 int layout activity_main 0x7f0b001e
 int layout activity_otp_authentication 0x7f0b001f
 int layout activity_profile 0x7f0b0020
+int layout activity_quiz_main 0x7f0b0090
 int layout activity_set_profile 0x7f0b0021
 int layout activity_specificchat 0x7f0b008c
 int layout activity_splash_screen 0x7f0b0022
 int layout activity_update_profile 0x7f0b0023
+int layout activity_watch_specific_profile 0x7f0b008f
 int layout browser_actions_context_menu_page 0x7f0b0024
 int layout browser_actions_context_menu_row 0x7f0b0025
 int layout chats_fragment 0x7f0b0026
@@ -3044,7 +3058,6 @@ int layout mtrl_picker_header_title_text 0x7f0b0064
 int layout mtrl_picker_header_toggle 0x7f0b0065
 int layout mtrl_picker_text_input_date 0x7f0b0066
 int layout mtrl_picker_text_input_date_range 0x7f0b0067
-int layout my_profile_fragment 0x7f0b0068
 int layout notification_action 0x7f0b0069
 int layout notification_action_tombstone 0x7f0b006a
 int layout notification_media_action 0x7f0b006b
@@ -3061,6 +3074,7 @@ int layout notification_template_media_custom 0x7f0b0075
 int layout notification_template_part_chronometer 0x7f0b0076
 int layout notification_template_part_time 0x7f0b0077
 int layout reciverchatlayout 0x7f0b008d
+int layout score_bottom_sheets 0x7f0b0091
 int layout select_dialog_item_material 0x7f0b0078
 int layout select_dialog_multichoice_material 0x7f0b0079
 int layout select_dialog_singlechoice_material 0x7f0b007a
@@ -3262,6 +3276,7 @@ int string mtrl_picker_toggle_to_calendar_input_mode 0x7f110082
 int string mtrl_picker_toggle_to_day_selection 0x7f110083
 int string mtrl_picker_toggle_to_text_input_mode 0x7f110084
 int string mtrl_picker_toggle_to_year_selection 0x7f110085
+int string name 0x7f110096
 int string nav_app_bar_navigate_up_description 0x7f110086
 int string nav_app_bar_open_drawer_description 0x7f110087
 int string next 0x7f110088

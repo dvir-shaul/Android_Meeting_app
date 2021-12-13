@@ -29,7 +29,7 @@ public class chatActivity extends AppCompatActivity {
      */
 
     TabLayout tabLayout;
-    TabItem mchat, mstatus, mmyprofile;
+    TabItem mchat, mstatus;
     ViewPager viewPager;
     PagerAdapter pagerAdapter;
 
@@ -52,7 +52,6 @@ public class chatActivity extends AppCompatActivity {
 
         tabLayout = findViewById(R.id.include);
         mchat = findViewById(R.id.chat);
-        mmyprofile = findViewById(R.id.myprofile);
         mstatus = findViewById(R.id.status);
         viewPager = findViewById(R.id.fragmentcontainer);
 
@@ -84,8 +83,6 @@ public class chatActivity extends AppCompatActivity {
 
             }
         });
-
-
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
     }
 
@@ -101,7 +98,6 @@ public class chatActivity extends AppCompatActivity {
             case R.id.setting:
                 Toast.makeText(getApplicationContext(),"Setting is clicked", Toast.LENGTH_SHORT).show();
         }
-
         return true;
     }
 

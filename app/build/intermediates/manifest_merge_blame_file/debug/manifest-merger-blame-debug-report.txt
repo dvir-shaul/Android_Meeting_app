@@ -24,7 +24,7 @@
 14-->[com.google.android.gms:play-services-measurement:20.0.0] D:\Android_Projects\pic\caches\transforms-3\8edd119f172d33bf3b4bd2b9e7d7aae4\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:26:22-107
 15
 16    <application
-16-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:5:5-47:19
+16-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:5:5-53:19
 17        android:allowBackup="true"
 17-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:6:9-35
 18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -43,321 +43,333 @@
 25-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:11:9-49
 26        <activity
 26-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:12:9-14:40
-27            android:name="com.example.arielscupid.specificchat"
-27-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:13:13-41
+27            android:name="com.example.arielscupid.watch_specific_profile"
+27-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:13:13-51
 28            android:exported="false" />
 28-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:14:13-37
 29        <activity
 29-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:15:9-17:40
-30            android:name="com.example.arielscupid.LoginActivity"
-30-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:16:13-42
+30            android:name="com.example.arielscupid.specificchat"
+30-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:16:13-41
 31            android:exported="false" />
 31-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:17:13-37
 32        <activity
 32-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:18:9-20:40
-33            android:name="com.example.arielscupid.UpdateProfile"
+33            android:name="com.example.arielscupid.LoginActivity"
 33-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:19:13-42
 34            android:exported="false" />
 34-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:20:13-37
 35        <activity
 35-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:21:9-23:40
-36            android:name="com.example.arielscupid.ProfileActivity"
-36-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:22:13-44
+36            android:name="com.example.arielscupid.UpdateProfile"
+36-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:22:13-42
 37            android:exported="false" />
 37-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:23:13-37
 38        <activity
 38-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:24:9-26:40
-39            android:name="com.example.arielscupid.chatActivity"
-39-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:25:13-41
+39            android:name="com.example.arielscupid.ProfileActivity"
+39-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:25:13-44
 40            android:exported="false" />
 40-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:26:13-37
 41        <activity
 41-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:27:9-29:40
-42            android:name="com.example.arielscupid.setProfile"
-42-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:28:13-39
+42            android:name="com.example.arielscupid.chatActivity"
+42-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:28:13-41
 43            android:exported="false" />
 43-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:29:13-37
 44        <activity
 44-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:30:9-32:40
-45            android:name="com.example.arielscupid.otpAuthentication"
-45-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:31:13-46
+45            android:name="com.example.arielscupid.QuizMainAct"
+45-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:31:13-40
 46            android:exported="false" />
 46-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:32:13-37
 47        <activity
 47-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:33:9-35:40
-48            android:name="com.example.arielscupid.MainActivity"
-48-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:34:13-41
+48            android:name="com.example.arielscupid.setProfile"
+48-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:34:13-39
 49            android:exported="false" />
 49-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:35:13-37
 50        <activity
-50-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:36:9-46:20
-51            android:name="com.example.arielscupid.SplashScreen"
-51-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:37:13-41
-52            android:exported="true"
-52-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:38:13-36
-53            android:label="@string/app_name"
-53-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:39:13-45
-54            android:theme="@style/Theme.ArielsCupid.NoActionBar" >
-54-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:40:13-65
-55            <intent-filter>
-55-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:41:13-45:29
-56                <action android:name="android.intent.action.MAIN" />
-56-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:42:17-69
-56-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:42:25-66
-57
-58                <category android:name="android.intent.category.LAUNCHER" />
-58-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:44:17-77
-58-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:44:27-74
-59            </intent-filter>
-60        </activity>
-61        <activity
-61-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:27:9-44:20
-62            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-62-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:28:13-80
-63            android:excludeFromRecents="true"
-63-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:29:13-46
-64            android:exported="true"
-64-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:30:13-36
-65            android:launchMode="singleTask"
-65-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:31:13-44
-66            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-66-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:32:13-72
-67            <intent-filter>
-67-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:33:13-43:29
-68                <action android:name="android.intent.action.VIEW" />
-68-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:17-69
-68-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:25-66
-69
-70                <category android:name="android.intent.category.DEFAULT" />
-70-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
-70-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
-71                <category android:name="android.intent.category.BROWSABLE" />
-71-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:17-78
-71-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:27-75
-72
-73                <data
-73-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:39:17-42:51
-74                    android:host="firebase.auth"
-74-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:40:21-49
-75                    android:path="/"
-75-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:41:21-37
-76                    android:scheme="genericidp" />
-76-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:42:21-48
-77            </intent-filter>
-78        </activity>
-79        <activity
-79-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:45:9-62:20
-80            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-80-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:46:13-79
-81            android:excludeFromRecents="true"
-81-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:47:13-46
-82            android:exported="true"
-82-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:48:13-36
-83            android:launchMode="singleTask"
-83-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:49:13-44
-84            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-84-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:50:13-72
-85            <intent-filter>
-85-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:51:13-61:29
-86                <action android:name="android.intent.action.VIEW" />
-86-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:17-69
-86-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:25-66
-87
-88                <category android:name="android.intent.category.DEFAULT" />
-88-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
-88-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
-89                <category android:name="android.intent.category.BROWSABLE" />
-89-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:17-78
-89-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:27-75
-90
-91                <data
-91-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:39:17-42:51
-92                    android:host="firebase.auth"
-92-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:40:21-49
-93                    android:path="/"
-93-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:41:21-37
-94                    android:scheme="recaptcha" />
-94-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:42:21-48
-95            </intent-filter>
-96        </activity>
-97
-98        <service
-98-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:64:9-73:19
-99            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
-99-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:65:13-101
-100            android:enabled="true"
-100-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:66:13-35
-101            android:exported="false" >
-101-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:67:13-37
-102            <intent-filter>
-102-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:68:13-72:29
-103                <action android:name="com.google.firebase.auth.api.gms.service.START" />
-103-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:17-89
-103-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:25-86
-104
-105                <category android:name="android.intent.category.DEFAULT" />
-105-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
-105-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
-106            </intent-filter>
-107        </service>
-108        <service
-108-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:74:9-80:19
-109            android:name="com.google.firebase.components.ComponentDiscoveryService"
-109-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:75:13-84
-110            android:directBootAware="true"
-110-->[com.google.firebase:firebase-common:20.0.0] D:\Android_Projects\pic\caches\transforms-3\45b4a080f8d120803c4464eae4da744b\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
-111            android:exported="false" >
-111-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:76:13-37
-112            <meta-data
-112-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:77:13-79:85
-113                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-113-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:78:17-109
-114                android:value="com.google.firebase.components.ComponentRegistrar" />
-114-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:79:17-82
-115            <meta-data
-115-->[com.google.firebase:firebase-database:20.0.2] D:\Android_Projects\pic\caches\transforms-3\6df2497b371575efde943d8fc11fc0d6\transformed\jetified-firebase-database-20.0.2\AndroidManifest.xml:32:13-34:85
-116                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-116-->[com.google.firebase:firebase-database:20.0.2] D:\Android_Projects\pic\caches\transforms-3\6df2497b371575efde943d8fc11fc0d6\transformed\jetified-firebase-database-20.0.2\AndroidManifest.xml:33:17-109
-117                android:value="com.google.firebase.components.ComponentRegistrar" />
-117-->[com.google.firebase:firebase-database:20.0.2] D:\Android_Projects\pic\caches\transforms-3\6df2497b371575efde943d8fc11fc0d6\transformed\jetified-firebase-database-20.0.2\AndroidManifest.xml:34:17-82
+50-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:36:9-38:40
+51            android:name="com.example.arielscupid.otpAuthentication"
+51-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:37:13-46
+52            android:exported="false" />
+52-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:38:13-37
+53        <activity
+53-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:39:9-41:40
+54            android:name="com.example.arielscupid.MainActivity"
+54-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:40:13-41
+55            android:exported="false" />
+55-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:41:13-37
+56        <activity
+56-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:42:9-52:20
+57            android:name="com.example.arielscupid.SplashScreen"
+57-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:43:13-41
+58            android:exported="true"
+58-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:44:13-36
+59            android:label="@string/app_name"
+59-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:45:13-45
+60            android:theme="@style/Theme.ArielsCupid.NoActionBar" >
+60-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:46:13-65
+61            <intent-filter>
+61-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:47:13-51:29
+62                <action android:name="android.intent.action.MAIN" />
+62-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:48:17-69
+62-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:48:25-66
+63
+64                <category android:name="android.intent.category.LAUNCHER" />
+64-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:50:17-77
+64-->D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:50:27-74
+65            </intent-filter>
+66        </activity>
+67        <activity
+67-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:27:9-44:20
+68            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+68-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:28:13-80
+69            android:excludeFromRecents="true"
+69-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:29:13-46
+70            android:exported="true"
+70-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:30:13-36
+71            android:launchMode="singleTask"
+71-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:31:13-44
+72            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+72-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:32:13-72
+73            <intent-filter>
+73-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:33:13-43:29
+74                <action android:name="android.intent.action.VIEW" />
+74-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:17-69
+74-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:25-66
+75
+76                <category android:name="android.intent.category.DEFAULT" />
+76-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
+76-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
+77                <category android:name="android.intent.category.BROWSABLE" />
+77-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:17-78
+77-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:27-75
+78
+79                <data
+79-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:39:17-42:51
+80                    android:host="firebase.auth"
+80-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:40:21-49
+81                    android:path="/"
+81-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:41:21-37
+82                    android:scheme="genericidp" />
+82-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:42:21-48
+83            </intent-filter>
+84        </activity>
+85        <activity
+85-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:45:9-62:20
+86            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+86-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:46:13-79
+87            android:excludeFromRecents="true"
+87-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:47:13-46
+88            android:exported="true"
+88-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:48:13-36
+89            android:launchMode="singleTask"
+89-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:49:13-44
+90            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+90-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:50:13-72
+91            <intent-filter>
+91-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:51:13-61:29
+92                <action android:name="android.intent.action.VIEW" />
+92-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:17-69
+92-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:25-66
+93
+94                <category android:name="android.intent.category.DEFAULT" />
+94-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
+94-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
+95                <category android:name="android.intent.category.BROWSABLE" />
+95-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:17-78
+95-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:27-75
+96
+97                <data
+97-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:39:17-42:51
+98                    android:host="firebase.auth"
+98-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:40:21-49
+99                    android:path="/"
+99-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:41:21-37
+100                    android:scheme="recaptcha" />
+100-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:42:21-48
+101            </intent-filter>
+102        </activity>
+103
+104        <service
+104-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:64:9-73:19
+105            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+105-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:65:13-101
+106            android:enabled="true"
+106-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:66:13-35
+107            android:exported="false" >
+107-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:67:13-37
+108            <intent-filter>
+108-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:68:13-72:29
+109                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+109-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:17-89
+109-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:25-86
+110
+111                <category android:name="android.intent.category.DEFAULT" />
+111-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
+111-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
+112            </intent-filter>
+113        </service>
+114        <service
+114-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:74:9-80:19
+115            android:name="com.google.firebase.components.ComponentDiscoveryService"
+115-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:75:13-84
+116            android:directBootAware="true"
+116-->[com.google.firebase:firebase-common:20.0.0] D:\Android_Projects\pic\caches\transforms-3\45b4a080f8d120803c4464eae4da744b\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+117            android:exported="false" >
+117-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:76:13-37
 118            <meta-data
-118-->[com.google.firebase:firebase-firestore:24.0.0] D:\Android_Projects\pic\caches\transforms-3\d1716f973584b4b2af17a35d695ea6c1\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:20:13-22:85
-119                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-119-->[com.google.firebase:firebase-firestore:24.0.0] D:\Android_Projects\pic\caches\transforms-3\d1716f973584b4b2af17a35d695ea6c1\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:21:17-111
+118-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:77:13-79:85
+119                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+119-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:78:17-109
 120                android:value="com.google.firebase.components.ComponentRegistrar" />
-120-->[com.google.firebase:firebase-firestore:24.0.0] D:\Android_Projects\pic\caches\transforms-3\d1716f973584b4b2af17a35d695ea6c1\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:22:17-82
+120-->[com.google.firebase:firebase-auth:21.0.1] D:\Android_Projects\pic\caches\transforms-3\bc92e791c177c44f8433e6c0958e860f\transformed\jetified-firebase-auth-21.0.1\AndroidManifest.xml:79:17-82
 121            <meta-data
-121-->[com.google.firebase:firebase-storage:20.0.0] D:\Android_Projects\pic\caches\transforms-3\0a7b074b652d95014de176cc9faae700\transformed\jetified-firebase-storage-20.0.0\AndroidManifest.xml:33:13-35:85
-122                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-122-->[com.google.firebase:firebase-storage:20.0.0] D:\Android_Projects\pic\caches\transforms-3\0a7b074b652d95014de176cc9faae700\transformed\jetified-firebase-storage-20.0.0\AndroidManifest.xml:34:17-107
+121-->[com.google.firebase:firebase-database:20.0.3] D:\Android_Projects\pic\caches\transforms-3\18cfd55cf106be79d89b3c538ab5de5a\transformed\jetified-firebase-database-20.0.3\AndroidManifest.xml:32:13-34:85
+122                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+122-->[com.google.firebase:firebase-database:20.0.3] D:\Android_Projects\pic\caches\transforms-3\18cfd55cf106be79d89b3c538ab5de5a\transformed\jetified-firebase-database-20.0.3\AndroidManifest.xml:33:17-109
 123                android:value="com.google.firebase.components.ComponentRegistrar" />
-123-->[com.google.firebase:firebase-storage:20.0.0] D:\Android_Projects\pic\caches\transforms-3\0a7b074b652d95014de176cc9faae700\transformed\jetified-firebase-storage-20.0.0\AndroidManifest.xml:35:17-82
+123-->[com.google.firebase:firebase-database:20.0.3] D:\Android_Projects\pic\caches\transforms-3\18cfd55cf106be79d89b3c538ab5de5a\transformed\jetified-firebase-database-20.0.3\AndroidManifest.xml:34:17-82
 124            <meta-data
-124-->[com.google.android.gms:play-services-measurement-api:20.0.0] D:\Android_Projects\pic\caches\transforms-3\0ef913d10470ceaf4bc18c2c16721b45\transformed\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:30:13-32:85
-125                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-125-->[com.google.android.gms:play-services-measurement-api:20.0.0] D:\Android_Projects\pic\caches\transforms-3\0ef913d10470ceaf4bc18c2c16721b45\transformed\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:31:17-139
+124-->[com.google.firebase:firebase-firestore:24.0.0] D:\Android_Projects\pic\caches\transforms-3\d1716f973584b4b2af17a35d695ea6c1\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:20:13-22:85
+125                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+125-->[com.google.firebase:firebase-firestore:24.0.0] D:\Android_Projects\pic\caches\transforms-3\d1716f973584b4b2af17a35d695ea6c1\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:21:17-111
 126                android:value="com.google.firebase.components.ComponentRegistrar" />
-126-->[com.google.android.gms:play-services-measurement-api:20.0.0] D:\Android_Projects\pic\caches\transforms-3\0ef913d10470ceaf4bc18c2c16721b45\transformed\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:32:17-82
+126-->[com.google.firebase:firebase-firestore:24.0.0] D:\Android_Projects\pic\caches\transforms-3\d1716f973584b4b2af17a35d695ea6c1\transformed\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:22:17-82
 127            <meta-data
-127-->[com.google.firebase:firebase-installations:17.0.0] D:\Android_Projects\pic\caches\transforms-3\a844cd1cfb8e0f3354c1720799017d59\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
-128                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-128-->[com.google.firebase:firebase-installations:17.0.0] D:\Android_Projects\pic\caches\transforms-3\a844cd1cfb8e0f3354c1720799017d59\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+127-->[com.google.firebase:firebase-storage:20.0.0] D:\Android_Projects\pic\caches\transforms-3\0a7b074b652d95014de176cc9faae700\transformed\jetified-firebase-storage-20.0.0\AndroidManifest.xml:33:13-35:85
+128                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+128-->[com.google.firebase:firebase-storage:20.0.0] D:\Android_Projects\pic\caches\transforms-3\0a7b074b652d95014de176cc9faae700\transformed\jetified-firebase-storage-20.0.0\AndroidManifest.xml:34:17-107
 129                android:value="com.google.firebase.components.ComponentRegistrar" />
-129-->[com.google.firebase:firebase-installations:17.0.0] D:\Android_Projects\pic\caches\transforms-3\a844cd1cfb8e0f3354c1720799017d59\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
-130        </service>
-131
-132        <activity
-132-->[com.google.android.gms:play-services-auth:19.2.0] D:\Android_Projects\pic\caches\transforms-3\690d4e3d4c08c9e780ec64aa6aeca3b0\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:23:9-27:75
-133            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-133-->[com.google.android.gms:play-services-auth:19.2.0] D:\Android_Projects\pic\caches\transforms-3\690d4e3d4c08c9e780ec64aa6aeca3b0\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:24:13-93
-134            android:excludeFromRecents="true"
-134-->[com.google.android.gms:play-services-auth:19.2.0] D:\Android_Projects\pic\caches\transforms-3\690d4e3d4c08c9e780ec64aa6aeca3b0\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:25:13-46
-135            android:exported="false"
-135-->[com.google.android.gms:play-services-auth:19.2.0] D:\Android_Projects\pic\caches\transforms-3\690d4e3d4c08c9e780ec64aa6aeca3b0\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:26:13-37
-136            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-136-->[com.google.android.gms:play-services-auth:19.2.0] D:\Android_Projects\pic\caches\transforms-3\690d4e3d4c08c9e780ec64aa6aeca3b0\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:27:13-72
-137        <!--
-138            Service handling Google Sign-In user revocation. For apps that do not integrate with
-139            Google Sign-In, this service will never be started.
-140        -->
-141        <service
-141-->[com.google.android.gms:play-services-auth:19.2.0] D:\Android_Projects\pic\caches\transforms-3\690d4e3d4c08c9e780ec64aa6aeca3b0\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:33:9-37:51
-142            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-142-->[com.google.android.gms:play-services-auth:19.2.0] D:\Android_Projects\pic\caches\transforms-3\690d4e3d4c08c9e780ec64aa6aeca3b0\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:34:13-89
-143            android:exported="true"
-143-->[com.google.android.gms:play-services-auth:19.2.0] D:\Android_Projects\pic\caches\transforms-3\690d4e3d4c08c9e780ec64aa6aeca3b0\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:35:13-36
-144            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-144-->[com.google.android.gms:play-services-auth:19.2.0] D:\Android_Projects\pic\caches\transforms-3\690d4e3d4c08c9e780ec64aa6aeca3b0\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:36:13-107
-145            android:visibleToInstantApps="true" />
-145-->[com.google.android.gms:play-services-auth:19.2.0] D:\Android_Projects\pic\caches\transforms-3\690d4e3d4c08c9e780ec64aa6aeca3b0\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:37:13-48
-146
-147        <provider
-147-->[com.squareup.picasso:picasso:2.71828] D:\Android_Projects\pic\caches\transforms-3\0b8503b01b8e527735caf706572275aa\transformed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
-148            android:name="com.squareup.picasso.PicassoProvider"
-148-->[com.squareup.picasso:picasso:2.71828] D:\Android_Projects\pic\caches\transforms-3\0b8503b01b8e527735caf706572275aa\transformed\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
-149            android:authorities="com.example.arielscupid.com.squareup.picasso"
-149-->[com.squareup.picasso:picasso:2.71828] D:\Android_Projects\pic\caches\transforms-3\0b8503b01b8e527735caf706572275aa\transformed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
-150            android:exported="false" />
-150-->[com.squareup.picasso:picasso:2.71828] D:\Android_Projects\pic\caches\transforms-3\0b8503b01b8e527735caf706572275aa\transformed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
-151        <provider
-151-->[com.google.firebase:firebase-common:20.0.0] D:\Android_Projects\pic\caches\transforms-3\45b4a080f8d120803c4464eae4da744b\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
-152            android:name="com.google.firebase.provider.FirebaseInitProvider"
-152-->[com.google.firebase:firebase-common:20.0.0] D:\Android_Projects\pic\caches\transforms-3\45b4a080f8d120803c4464eae4da744b\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
-153            android:authorities="com.example.arielscupid.firebaseinitprovider"
-153-->[com.google.firebase:firebase-common:20.0.0] D:\Android_Projects\pic\caches\transforms-3\45b4a080f8d120803c4464eae4da744b\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
-154            android:directBootAware="true"
-154-->[com.google.firebase:firebase-common:20.0.0] D:\Android_Projects\pic\caches\transforms-3\45b4a080f8d120803c4464eae4da744b\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
-155            android:exported="false"
-155-->[com.google.firebase:firebase-common:20.0.0] D:\Android_Projects\pic\caches\transforms-3\45b4a080f8d120803c4464eae4da744b\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
-156            android:initOrder="100" />
-156-->[com.google.firebase:firebase-common:20.0.0] D:\Android_Projects\pic\caches\transforms-3\45b4a080f8d120803c4464eae4da744b\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
-157
-158        <activity
-158-->[com.google.android.gms:play-services-base:17.5.0] D:\Android_Projects\pic\caches\transforms-3\3fba89c9355ff4a4d3d1bf081ee1e4d2\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:23:9-26:75
-159            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-159-->[com.google.android.gms:play-services-base:17.5.0] D:\Android_Projects\pic\caches\transforms-3\3fba89c9355ff4a4d3d1bf081ee1e4d2\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:24:13-79
-160            android:exported="false"
-160-->[com.google.android.gms:play-services-base:17.5.0] D:\Android_Projects\pic\caches\transforms-3\3fba89c9355ff4a4d3d1bf081ee1e4d2\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:25:13-37
-161            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-161-->[com.google.android.gms:play-services-base:17.5.0] D:\Android_Projects\pic\caches\transforms-3\3fba89c9355ff4a4d3d1bf081ee1e4d2\transformed\jetified-play-services-base-17.5.0\AndroidManifest.xml:26:13-72
-162
-163        <receiver
-163-->[com.google.android.gms:play-services-measurement:20.0.0] D:\Android_Projects\pic\caches\transforms-3\8edd119f172d33bf3b4bd2b9e7d7aae4\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:29:9-33:20
-164            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-164-->[com.google.android.gms:play-services-measurement:20.0.0] D:\Android_Projects\pic\caches\transforms-3\8edd119f172d33bf3b4bd2b9e7d7aae4\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:30:13-85
-165            android:enabled="true"
-165-->[com.google.android.gms:play-services-measurement:20.0.0] D:\Android_Projects\pic\caches\transforms-3\8edd119f172d33bf3b4bd2b9e7d7aae4\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:31:13-35
-166            android:exported="false" >
-166-->[com.google.android.gms:play-services-measurement:20.0.0] D:\Android_Projects\pic\caches\transforms-3\8edd119f172d33bf3b4bd2b9e7d7aae4\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:32:13-37
-167        </receiver>
+129-->[com.google.firebase:firebase-storage:20.0.0] D:\Android_Projects\pic\caches\transforms-3\0a7b074b652d95014de176cc9faae700\transformed\jetified-firebase-storage-20.0.0\AndroidManifest.xml:35:17-82
+130            <meta-data
+130-->[com.google.android.gms:play-services-measurement-api:20.0.0] D:\Android_Projects\pic\caches\transforms-3\0ef913d10470ceaf4bc18c2c16721b45\transformed\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:30:13-32:85
+131                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+131-->[com.google.android.gms:play-services-measurement-api:20.0.0] D:\Android_Projects\pic\caches\transforms-3\0ef913d10470ceaf4bc18c2c16721b45\transformed\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:31:17-139
+132                android:value="com.google.firebase.components.ComponentRegistrar" />
+132-->[com.google.android.gms:play-services-measurement-api:20.0.0] D:\Android_Projects\pic\caches\transforms-3\0ef913d10470ceaf4bc18c2c16721b45\transformed\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:32:17-82
+133            <meta-data
+133-->[com.google.firebase:firebase-installations:17.0.0] D:\Android_Projects\pic\caches\transforms-3\a844cd1cfb8e0f3354c1720799017d59\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
+134                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+134-->[com.google.firebase:firebase-installations:17.0.0] D:\Android_Projects\pic\caches\transforms-3\a844cd1cfb8e0f3354c1720799017d59\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+135                android:value="com.google.firebase.components.ComponentRegistrar" />
+135-->[com.google.firebase:firebase-installations:17.0.0] D:\Android_Projects\pic\caches\transforms-3\a844cd1cfb8e0f3354c1720799017d59\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
+136        </service>
+137
+138        <activity
+138-->[com.google.android.gms:play-services-auth:20.0.0] D:\Android_Projects\pic\caches\transforms-3\a487f8ce49997ad2dbd37e75ae6b3d7c\transformed\jetified-play-services-auth-20.0.0\AndroidManifest.xml:23:9-27:75
+139            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+139-->[com.google.android.gms:play-services-auth:20.0.0] D:\Android_Projects\pic\caches\transforms-3\a487f8ce49997ad2dbd37e75ae6b3d7c\transformed\jetified-play-services-auth-20.0.0\AndroidManifest.xml:24:13-93
+140            android:excludeFromRecents="true"
+140-->[com.google.android.gms:play-services-auth:20.0.0] D:\Android_Projects\pic\caches\transforms-3\a487f8ce49997ad2dbd37e75ae6b3d7c\transformed\jetified-play-services-auth-20.0.0\AndroidManifest.xml:25:13-46
+141            android:exported="false"
+141-->[com.google.android.gms:play-services-auth:20.0.0] D:\Android_Projects\pic\caches\transforms-3\a487f8ce49997ad2dbd37e75ae6b3d7c\transformed\jetified-play-services-auth-20.0.0\AndroidManifest.xml:26:13-37
+142            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+142-->[com.google.android.gms:play-services-auth:20.0.0] D:\Android_Projects\pic\caches\transforms-3\a487f8ce49997ad2dbd37e75ae6b3d7c\transformed\jetified-play-services-auth-20.0.0\AndroidManifest.xml:27:13-72
+143        <!--
+144            Service handling Google Sign-In user revocation. For apps that do not integrate with
+145            Google Sign-In, this service will never be started.
+146        -->
+147        <service
+147-->[com.google.android.gms:play-services-auth:20.0.0] D:\Android_Projects\pic\caches\transforms-3\a487f8ce49997ad2dbd37e75ae6b3d7c\transformed\jetified-play-services-auth-20.0.0\AndroidManifest.xml:33:9-37:51
+148            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+148-->[com.google.android.gms:play-services-auth:20.0.0] D:\Android_Projects\pic\caches\transforms-3\a487f8ce49997ad2dbd37e75ae6b3d7c\transformed\jetified-play-services-auth-20.0.0\AndroidManifest.xml:34:13-89
+149            android:exported="true"
+149-->[com.google.android.gms:play-services-auth:20.0.0] D:\Android_Projects\pic\caches\transforms-3\a487f8ce49997ad2dbd37e75ae6b3d7c\transformed\jetified-play-services-auth-20.0.0\AndroidManifest.xml:35:13-36
+150            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+150-->[com.google.android.gms:play-services-auth:20.0.0] D:\Android_Projects\pic\caches\transforms-3\a487f8ce49997ad2dbd37e75ae6b3d7c\transformed\jetified-play-services-auth-20.0.0\AndroidManifest.xml:36:13-107
+151            android:visibleToInstantApps="true" />
+151-->[com.google.android.gms:play-services-auth:20.0.0] D:\Android_Projects\pic\caches\transforms-3\a487f8ce49997ad2dbd37e75ae6b3d7c\transformed\jetified-play-services-auth-20.0.0\AndroidManifest.xml:37:13-48
+152
+153        <provider
+153-->[com.squareup.picasso:picasso:2.71828] D:\Android_Projects\pic\caches\transforms-3\0b8503b01b8e527735caf706572275aa\transformed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+154            android:name="com.squareup.picasso.PicassoProvider"
+154-->[com.squareup.picasso:picasso:2.71828] D:\Android_Projects\pic\caches\transforms-3\0b8503b01b8e527735caf706572275aa\transformed\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+155            android:authorities="com.example.arielscupid.com.squareup.picasso"
+155-->[com.squareup.picasso:picasso:2.71828] D:\Android_Projects\pic\caches\transforms-3\0b8503b01b8e527735caf706572275aa\transformed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+156            android:exported="false" />
+156-->[com.squareup.picasso:picasso:2.71828] D:\Android_Projects\pic\caches\transforms-3\0b8503b01b8e527735caf706572275aa\transformed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+157        <provider
+157-->[com.google.firebase:firebase-common:20.0.0] D:\Android_Projects\pic\caches\transforms-3\45b4a080f8d120803c4464eae4da744b\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+158            android:name="com.google.firebase.provider.FirebaseInitProvider"
+158-->[com.google.firebase:firebase-common:20.0.0] D:\Android_Projects\pic\caches\transforms-3\45b4a080f8d120803c4464eae4da744b\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+159            android:authorities="com.example.arielscupid.firebaseinitprovider"
+159-->[com.google.firebase:firebase-common:20.0.0] D:\Android_Projects\pic\caches\transforms-3\45b4a080f8d120803c4464eae4da744b\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+160            android:directBootAware="true"
+160-->[com.google.firebase:firebase-common:20.0.0] D:\Android_Projects\pic\caches\transforms-3\45b4a080f8d120803c4464eae4da744b\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+161            android:exported="false"
+161-->[com.google.firebase:firebase-common:20.0.0] D:\Android_Projects\pic\caches\transforms-3\45b4a080f8d120803c4464eae4da744b\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+162            android:initOrder="100" />
+162-->[com.google.firebase:firebase-common:20.0.0] D:\Android_Projects\pic\caches\transforms-3\45b4a080f8d120803c4464eae4da744b\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+163
+164        <activity
+164-->[com.google.android.gms:play-services-base:18.0.0] D:\Android_Projects\pic\caches\transforms-3\3c9eb5accf48c58e86651cd5a65fb6e3\transformed\jetified-play-services-base-18.0.0\AndroidManifest.xml:20:9-22:45
+165            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+165-->[com.google.android.gms:play-services-base:18.0.0] D:\Android_Projects\pic\caches\transforms-3\3c9eb5accf48c58e86651cd5a65fb6e3\transformed\jetified-play-services-base-18.0.0\AndroidManifest.xml:20:19-85
+166            android:exported="false"
+166-->[com.google.android.gms:play-services-base:18.0.0] D:\Android_Projects\pic\caches\transforms-3\3c9eb5accf48c58e86651cd5a65fb6e3\transformed\jetified-play-services-base-18.0.0\AndroidManifest.xml:22:19-43
+167            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+167-->[com.google.android.gms:play-services-base:18.0.0] D:\Android_Projects\pic\caches\transforms-3\3c9eb5accf48c58e86651cd5a65fb6e3\transformed\jetified-play-services-base-18.0.0\AndroidManifest.xml:21:19-78
 168
-169        <service
-169-->[com.google.android.gms:play-services-measurement:20.0.0] D:\Android_Projects\pic\caches\transforms-3\8edd119f172d33bf3b4bd2b9e7d7aae4\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:35:9-38:40
-170            android:name="com.google.android.gms.measurement.AppMeasurementService"
-170-->[com.google.android.gms:play-services-measurement:20.0.0] D:\Android_Projects\pic\caches\transforms-3\8edd119f172d33bf3b4bd2b9e7d7aae4\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:36:13-84
+169        <receiver
+169-->[com.google.android.gms:play-services-measurement:20.0.0] D:\Android_Projects\pic\caches\transforms-3\8edd119f172d33bf3b4bd2b9e7d7aae4\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:29:9-33:20
+170            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+170-->[com.google.android.gms:play-services-measurement:20.0.0] D:\Android_Projects\pic\caches\transforms-3\8edd119f172d33bf3b4bd2b9e7d7aae4\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:30:13-85
 171            android:enabled="true"
-171-->[com.google.android.gms:play-services-measurement:20.0.0] D:\Android_Projects\pic\caches\transforms-3\8edd119f172d33bf3b4bd2b9e7d7aae4\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:37:13-35
-172            android:exported="false" />
-172-->[com.google.android.gms:play-services-measurement:20.0.0] D:\Android_Projects\pic\caches\transforms-3\8edd119f172d33bf3b4bd2b9e7d7aae4\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:38:13-37
-173        <service
-173-->[com.google.android.gms:play-services-measurement:20.0.0] D:\Android_Projects\pic\caches\transforms-3\8edd119f172d33bf3b4bd2b9e7d7aae4\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:39:9-43:72
-174            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-174-->[com.google.android.gms:play-services-measurement:20.0.0] D:\Android_Projects\pic\caches\transforms-3\8edd119f172d33bf3b4bd2b9e7d7aae4\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:40:13-87
-175            android:enabled="true"
-175-->[com.google.android.gms:play-services-measurement:20.0.0] D:\Android_Projects\pic\caches\transforms-3\8edd119f172d33bf3b4bd2b9e7d7aae4\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:41:13-35
-176            android:exported="false"
-176-->[com.google.android.gms:play-services-measurement:20.0.0] D:\Android_Projects\pic\caches\transforms-3\8edd119f172d33bf3b4bd2b9e7d7aae4\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:42:13-37
-177            android:permission="android.permission.BIND_JOB_SERVICE" />
-177-->[com.google.android.gms:play-services-measurement:20.0.0] D:\Android_Projects\pic\caches\transforms-3\8edd119f172d33bf3b4bd2b9e7d7aae4\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:43:13-69
-178
-179        <meta-data
-179-->[com.google.android.gms:play-services-basement:17.5.0] D:\Android_Projects\pic\caches\transforms-3\8af45b3c4bfca56d649743056fa4aec9\transformed\jetified-play-services-basement-17.5.0\AndroidManifest.xml:23:9-25:69
-180            android:name="com.google.android.gms.version"
-180-->[com.google.android.gms:play-services-basement:17.5.0] D:\Android_Projects\pic\caches\transforms-3\8af45b3c4bfca56d649743056fa4aec9\transformed\jetified-play-services-basement-17.5.0\AndroidManifest.xml:24:13-58
-181            android:value="@integer/google_play_services_version" />
-181-->[com.google.android.gms:play-services-basement:17.5.0] D:\Android_Projects\pic\caches\transforms-3\8af45b3c4bfca56d649743056fa4aec9\transformed\jetified-play-services-basement-17.5.0\AndroidManifest.xml:25:13-66
-182
-183        <provider
-183-->[androidx.emoji2:emoji2:1.0.0] D:\Android_Projects\pic\caches\transforms-3\92708834b1c092ddf07d1634926df188\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-184            android:name="androidx.startup.InitializationProvider"
-184-->[androidx.emoji2:emoji2:1.0.0] D:\Android_Projects\pic\caches\transforms-3\92708834b1c092ddf07d1634926df188\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
-185            android:authorities="com.example.arielscupid.androidx-startup"
-185-->[androidx.emoji2:emoji2:1.0.0] D:\Android_Projects\pic\caches\transforms-3\92708834b1c092ddf07d1634926df188\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
-186            android:exported="false" >
-186-->[androidx.emoji2:emoji2:1.0.0] D:\Android_Projects\pic\caches\transforms-3\92708834b1c092ddf07d1634926df188\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
-187            <meta-data
-187-->[androidx.emoji2:emoji2:1.0.0] D:\Android_Projects\pic\caches\transforms-3\92708834b1c092ddf07d1634926df188\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-188                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-188-->[androidx.emoji2:emoji2:1.0.0] D:\Android_Projects\pic\caches\transforms-3\92708834b1c092ddf07d1634926df188\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
-189                android:value="androidx.startup" />
-189-->[androidx.emoji2:emoji2:1.0.0] D:\Android_Projects\pic\caches\transforms-3\92708834b1c092ddf07d1634926df188\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
-190            <meta-data
-190-->[androidx.lifecycle:lifecycle-process:2.4.0] D:\Android_Projects\pic\caches\transforms-3\d9db6b6f9ce68129424c2ebe8909f584\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-191                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-191-->[androidx.lifecycle:lifecycle-process:2.4.0] D:\Android_Projects\pic\caches\transforms-3\d9db6b6f9ce68129424c2ebe8909f584\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-192                android:value="androidx.startup" />
-192-->[androidx.lifecycle:lifecycle-process:2.4.0] D:\Android_Projects\pic\caches\transforms-3\d9db6b6f9ce68129424c2ebe8909f584\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-193        </provider>
-194    </application>
-195
-196</manifest>
+171-->[com.google.android.gms:play-services-measurement:20.0.0] D:\Android_Projects\pic\caches\transforms-3\8edd119f172d33bf3b4bd2b9e7d7aae4\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:31:13-35
+172            android:exported="false" >
+172-->[com.google.android.gms:play-services-measurement:20.0.0] D:\Android_Projects\pic\caches\transforms-3\8edd119f172d33bf3b4bd2b9e7d7aae4\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:32:13-37
+173        </receiver>
+174
+175        <service
+175-->[com.google.android.gms:play-services-measurement:20.0.0] D:\Android_Projects\pic\caches\transforms-3\8edd119f172d33bf3b4bd2b9e7d7aae4\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:35:9-38:40
+176            android:name="com.google.android.gms.measurement.AppMeasurementService"
+176-->[com.google.android.gms:play-services-measurement:20.0.0] D:\Android_Projects\pic\caches\transforms-3\8edd119f172d33bf3b4bd2b9e7d7aae4\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:36:13-84
+177            android:enabled="true"
+177-->[com.google.android.gms:play-services-measurement:20.0.0] D:\Android_Projects\pic\caches\transforms-3\8edd119f172d33bf3b4bd2b9e7d7aae4\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:37:13-35
+178            android:exported="false" />
+178-->[com.google.android.gms:play-services-measurement:20.0.0] D:\Android_Projects\pic\caches\transforms-3\8edd119f172d33bf3b4bd2b9e7d7aae4\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:38:13-37
+179        <service
+179-->[com.google.android.gms:play-services-measurement:20.0.0] D:\Android_Projects\pic\caches\transforms-3\8edd119f172d33bf3b4bd2b9e7d7aae4\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:39:9-43:72
+180            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+180-->[com.google.android.gms:play-services-measurement:20.0.0] D:\Android_Projects\pic\caches\transforms-3\8edd119f172d33bf3b4bd2b9e7d7aae4\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:40:13-87
+181            android:enabled="true"
+181-->[com.google.android.gms:play-services-measurement:20.0.0] D:\Android_Projects\pic\caches\transforms-3\8edd119f172d33bf3b4bd2b9e7d7aae4\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:41:13-35
+182            android:exported="false"
+182-->[com.google.android.gms:play-services-measurement:20.0.0] D:\Android_Projects\pic\caches\transforms-3\8edd119f172d33bf3b4bd2b9e7d7aae4\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:42:13-37
+183            android:permission="android.permission.BIND_JOB_SERVICE" />
+183-->[com.google.android.gms:play-services-measurement:20.0.0] D:\Android_Projects\pic\caches\transforms-3\8edd119f172d33bf3b4bd2b9e7d7aae4\transformed\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:43:13-69
+184
+185        <meta-data
+185-->[com.google.android.gms:play-services-basement:18.0.0] D:\Android_Projects\pic\caches\transforms-3\d54d5a4448cd99be44c2671f0beb7e83\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+186            android:name="com.google.android.gms.version"
+186-->[com.google.android.gms:play-services-basement:18.0.0] D:\Android_Projects\pic\caches\transforms-3\d54d5a4448cd99be44c2671f0beb7e83\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+187            android:value="@integer/google_play_services_version" />
+187-->[com.google.android.gms:play-services-basement:18.0.0] D:\Android_Projects\pic\caches\transforms-3\d54d5a4448cd99be44c2671f0beb7e83\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+188
+189        <provider
+189-->[androidx.emoji2:emoji2:1.0.0] D:\Android_Projects\pic\caches\transforms-3\92708834b1c092ddf07d1634926df188\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+190            android:name="androidx.startup.InitializationProvider"
+190-->[androidx.emoji2:emoji2:1.0.0] D:\Android_Projects\pic\caches\transforms-3\92708834b1c092ddf07d1634926df188\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+191            android:authorities="com.example.arielscupid.androidx-startup"
+191-->[androidx.emoji2:emoji2:1.0.0] D:\Android_Projects\pic\caches\transforms-3\92708834b1c092ddf07d1634926df188\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+192            android:exported="false" >
+192-->[androidx.emoji2:emoji2:1.0.0] D:\Android_Projects\pic\caches\transforms-3\92708834b1c092ddf07d1634926df188\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+193            <meta-data
+193-->[androidx.emoji2:emoji2:1.0.0] D:\Android_Projects\pic\caches\transforms-3\92708834b1c092ddf07d1634926df188\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+194                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+194-->[androidx.emoji2:emoji2:1.0.0] D:\Android_Projects\pic\caches\transforms-3\92708834b1c092ddf07d1634926df188\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+195                android:value="androidx.startup" />
+195-->[androidx.emoji2:emoji2:1.0.0] D:\Android_Projects\pic\caches\transforms-3\92708834b1c092ddf07d1634926df188\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+196            <meta-data
+196-->[androidx.lifecycle:lifecycle-process:2.4.0] D:\Android_Projects\pic\caches\transforms-3\d9db6b6f9ce68129424c2ebe8909f584\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+197                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+197-->[androidx.lifecycle:lifecycle-process:2.4.0] D:\Android_Projects\pic\caches\transforms-3\d9db6b6f9ce68129424c2ebe8909f584\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+198                android:value="androidx.startup" />
+198-->[androidx.lifecycle:lifecycle-process:2.4.0] D:\Android_Projects\pic\caches\transforms-3\d9db6b6f9ce68129424c2ebe8909f584\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+199        </provider>
+200    </application>
+201
+202</manifest>

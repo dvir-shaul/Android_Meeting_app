@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ArielsCupid">
         <activity
+            android:name=".watch_specific_profile"
+            android:exported="false" />
+        <activity
             android:name=".specificchat"
             android:exported="false" />
         <activity
@@ -23,6 +26,9 @@
             android:exported="false" />
         <activity
             android:name=".chatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuizMainAct"
             android:exported="false" />
         <activity
             android:name=".setProfile"

@@ -24,6 +24,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.ArielsCupid" >
         <activity
+            android:name="com.example.arielscupid.watch_specific_profile"
+            android:exported="false" />
+        <activity
             android:name="com.example.arielscupid.specificchat"
             android:exported="false" />
         <activity
@@ -37,6 +40,9 @@
             android:exported="false" />
         <activity
             android:name="com.example.arielscupid.chatActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.arielscupid.QuizMainAct"
             android:exported="false" />
         <activity
             android:name="com.example.arielscupid.setProfile"

@@ -31,6 +31,7 @@
                 android:id="@+id/myapptext">
 
             </TextView>
+
         </RelativeLayout>
 
     </androidx.appcompat.widget.Toolbar>
@@ -49,11 +50,6 @@
         app:tabTextColor="#77a3a7">
 
 
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/myprofile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="My Profile"></com.google.android.material.tabs.TabItem>
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/chat"

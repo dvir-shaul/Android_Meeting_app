@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#B3E7ED"
+    tools:context=".watch_specific_profile"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="0dp"
+        android:background="#13A4B5"
+        android:id="@+id/toolbarOfViewProfileActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/backbuttonofviewprofile"
+                app:tint="@color/white"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:layout_centerVertical="true"
+                />
+
+
+            <TextView
+                android:id="@+id/myapptext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/backbuttonofviewprofile"
+                android:text="My profile"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewuserimage"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@+id/toolbarOfViewProfileActivity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="80dp" >
+
+        <ImageView
+            android:id="@+id/viewuserimageinimageview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/defaultprofile" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/viewAbout"
+        android:layout_width="match_parent"
+        android:layout_height="206dp"
+        android:layout_below="@id/viewuserimage"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentEnd="true"
+        android:clickable="false"
+        android:enabled="false"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:isScrollContainer="true"
+        android:maxLength="240"
+        android:text="is your information is"
+        android:textColor="#000000" />
+
+
+    <TextView
+        android:id="@+id/viewRefernce"
+        android:layout_width="match_parent"
+        android:layout_height="206dp"
+        android:layout_below="@id/viewAbout"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentEnd="true"
+        android:clickable="false"
+        android:enabled="false"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:isScrollContainer="true"
+        android:maxLength="240"
+        android:text="refrencre from another users"
+        android:textColor="#000000" />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

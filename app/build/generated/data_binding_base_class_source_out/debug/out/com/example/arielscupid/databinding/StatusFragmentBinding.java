@@ -4,20 +4,33 @@ package com.example.arielscupid.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.arielscupid.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class StatusFragmentBinding implements ViewBinding {
   @NonNull
   private final RelativeLayout rootView;
 
-  private StatusFragmentBinding(@NonNull RelativeLayout rootView) {
+  @NonNull
+  public final TextView cardQuetion;
+
+  @NonNull
+  public final Button startQuizButton;
+
+  private StatusFragmentBinding(@NonNull RelativeLayout rootView, @NonNull TextView cardQuetion,
+      @NonNull Button startQuizButton) {
     this.rootView = rootView;
+    this.cardQuetion = cardQuetion;
+    this.startQuizButton = startQuizButton;
   }
 
   @Override
@@ -43,10 +56,25 @@ public final class StatusFragmentBinding implements ViewBinding {
 
   @NonNull
   public static StatusFragmentBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.card_quetion;
+      TextView cardQuetion = ViewBindings.findChildViewById(rootView, id);
+      if (cardQuetion == null) {
+        break missingId;
+      }
 
-    return new StatusFragmentBinding((RelativeLayout) rootView);
+      id = R.id.startQuizButton;
+      Button startQuizButton = ViewBindings.findChildViewById(rootView, id);
+      if (startQuizButton == null) {
+        break missingId;
+      }
+
+      return new StatusFragmentBinding((RelativeLayout) rootView, cardQuetion, startQuizButton);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

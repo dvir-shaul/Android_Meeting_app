@@ -4,7 +4,7 @@
             "outputFile": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
             "map": [
                 {
-                    "source": "D:\\Android_Projects\\pic\\caches\\transforms-3\\690d4e3d4c08c9e780ec64aa6aeca3b0\\transformed\\jetified-play-services-auth-19.2.0\\res\\values-watch-v20\\values.xml",
+                    "source": "D:\\Android_Projects\\pic\\caches\\transforms-3\\a487f8ce49997ad2dbd37e75ae6b3d7c\\transformed\\jetified-play-services-auth-20.0.0\\res\\values-watch-v20\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",

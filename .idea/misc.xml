@@ -3,10 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.24537037037037038" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable-xxhdpi/reciverchatdrawable.xml" value="0.3263888888888889" />
+        <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.24537037037037038" />
+        <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/ic_baseline_arrow_forward_24.xml" value="0.24537037037037038" />
+        <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.24537037037037038" />
+        <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.24537037037037038" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/ic_baseline_more_vert_24.xml" value="0.3356164383561644" />
+        <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/ic_launcher_background.xml" value="0.24537037037037038" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/messagebackground.xml" value="0.19583333333333333" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/senderchatdrawable.xml" value="0.3263888888888889" />
+        <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout-v26/activity_profile.xml" value="0.24791666666666667" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/activity_chat.xml" value="0.25" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/activity_home_page.xml" value="0.32592592592592595" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/activity_login.xml" value="0.33" />
@@ -15,10 +22,12 @@
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/activity_otp_authentication.xml" value="0.32592592592592595" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/activity_profile.xml" value="0.25" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/activity_profile_acticity.xml" value="0.1699074074074074" />
+        <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/activity_quiz_main.xml" value="0.2310185185185185" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/activity_set_profile.xml" value="0.33" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/activity_specificchat.xml" value="0.33" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/activity_splash_screen.xml" value="0.33" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/activity_update_profile.xml" value="0.33" />
+        <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/activity_watch_specific_profile.xml" value="0.31342592592592594" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/chats_fragment.xml" value="0.33" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/chatviewlayout.xml" value="0.33" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/content_main.xml" value="0.16944444444444445" />
@@ -26,6 +35,7 @@
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/fragment_second.xml" value="0.16944444444444445" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/my_profile_fragment.xml" value="0.16944444444444445" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/reciverchatlayout.xml" value="0.31203703703703706" />
+        <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/score_bottom_sheets.xml" value="0.2310185185185185" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/senderchatlayout.xml" value="0.31203703703703706" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/status_fragment.xml" value="0.16944444444444445" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/menu/menu.xml" value="0.32592592592592595" />

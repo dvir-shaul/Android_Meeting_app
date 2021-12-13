@@ -36,6 +36,7 @@ public class specificchat extends AppCompatActivity {
 
     CardView msendmessagecardview;
     androidx.appcompat.widget.Toolbar mtoolbarofspecificchat;
+
     ImageView mimageviewofspecificuser;
     TextView mnameofuser;
 
@@ -75,7 +76,8 @@ public class specificchat extends AppCompatActivity {
 
         mtoolbarofspecificchat=findViewById(R.id.toolbarofspecificchat);
         mnameofuser=findViewById(R.id.Nameofspecificuser);
-        mimageviewofspecificuser=findViewById(R.id.specificuserinimageview);
+        mimageviewofspecificuser=findViewById(R.id.specificuserimageinimageview);
+
 
         mbackbuttonofspecificchat=findViewById(R.id.backbuttonofspecificchat);
 
@@ -96,8 +98,8 @@ public class specificchat extends AppCompatActivity {
         setSupportActionBar(mtoolbarofspecificchat);
         mtoolbarofspecificchat.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Toolbar is Clicked",Toast.LENGTH_SHORT);
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),"Toolbar is Clicked",Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -159,7 +161,6 @@ public class specificchat extends AppCompatActivity {
 
         mnameofuser.setText(mrecivername);
         String uri=getIntent().getStringExtra("imageuri");
-
         if(uri.isEmpty()){
             Toast.makeText(getApplicationContext(),"null is recived",Toast.LENGTH_SHORT);
         }
@@ -180,7 +181,7 @@ public class specificchat extends AppCompatActivity {
                 enteredmessage=mgetmessage.getText().toString();
                 if(enteredmessage.isEmpty())
                 {
-                    Toast.makeText(getApplicationContext(),"Enter a message first",Toast.LENGTH_SHORT);
+                    Toast.makeText(getApplicationContext(),"Enter a message first",Toast.LENGTH_SHORT).show();
                 }
                 else
                 {

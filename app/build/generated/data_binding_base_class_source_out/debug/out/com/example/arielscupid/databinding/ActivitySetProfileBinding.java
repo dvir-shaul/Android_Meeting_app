@@ -24,6 +24,9 @@ public final class ActivitySetProfileBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
+  public final EditText getAbout;
+
+  @NonNull
   public final CardView getuserimage;
 
   @NonNull
@@ -38,11 +41,12 @@ public final class ActivitySetProfileBinding implements ViewBinding {
   @NonNull
   public final Button saveprofile;
 
-  private ActivitySetProfileBinding(@NonNull RelativeLayout rootView,
+  private ActivitySetProfileBinding(@NonNull RelativeLayout rootView, @NonNull EditText getAbout,
       @NonNull CardView getuserimage, @NonNull ImageView getuserimageinimageview,
       @NonNull EditText getusername, @NonNull ProgressBar progressbarofsetprofile,
       @NonNull Button saveprofile) {
     this.rootView = rootView;
+    this.getAbout = getAbout;
     this.getuserimage = getuserimage;
     this.getuserimageinimageview = getuserimageinimageview;
     this.getusername = getusername;
@@ -77,6 +81,12 @@ public final class ActivitySetProfileBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.getAbout;
+      EditText getAbout = ViewBindings.findChildViewById(rootView, id);
+      if (getAbout == null) {
+        break missingId;
+      }
+
       id = R.id.getuserimage;
       CardView getuserimage = ViewBindings.findChildViewById(rootView, id);
       if (getuserimage == null) {
@@ -107,7 +117,7 @@ public final class ActivitySetProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivitySetProfileBinding((RelativeLayout) rootView, getuserimage,
+      return new ActivitySetProfileBinding((RelativeLayout) rootView, getAbout, getuserimage,
           getuserimageinimageview, getusername, progressbarofsetprofile, saveprofile);
     }
     String missingId = rootView.getResources().getResourceName(id);

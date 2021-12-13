@@ -62,7 +62,6 @@ public class ChatsFragment extends Fragment {
             protected void onBindViewHolder(@NonNull NoteViewHolder noteViewHolder, int i, @NonNull firebasemodel firebasemodel) {
                 noteViewHolder.paticularusername.setText(firebasemodel.getName());
                 String uri = firebasemodel.getImage();
-
                 Picasso.get().load(uri).into(mimageviewofuser);
                 if(firebasemodel.getStatus().equals("Online"))
                 {

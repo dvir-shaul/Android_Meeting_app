@@ -19,7 +19,7 @@ public class MessagesAdapter extends RecyclerView.Adapter {
     ArrayList<Messages> messagearrylist;
 
     int ITEM_SEND = 1;
-    int ITEM_RECIVE = 2;
+    int ITEM_RECEIVE = 2;
 
     public MessagesAdapter(Context context, ArrayList<Messages> messagearrylist) {
         this.context = context;
@@ -72,7 +72,7 @@ public class MessagesAdapter extends RecyclerView.Adapter {
         }
         else
         {
-            return ITEM_RECIVE;
+            return ITEM_RECEIVE;
         }
     }
 
@@ -80,9 +80,6 @@ public class MessagesAdapter extends RecyclerView.Adapter {
     public int getItemCount() {
         return messagearrylist.size();
     }
-
-
-
 
     /**
      * 2 class for each of the sender/reciver layout
@@ -92,7 +89,6 @@ public class MessagesAdapter extends RecyclerView.Adapter {
 
         TextView textViewmessaage;
         TextView timeofmessage;
-
 
         public SenderViewHolder(@NonNull View itemView) {
             super(itemView);

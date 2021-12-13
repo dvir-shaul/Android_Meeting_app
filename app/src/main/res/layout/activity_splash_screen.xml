@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#B3E7ED"
+    android:background="#93CBD3"
     tools:context=".SplashScreen">
 
     <ImageView
@@ -23,7 +23,9 @@
         android:layout_marginBottom="5dp"
         android:fontFamily="@font/raleway"
         android:text="from"
-        android:textColor="#13A4B5">
+        android:textColor="#000304"
+        android:textSize="15dp"
+        android:textStyle="bold">
 
     </TextView>
 
@@ -38,7 +40,7 @@
         android:text="Adi, Hodaya, Dvir"
         android:textColor="#056B78"
         android:textSize="20sp"
-        android:textStyle="normal">
+        android:textStyle="bold">
 
     </TextView>
 

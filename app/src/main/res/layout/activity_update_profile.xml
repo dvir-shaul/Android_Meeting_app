@@ -79,6 +79,17 @@
         android:hint="Enter your new name here"
         android:inputType="textCapWords" />
 
+    <EditText
+        android:id="@+id/getAbout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/getnewusername"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:hint="Enter your new about here"
+        android:inputType="textCapWords" />
+
     <ImageView
         android:id="@+id/logoofviewprofile"
         android:layout_width="50dp"
@@ -95,7 +106,7 @@
         android:id="@+id/updateprofilebutton"
         android:layout_width="150dp"
         android:layout_height="70dp"
-        android:layout_below="@id/getnewusername"
+        android:layout_below="@id/getAbout"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="#0E646C"

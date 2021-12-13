@@ -96,16 +96,31 @@
         android:layout_marginRight="90dp"
         android:clickable="false"
         android:enabled="false"
-
-        android:hint="Enter your name here"
+        android:hint="your name is"
         android:inputType="textCapWords" />
+
+
+    <EditText
+        android:id="@+id/viewAbout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/viewusername"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:clickable="false"
+        android:enabled="false"
+        android:inputType="text"
+        android:hint="your information is " />
+
+
 
 
     <TextView
         android:id="@+id/movetoupdateprofile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/viewusername"
+        android:layout_below="@id/viewAbout"
         android:layout_centerInParent="true"
         android:layout_marginTop="50dp"
         android:paddingLeft="20dp"

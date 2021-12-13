@@ -89,12 +89,7 @@ public class specificchat extends AppCompatActivity {
         linearLayoutManager.setStackFromEnd(true);
         mmessagerecylerview.setLayoutManager(linearLayoutManager);
         messagesAdapter= new MessagesAdapter(specificchat.this, messagesArrayList);
-
         mmessagerecylerview.setAdapter(messagesAdapter);
-
-
-
-
 
 
 
@@ -134,7 +129,6 @@ public class specificchat extends AppCompatActivity {
                 for(DataSnapshot snapshot1:snapshot.getChildren())
                 {
                     Messages messages=snapshot1.getValue(Messages.class);
-
                     messagesArrayList.add(messages);
                 }
                 messagesAdapter.notifyDataSetChanged();
@@ -187,16 +181,12 @@ public class specificchat extends AppCompatActivity {
                 if(enteredmessage.isEmpty())
                 {
                     Toast.makeText(getApplicationContext(),"Enter a message first",Toast.LENGTH_SHORT);
-
                 }
                 else
                 {
-
                     Date date = new Date();
                     currenttime=simpleDateFormat.format(calendar.getTime());
-
                     Messages messages = new Messages(enteredmessage, firebaseAuth.getUid(), date.getTime(),currenttime );
-
                     firebaseDatabase=FirebaseDatabase.getInstance();
                     firebaseDatabase.getReference()
                             .child("chats")
@@ -219,10 +209,8 @@ public class specificchat extends AppCompatActivity {
 
                                                 }
                                             });
-
                                 }
                             });
-
                     mgetmessage.setText(null);
                 }
             }

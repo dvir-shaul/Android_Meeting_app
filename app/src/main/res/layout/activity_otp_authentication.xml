@@ -37,37 +37,40 @@
     <EditText
         android:id="@+id/getEmail"
         android:drawableLeft="@drawable/ic_baseline_email_24"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
         android:layout_height="50dp"
         android:layout_below="@id/textheading"
         android:layout_centerHorizontal="true"
-        android:hint="Enter Email                            "
+        android:hint="Enter Email"
         android:inputType="text"
-        android:textAlignment="center"
         android:textColor="@color/black" />
 
     <EditText
         android:id="@+id/getpass"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
         android:layout_height="50dp"
         android:layout_below="@id/getEmail"
         android:layout_centerHorizontal="true"
         android:drawableLeft="@drawable/ic_sharp_security_24"
-        android:hint="Enter Password                  "
+        android:hint="Enter Password"
         android:inputType="textPassword"
-        android:textAlignment="center"
         android:textColor="@color/black" />
 
     <EditText
         android:id="@+id/getpass2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
         android:layout_height="50dp"
         android:layout_below="@id/getpass"
         android:layout_centerHorizontal="true"
         android:drawableLeft="@drawable/ic_sharp_security_24"
-        android:hint="Confirm Password              "
+        android:hint="Confirm Password"
         android:inputType="textPassword"
-        android:textAlignment="center"
         android:textColor="@color/black" />
 
     <android.widget.Button

@@ -68,7 +68,7 @@ public class otpAuthentication extends AppCompatActivity {
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                PergorAuth();
+                RegisterAuth();
             }
         });
     }
@@ -80,7 +80,7 @@ public class otpAuthentication extends AppCompatActivity {
     }
 
 
-    private void PergorAuth() {
+    private void RegisterAuth() {
         String email = inputEmail.getText().toString();
         String password = inputPasswrod.getText().toString();
         String confirmPassword = inputConfirmPasword.getText().toString();
@@ -116,7 +116,6 @@ public class otpAuthentication extends AppCompatActivity {
                     else {
                         progressDialog.dismiss();
                         Toast.makeText(otpAuthentication.this, ""+task.getException(), Toast.LENGTH_SHORT).show();
-
                     }
                 }
             });

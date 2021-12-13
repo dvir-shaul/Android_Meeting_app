@@ -31,6 +31,8 @@ public class ProfileActivity extends AppCompatActivity {
 
 
     EditText mviewusername;
+    EditText mviewabout;
+
     FirebaseAuth firebaseAuth;
     FirebaseDatabase firebaseDatabase;
     TextView mmovetoupdateprofile;
@@ -65,6 +67,7 @@ public class ProfileActivity extends AppCompatActivity {
         mtoolbarofviewprofile=findViewById(R.id.toolbarOfViewProfileActivity);
         mbackbuttonofviewprofile=findViewById(R.id.backbuttonofviewprofile);
 
+        mviewabout=findViewById(R.id.viewAbout);
 
 
 
@@ -96,6 +99,7 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 userprofile muserprofile=snapshot.getValue(userprofile.class);
+                mviewabout.setText(muserprofile.getAbout());
                 mviewusername.setText(muserprofile.getUsername());
             }
 
@@ -111,10 +115,11 @@ public class ProfileActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent=new Intent(ProfileActivity.this,UpdateProfile.class);
                 intent.putExtra("nameofuser",mviewusername.getText().toString());
+                intent.putExtra("about",mviewabout.getText().toString());
+
                 startActivity(intent);
             }
         });
-
 
     }
 
@@ -135,6 +140,8 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
     }
+
+
 
     @Override
     protected void onStart() {

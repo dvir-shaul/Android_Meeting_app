@@ -1,13 +1,3 @@
-com/example/arielscupid/Messages.java
- com.example.arielscupid.Messages
-com/example/arielscupid/userprofile.java
- com.example.arielscupid.userprofile
-com/example/arielscupid/firebasemodel.java
- com.example.arielscupid.firebasemodel
-com/example/arielscupid/BuildConfig.java
- com.example.arielscupid.BuildConfig
-com/example/arielscupid/PagerAdapter.java
- com.example.arielscupid.PagerAdapter
 com/example/arielscupid/databinding/ActivitySetProfileBinding.java
  com.example.arielscupid.databinding.ActivitySetProfileBinding
 com/example/arielscupid/databinding/StatusFragmentBinding.java
@@ -22,6 +12,8 @@ com/example/arielscupid/setProfile.java
  com.example.arielscupid.setProfile$4$2
  com.example.arielscupid.setProfile$5
  com.example.arielscupid.setProfile$6
+com/example/arielscupid/BuildConfig.java
+ com.example.arielscupid.BuildConfig
 com/example/arielscupid/UpdateProfile.java
  com.example.arielscupid.UpdateProfile
  com.example.arielscupid.UpdateProfile$1
@@ -36,6 +28,8 @@ com/example/arielscupid/UpdateProfile.java
  com.example.arielscupid.UpdateProfile$8$1
  com.example.arielscupid.UpdateProfile$8$2
  com.example.arielscupid.UpdateProfile$9
+com/example/arielscupid/Messages.java
+ com.example.arielscupid.Messages
 com/example/arielscupid/otpAuthentication.java
  com.example.arielscupid.otpAuthentication
  com.example.arielscupid.otpAuthentication$1
@@ -47,6 +41,10 @@ com/example/arielscupid/databinding/ActivitySplashScreenBinding.java
  com.example.arielscupid.databinding.ActivitySplashScreenBinding
 com/example/arielscupid/databinding/ActivityOtpAuthenticationBinding.java
  com.example.arielscupid.databinding.ActivityOtpAuthenticationBinding
+com/example/arielscupid/firebasemodel.java
+ com.example.arielscupid.firebasemodel
+com/example/arielscupid/PagerAdapter.java
+ com.example.arielscupid.PagerAdapter
 com/example/arielscupid/databinding/ChatviewlayoutBinding.java
  com.example.arielscupid.databinding.ChatviewlayoutBinding
 com/example/arielscupid/LoginActivity.java
@@ -89,6 +87,8 @@ com/example/arielscupid/SplashScreen.java
  com.example.arielscupid.SplashScreen$1
 com/example/arielscupid/databinding/ActivityMainBinding.java
  com.example.arielscupid.databinding.ActivityMainBinding
+com/example/arielscupid/userprofile.java
+ com.example.arielscupid.userprofile
 com/example/arielscupid/MessagesAdapter.java
  com.example.arielscupid.MessagesAdapter
  com.example.arielscupid.MessagesAdapter$RecieverViewHolder

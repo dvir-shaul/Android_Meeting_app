@@ -43,7 +43,7 @@ public class setProfile extends AppCompatActivity {
     private EditText mgetusername;
     private android.widget.Button msaveprofile;
     private FirebaseAuth firebaseAuth;
-    private String name;
+    private String name,about;
 
     private FirebaseStorage firebaseStorage;
     private StorageReference storageReference;
@@ -54,6 +54,10 @@ public class setProfile extends AppCompatActivity {
     private DatabaseReference mDatabase;
 
     ProgressBar mprogressbarofsetprofile;
+
+
+    private EditText mgetabout;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,6 +80,7 @@ public class setProfile extends AppCompatActivity {
         msaveprofile = findViewById(R.id.saveprofile);
         mprogressbarofsetprofile = findViewById(R.id.progressbarofsetprofile);
 
+        mgetabout= findViewById(R.id.getAbout);
 
 
           //pick a picture from photos on your phone
@@ -93,6 +98,7 @@ public class setProfile extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 name=mgetusername.getText().toString();
+                about=mgetabout.getText().toString();
                 if(name.isEmpty())
                 {
                     Toast.makeText(getApplicationContext(),"Name is Empty", Toast.LENGTH_SHORT).show();
@@ -101,11 +107,14 @@ public class setProfile extends AppCompatActivity {
                 {
                     Toast.makeText(getApplicationContext(),"Image is Empty", Toast.LENGTH_SHORT).show();
                 }
+                else if(about.isEmpty())
+                {
+                    Toast.makeText(getApplicationContext(),"about is Empty", Toast.LENGTH_SHORT).show();
+                }
                 else
                 {
                     mprogressbarofsetprofile.setVisibility(View.VISIBLE);
                     sendDataForNewUser();
-
                     mprogressbarofsetprofile.setVisibility(View.INVISIBLE);
                     Intent intent = new Intent(setProfile.this, chatActivity.class);
                     startActivity(intent);
@@ -123,14 +132,16 @@ public class setProfile extends AppCompatActivity {
      * data sending on real time database
      */
     private void sendDataToRealTimeDatabase(){
+        about = mgetabout.getText().toString().trim();
+        name = mgetusername.getText().toString().trim();
 
-        name=mgetusername.getText().toString().trim();
+
         FirebaseDatabase firebaseDatabase= FirebaseDatabase.getInstance();
         DatabaseReference databaseReference = firebaseDatabase.getReference(firebaseAuth.getUid());
         /**
          * create reference to the userprofile java file we create and their public objects
          */
-        userprofile muserprofile = new userprofile(name,firebaseAuth.getUid());
+        userprofile muserprofile = new userprofile(name,firebaseAuth.getUid(),about);
         databaseReference.setValue(muserprofile);
         Toast.makeText(getApplicationContext(),"User Profile Added Successfully", Toast.LENGTH_SHORT).show();
         sendImagetoStoarge();
@@ -208,6 +219,10 @@ public class setProfile extends AppCompatActivity {
         userdata.put("image",ImageUriAcessToken);
         userdata.put("uid",firebaseAuth.getUid());
         userdata.put("status","Online");
+        userdata.put("questions",0);
+        userdata.put("about",about);
+
+
 
         documentReference.set(userdata).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override

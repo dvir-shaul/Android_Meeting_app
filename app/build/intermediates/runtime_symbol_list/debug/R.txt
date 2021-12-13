@@ -2543,6 +2543,7 @@ int id forever 0x7f08011a
 int id fragment_container_view_tag 0x7f08011b
 int id fragmentcontainer 0x7f08011c
 int id frost 0x7f08011d
+int id getAbout 0x7f080286
 int id getEmail 0x7f08011e
 int id getNetUserImage 0x7f080272
 int id getmessage 0x7f08027d
@@ -2876,6 +2877,7 @@ int id updateprofilebutton 0x7f080277
 int id useLogo 0x7f08025a
 int id verifyotp 0x7f08025b
 int id vertical_only 0x7f08025c
+int id viewAbout 0x7f080287
 int id view_offset_helper 0x7f08025d
 int id view_transition 0x7f08025e
 int id view_tree_lifecycle_owner 0x7f08025f

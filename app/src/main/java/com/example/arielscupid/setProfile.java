@@ -43,7 +43,7 @@ public class setProfile extends AppCompatActivity {
     private EditText mgetusername;
     private android.widget.Button msaveprofile;
     private FirebaseAuth firebaseAuth;
-    private String name,about;
+    private String name,about, gender;
 
     private FirebaseStorage firebaseStorage;
     private StorageReference storageReference;
@@ -56,7 +56,10 @@ public class setProfile extends AppCompatActivity {
     ProgressBar mprogressbarofsetprofile;
 
 
-    private EditText mgetabout;
+    private EditText mgetabout, mgetGender;
+
+    String male = "Male";
+    String female = "Female";
 
 
     @Override
@@ -81,7 +84,7 @@ public class setProfile extends AppCompatActivity {
         mprogressbarofsetprofile = findViewById(R.id.progressbarofsetprofile);
 
         mgetabout= findViewById(R.id.getAbout);
-
+        mgetGender = findViewById(R.id.getGender);
 
           //pick a picture from photos on your phone
         mgetuserimage.setOnClickListener(new View.OnClickListener() {
@@ -99,17 +102,22 @@ public class setProfile extends AppCompatActivity {
             public void onClick(View v) {
                 name=mgetusername.getText().toString();
                 about=mgetabout.getText().toString();
+                gender = mgetGender.getText().toString();
                 if(name.isEmpty())
                 {
-                    Toast.makeText(getApplicationContext(),"Name is Empty", Toast.LENGTH_SHORT).show();
+                    mgetusername.setError("Name is Empty");
                 }
                 else if(imagepath==null)
                 {
                     Toast.makeText(getApplicationContext(),"Image is Empty", Toast.LENGTH_SHORT).show();
                 }
+                else if( ! (gender.equals(male) ||  gender.equals(female)))
+                {
+                    mgetGender.setError("Enter gender Male/Female");
+                }
                 else if(about.isEmpty())
                 {
-                    Toast.makeText(getApplicationContext(),"about is Empty", Toast.LENGTH_SHORT).show();
+                    mgetabout.setError("About is Empty");
                 }
                 else
                 {
@@ -134,14 +142,14 @@ public class setProfile extends AppCompatActivity {
     private void sendDataToRealTimeDatabase(){
         about = mgetabout.getText().toString().trim();
         name = mgetusername.getText().toString().trim();
-
+        gender = mgetGender.getText().toString().trim();
 
         FirebaseDatabase firebaseDatabase= FirebaseDatabase.getInstance();
         DatabaseReference databaseReference = firebaseDatabase.getReference(firebaseAuth.getUid());
         /**
          * create reference to the userprofile java file we create and their public objects
          */
-        userprofile muserprofile = new userprofile(name,firebaseAuth.getUid(),about);
+        userprofile muserprofile = new userprofile(name,firebaseAuth.getUid(),about,gender);
         databaseReference.setValue(muserprofile);
         Toast.makeText(getApplicationContext(),"User Profile Added Successfully", Toast.LENGTH_SHORT).show();
         sendImagetoStoarge();

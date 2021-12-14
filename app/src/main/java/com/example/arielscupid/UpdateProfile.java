@@ -62,7 +62,7 @@ public class UpdateProfile extends AppCompatActivity {
 
     private static int PICK_IMAGE=123;
 
-    String newName, newAbout;
+    String newName, newAbout,newGender;
 
 
     @Override
@@ -72,6 +72,8 @@ public class UpdateProfile extends AppCompatActivity {
 
 
         mnewabout=findViewById(R.id.getAbout);
+        newGender="";
+
         mtoolbarofUpdateprofile=findViewById(R.id.toolbarOfUpdateProfileActivity);
         mbackbuttonofupdateprofile=findViewById(R.id.backbuttonofUpdateProfile);
         mgetnewimageinimageview=findViewById(R.id.viewuserimageinimageview);
@@ -96,6 +98,17 @@ public class UpdateProfile extends AppCompatActivity {
         });
         mnewabout.setText(intent.getStringExtra("about"));
         mnewusername.setText(intent.getStringExtra("nameofuser"));
+        newGender = (intent.getStringExtra("genderofuser"));
+
+        System.out.println("wiiiiiiio " + newGender);
+        System.out.println("wiiiiiiio " + newGender);
+        System.out.println("wiiiiiiio " + newGender);
+        System.out.println("wiiiiiiio " + newGender);
+        System.out.println("wiiiiiiio " + newGender);
+        System.out.println("wiiiiiiio " + newGender);
+        System.out.println("wiiiiiiio " + newGender);
+
+
         DatabaseReference databaseReference=firebaseDatabase.getReference(firebaseAuth.getUid());
 
         mupdateprofilebutton.setOnClickListener(new View.OnClickListener() {
@@ -110,7 +123,7 @@ public class UpdateProfile extends AppCompatActivity {
                 else if(imagepath!=null)
                 {
                     mprogressBar.setVisibility(View.VISIBLE);
-                    userprofile muserprofile = new userprofile(newName,firebaseAuth.getUid(),newAbout);
+                    userprofile muserprofile = new userprofile(newName,firebaseAuth.getUid(),newAbout,newGender);
                     databaseReference.setValue(muserprofile);
                     updateimagetostoarge();
                     Toast.makeText(getApplicationContext(),"Updated",Toast.LENGTH_SHORT).show();
@@ -122,7 +135,7 @@ public class UpdateProfile extends AppCompatActivity {
                 else
                 {
                     mprogressBar.setVisibility(View.VISIBLE);
-                    userprofile muserprofile = new userprofile(newName,firebaseAuth.getUid(),newAbout);
+                    userprofile muserprofile = new userprofile(newName,firebaseAuth.getUid(),newAbout,newGender);
                     databaseReference.setValue(muserprofile);
                     updateNameOnCloudFirestore();
                     Toast.makeText(getApplicationContext(),"Updated",Toast.LENGTH_SHORT).show();

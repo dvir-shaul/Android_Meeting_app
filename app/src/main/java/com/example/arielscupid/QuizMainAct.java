@@ -2,6 +2,7 @@ package com.example.arielscupid;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -57,6 +58,7 @@ public class QuizMainAct extends AppCompatActivity {
     private ArrayList<QuizModel> quizModelArrayList;
     Random random;
     int currentScore = 0, questionAttempted = 0, currentPos;
+    private static int Splash_Timer=3000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -132,7 +134,6 @@ public class QuizMainAct extends AppCompatActivity {
 //                    currentScore++;
 //                }
                 currentScore = currentScore + 500;
-
                 questionAttempted++;
                 currentPos = random.nextInt(quizModelArrayList.size());
                 setDataToViews(currentPos);

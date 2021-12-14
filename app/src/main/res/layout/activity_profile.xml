@@ -99,12 +99,25 @@
         android:textColor="#000000"
         android:inputType="textCapWords" />
 
+    <TextView
+        android:id="@+id/viewGender1"
+        android:layout_width="204dp"
+        android:layout_height="41dp"
+        android:layout_below="@id/viewusername"
+        android:layout_marginTop="-1dp"
+        android:layout_centerHorizontal="true"
+        android:clickable="false"
+        android:enabled="false"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:text="your gender"
+        android:textColor="#000000" />
 
     <TextView
         android:id="@+id/viewAbout"
         android:layout_width="match_parent"
         android:layout_height="206dp"
-        android:layout_below="@id/viewusername"
+        android:layout_below="@id/viewGender1"
         android:layout_alignParentEnd="true"
         android:focusable="true"
         android:clickable="false"
@@ -115,7 +128,6 @@
         android:isScrollContainer="true"
         android:maxLength="240"
         android:text="your information is your information is"
-
         android:textColor="#000000" />
 
 

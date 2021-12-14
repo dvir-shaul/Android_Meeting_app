@@ -49,10 +49,20 @@
         android:inputType="textCapWords" />
 
     <EditText
+        android:id="@+id/getGender"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/getusername"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:hint="Enter your name here"
+        android:inputType="textCapWords" />
+    <EditText
         android:id="@+id/getAbout"
         android:layout_width="wrap_content"
         android:layout_height="100dp"
-        android:layout_below="@id/getusername"
+        android:layout_below="@id/getGender"
         android:layout_centerInParent="true"
         android:hint="Enter your information here"
         android:focusable="true"

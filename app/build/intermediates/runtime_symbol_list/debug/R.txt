@@ -2547,6 +2547,7 @@ int id fragmentcontainer 0x7f090122
 int id frost 0x7f090123
 int id getAbout 0x7f090124
 int id getEmail 0x7f090125
+int id getGender 0x7f090291
 int id getNetUserImage 0x7f090126
 int id getmessage 0x7f090127
 int id getnewusername 0x7f090128
@@ -2889,6 +2890,7 @@ int id useLogo 0x7f090278
 int id verifyotp 0x7f090279
 int id vertical_only 0x7f09027a
 int id viewAbout 0x7f09027b
+int id viewGender1 0x7f090292
 int id viewRefernce 0x7f09027c
 int id view_offset_helper 0x7f09027d
 int id view_transition 0x7f09027e

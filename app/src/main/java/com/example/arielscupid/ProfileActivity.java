@@ -35,7 +35,7 @@ public class ProfileActivity extends AppCompatActivity {
 
 
     EditText mviewusername;
-    TextView mviewabout;
+    TextView mviewabout,gender;
 
     FirebaseAuth firebaseAuth;
     FirebaseDatabase firebaseDatabase;
@@ -72,7 +72,7 @@ public class ProfileActivity extends AppCompatActivity {
         mbackbuttonofviewprofile=findViewById(R.id.backbuttonofviewprofile);
 
         mviewabout=findViewById(R.id.viewAbout);
-
+        gender=findViewById(R.id.viewGender1);
 
         setSupportActionBar(mtoolbarofviewprofile);
         mbackbuttonofviewprofile.setOnClickListener(new View.OnClickListener() {
@@ -103,6 +103,7 @@ public class ProfileActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 userprofile muserprofile=snapshot.getValue(userprofile.class);
                 mviewabout.setText(muserprofile.getAbout());
+                gender.setText(muserprofile.getGender());
                 mviewusername.setText(muserprofile.getUsername());
             }
 
@@ -119,6 +120,7 @@ public class ProfileActivity extends AppCompatActivity {
                 Intent intent=new Intent(ProfileActivity.this,UpdateProfile.class);
                 intent.putExtra("nameofuser",mviewusername.getText().toString());
                 intent.putExtra("about",mviewabout.getText().toString());
+                intent.putExtra("genderofuser",gender.getText().toString());
 
                 startActivity(intent);
             }

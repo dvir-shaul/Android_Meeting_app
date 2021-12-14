@@ -43,7 +43,9 @@
             android:background="#03626E"
             android:padding="4dp"
             android:text="Option 1"
-            android:textAllCaps="false" />
+            android:textAllCaps="false"
+
+            />
 
         <Button
             android:id="@+id/idButtonOption2"

@@ -48,18 +48,9 @@ public class QuizMainAct extends AppCompatActivity {
     private FirebaseAuth firebaseAuth;
     private Uri scorePath;
 
-
     private FirebaseFirestore firebaseFirestore;
 
-    private ImageView mgetnewimageinimageview;
-    private StorageReference storageReference;
 
-    private String ImageURIaccestoken;
-
-    private androidx.appcompat.widget.Toolbar mtoolbarofUpdateprofile;
-    private ImageButton mbackbuttonofupdateprofile;
-
-    private FirebaseStorage firebaseStorage;
 
     private TextView questions, questionNum;
     private Button option1Btn, option2Btn, option3Btn, option4Btn;
@@ -95,9 +86,11 @@ public class QuizMainAct extends AppCompatActivity {
         option1Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (quizModelArrayList.get(currentPos).getAnswer().trim().toLowerCase().equals(option1Btn.getText().toString().trim().toLowerCase())) {
-                    currentScore++;
-                }
+//                if (quizModelArrayList.get(currentPos).getAnswer().trim().toLowerCase().equals(option1Btn.getText().toString().trim().toLowerCase())) {
+//                    currentScore++;
+//                }
+                currentScore = currentScore + 10;
+
                 questionAttempted++;
                 currentPos = random.nextInt(quizModelArrayList.size());
                 setDataToViews(currentPos);
@@ -107,9 +100,11 @@ public class QuizMainAct extends AppCompatActivity {
         option2Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (quizModelArrayList.get(currentPos).getAnswer().trim().toLowerCase().equals(option2Btn.getText().toString().trim().toLowerCase())) {
-                    currentScore++;
-                }
+//                if (quizModelArrayList.get(currentPos).getAnswer().trim().toLowerCase().equals(option2Btn.getText().toString().trim().toLowerCase())) {
+//                    currentScore++;
+//                }
+                currentScore = currentScore + 75;
+
                 questionAttempted++;
                 currentPos = random.nextInt(quizModelArrayList.size());
                 setDataToViews(currentPos);
@@ -119,9 +114,11 @@ public class QuizMainAct extends AppCompatActivity {
         option3Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (quizModelArrayList.get(currentPos).getAnswer().trim().toLowerCase().equals(option3Btn.getText().toString().trim().toLowerCase())) {
-                    currentScore++;
-                }
+//                if (quizModelArrayList.get(currentPos).getAnswer().trim().toLowerCase().equals(option3Btn.getText().toString().trim().toLowerCase())) {
+//                    currentScore++;
+//                }
+                currentScore = currentScore + 200;
+
                 questionAttempted++;
                 currentPos = random.nextInt(quizModelArrayList.size());
                 setDataToViews(currentPos);
@@ -131,9 +128,11 @@ public class QuizMainAct extends AppCompatActivity {
         option4Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (quizModelArrayList.get(currentPos).getAnswer().trim().toLowerCase().equals(option4Btn.getText().toString().trim().toLowerCase())) {
-                    currentScore++;
-                }
+//                if (quizModelArrayList.get(currentPos).getAnswer().trim().toLowerCase().equals(option4Btn.getText().toString().trim().toLowerCase())) {
+//                    currentScore++;
+//                }
+                currentScore = currentScore + 500;
+
                 questionAttempted++;
                 currentPos = random.nextInt(quizModelArrayList.size());
                 setDataToViews(currentPos);
@@ -180,11 +179,9 @@ public class QuizMainAct extends AppCompatActivity {
         bottomSheetDialog.setCancelable(false);
         bottomSheetDialog.setContentView(bottomSheetView);
         bottomSheetDialog.show();
+        }
 
 
-
-
-    }
 
     private void setDataToViews(int currentPos){
         questionNum.setText("Question Attempted :" + questionAttempted + "/10");
@@ -197,6 +194,9 @@ public class QuizMainAct extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Update Score", Toast.LENGTH_SHORT).show();
                 }
             });
+            Intent intent = new Intent(QuizMainAct.this, chatActivity.class);
+            startActivity(intent);
+            finish();
         }
         else {
             questions.setText(quizModelArrayList.get(currentPos).getQuestion());

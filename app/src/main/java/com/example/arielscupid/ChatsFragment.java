@@ -53,6 +53,8 @@ public class ChatsFragment extends Fragment {
 
 
         //Query query=firebaseFirestore.collection("Users");   // show everyone on app
+
+
         Query query=firebaseFirestore.collection("Users").whereNotEqualTo("uid",firebaseAuth.getUid()); // except me
 
         FirestoreRecyclerOptions<firebasemodel> allUsername = new FirestoreRecyclerOptions.Builder<firebasemodel>().setQuery(query,firebasemodel.class).build();

@@ -44,10 +44,6 @@
         "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\layout\\senderchatlayout.xml"
     },
     {
-        "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\my_profile_fragment.xml",
-        "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\layout\\my_profile_fragment.xml"
-    },
-    {
         "merged": "D:\\Android_Projects\\Ariel's_Cupid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\score_bottom_sheets.xml",
         "source": "D:\\Android_Projects\\Ariel's_Cupid\\app\\src\\main\\res\\layout\\score_bottom_sheets.xml"
     },

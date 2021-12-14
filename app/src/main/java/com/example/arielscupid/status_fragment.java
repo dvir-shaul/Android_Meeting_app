@@ -35,19 +35,4 @@ public class status_fragment extends Fragment {
         });
         return v;
     }
-
-//     @Override
-//    public void onClick(View v) {
-//        Intent intent = new Intent(getActivity(),quizMainActivity.class);
-//        startActivity(intent);
-//    }
-
-
-
-
-
-
-
-
-
 }

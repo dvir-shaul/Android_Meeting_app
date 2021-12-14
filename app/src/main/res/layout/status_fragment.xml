@@ -6,21 +6,6 @@
     tools:context="status_fragment"
     android:background="#B3E7ED">
 
-<!--    <TextView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Welcome to the quiz!"-->
-<!--        android:textAllCaps="false"-->
-<!--        android:textAlignment="center"-->
-<!--        android:gravity="center"-->
-<!--        android:layout_marginTop="50dp"-->
-<!--        android:textSize="20sp"-->
-<!--        android:textColor="#05707E"-->
-<!--        android:id="@+id/idQuestions"/>-->
-
-<!--    <TextView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
 
     <TextView
         android:layout_width="wrap_content"
@@ -29,20 +14,19 @@
         android:layout_marginTop="120dp"
         android:text="Welcome to the quiz!"
         android:textColor="#03626E"
-        android:textSize="40sp"
+        android:textSize="30sp"
         android:textStyle="bold" />
 
-    <TextView
-        android:layout_width="337dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="250dp"
-        android:text="Here you can change your score!"
-        android:textColor="#03626E"
-        android:textSize="34sp"
-        android:visibility="visible"
+    <ImageView
+        android:id="@+id/logo2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
 
-        />
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:src="@drawable/main_logo">
+
+    </ImageView>
 
     <TextView
         android:layout_width="wrap_content"
@@ -58,24 +42,14 @@
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="400dp"
-        android:background="#00FF5F"
+        android:layout_marginTop="500dp"
+        android:background="#F85656"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:text="Start Quiz"
         android:textSize="15sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
 
-
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Status"-->
-<!--        android:textSize="40sp"-->
-<!--        android:textStyle="bold"-->
-<!--        android:textColor="#014F59"-->
-<!--        android:layout_centerHorizontal="true"-->
-<!--        android:layout_centerInParent="true"-->
-<!--        />-->
 
 </RelativeLayout>

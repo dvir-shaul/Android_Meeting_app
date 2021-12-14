@@ -9,6 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_marginRight="50dp"
+        android:paddingBottom="8dp"
         android:background="@drawable/reciverchatdrawable"
         android:id="@+id/layoutformessage">
 
@@ -27,16 +28,16 @@
             />
 
         <TextView
+            android:id="@+id/timeofmessage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/timeofmessage"
-            android:textSize="10sp"
-            android:layout_toRightOf="@id/sendermessage"
             android:layout_alignBottom="@id/sendermessage"
-            android:layout_marginLeft="-40dp"
-            android:text="10:04"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="-10dp"
             android:padding="7dp"
-            android:textColor="#FF0000"/>
+            android:text="10:04"
+            android:textColor="#000000"
+            android:textSize="10sp" />
 
     </RelativeLayout>
 

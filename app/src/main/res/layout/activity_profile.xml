@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_marginTop="0dp"
-        android:background="#13A4B5"
+        android:background="#0E646C"
         android:id="@+id/toolbarOfViewProfileActivity">
 
         <RelativeLayout
@@ -27,6 +27,7 @@
                 android:layout_height="40dp"
                 android:id="@+id/backbuttonofviewprofile"
                 app:tint="@color/white"
+                android:layout_marginStart="332dp"
                 android:background="@android:color/transparent"
                 android:src="@drawable/ic_baseline_arrow_back_24"
                 android:layout_centerVertical="true"
@@ -119,14 +120,14 @@
         android:layout_height="206dp"
         android:layout_below="@id/viewGender1"
         android:layout_alignParentEnd="true"
-        android:focusable="true"
         android:clickable="false"
         android:enabled="false"
+        android:focusable="true"
         android:focusableInTouchMode="true"
         android:gravity="center_vertical|center_horizontal"
         android:inputType="textMultiLine|textNoSuggestions"
+        android:scrollbars="vertical"
         android:isScrollContainer="true"
-        android:maxLength="240"
         android:text="your information is your information is"
         android:textColor="#000000" />
 

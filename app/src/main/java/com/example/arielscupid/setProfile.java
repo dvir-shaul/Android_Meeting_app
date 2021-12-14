@@ -60,6 +60,7 @@ public class setProfile extends AppCompatActivity {
 
     String male = "Male";
     String female = "Female";
+    String other = "Other";
 
 
     @Override
@@ -111,9 +112,9 @@ public class setProfile extends AppCompatActivity {
                 {
                     Toast.makeText(getApplicationContext(),"Image is Empty", Toast.LENGTH_SHORT).show();
                 }
-                else if( ! (gender.equals(male) ||  gender.equals(female)))
+                else if( ! (  gender.equals(male) ||  gender.equals(female) || gender.equals(other) ))
                 {
-                    mgetGender.setError("Enter gender Male/Female");
+                    mgetGender.setError("Enter gender Male/Female/Other");
                 }
                 else if(about.isEmpty())
                 {
@@ -229,6 +230,7 @@ public class setProfile extends AppCompatActivity {
         userdata.put("status","Online");
         userdata.put("questions",0);
         userdata.put("about",about);
+        userdata.put("gender",gender);
 
 
 

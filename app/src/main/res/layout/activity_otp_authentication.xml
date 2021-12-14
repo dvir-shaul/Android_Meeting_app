@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#93CBD3"
+    android:background="#B3E7ED"
     android:layout_height="match_parent"
     tools:context=".otpAuthentication">
 
@@ -80,8 +80,10 @@
         android:layout_below="@id/getpass2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:background="#25d366"
+        android:background="@drawable/bg_button"
+        android:textColor="#FFFFFF"
         android:text="Already Have an account?"
+        android:textStyle="bold"
         android:textSize="12sp" />
 
 
@@ -92,10 +94,11 @@
         android:layout_below="@id/gobacktohomepage"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:background="#25d366"
+        android:background="@drawable/bg_button"
         android:paddingLeft="40dp"
         android:paddingRight="40dp"
         android:text="Register to app"
+        android:textStyle="bold"
         android:textColor="@color/white" />
 
 

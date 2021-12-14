@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -95,7 +96,7 @@ public class ProfileActivity extends AppCompatActivity {
         });
 
         /**
-         * get the name of our user
+         * get the values of our user
          */
         DatabaseReference databaseReference=firebaseDatabase.getReference(firebaseAuth.getUid());
         databaseReference.addValueEventListener(new ValueEventListener() {
@@ -105,6 +106,8 @@ public class ProfileActivity extends AppCompatActivity {
                 mviewabout.setText(muserprofile.getAbout());
                 gender.setText(muserprofile.getGender());
                 mviewusername.setText(muserprofile.getUsername());
+                mviewabout.setMovementMethod(new ScrollingMovementMethod());
+
             }
 
             @Override

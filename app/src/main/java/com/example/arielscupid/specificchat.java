@@ -43,6 +43,8 @@ public class specificchat extends AppCompatActivity {
     private String enteredmessage;
     String mrecivername,msendername,mreciveruid,msenderuid;
 
+    String name,about,gender;
+
     private FirebaseAuth firebaseAuth;
     FirebaseDatabase firebaseDatabase;
 
@@ -100,6 +102,36 @@ public class specificchat extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),"Toolbar is Clicked",Toast.LENGTH_SHORT).show();
+
+                DatabaseReference databaseReference=firebaseDatabase.getReference(getIntent().getStringExtra("reciveruid"));
+                databaseReference.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        userprofile muserprofile=snapshot.getValue(userprofile.class);
+
+                        about = (muserprofile.getAbout());
+                        gender= (muserprofile.getGender());
+                        name = (muserprofile.getUsername());
+                        String uid = muserprofile.getUserUID();
+
+                        Intent intent=new Intent(specificchat.this,watch_specific_profile.class);
+                        intent.putExtra("nameofuser",name);
+                        intent.putExtra("about",about);
+                        intent.putExtra("genderofuser",gender);
+                        intent.putExtra("getUID",uid);
+
+                        startActivity(intent);
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+                        Toast.makeText(getApplicationContext(), "Failed to fetch name", Toast.LENGTH_SHORT).show();
+                    }
+                });
+
+
+
             }
         });
 
@@ -107,7 +139,7 @@ public class specificchat extends AppCompatActivity {
         firebaseAuth=FirebaseAuth.getInstance();
         firebaseDatabase=FirebaseDatabase.getInstance();
         calendar=Calendar.getInstance();
-        simpleDateFormat=new SimpleDateFormat("hh:mm a");
+        simpleDateFormat=new SimpleDateFormat("HH:mm ");
 
         msenderuid=firebaseAuth.getUid();
         mreciveruid=getIntent().getStringExtra("reciveruid");

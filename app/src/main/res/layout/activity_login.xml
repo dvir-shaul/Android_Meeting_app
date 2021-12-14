@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
-    android:background="#93CBD3">
+    android:background="#B3E7ED">
 
     <ImageView
         android:id="@+id/logo"
@@ -60,7 +60,7 @@
         android:layout_marginStart="156dp"
         android:layout_marginEnd="145dp"
         android:layout_marginBottom="310dp"
-        android:background="#25d366"
+        android:background="@drawable/bg_button"
         android:text="Login"
         android:textColor="@color/white" />
 

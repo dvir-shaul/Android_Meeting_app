@@ -37,7 +37,7 @@ import java.util.Map;
 public class UpdateProfile extends AppCompatActivity {
 
 
-    private EditText mnewusername,mnewabout;
+    private EditText mnewusername,mnewabout,mnewgender;
 
     private FirebaseAuth firebaseAuth;
     private FirebaseDatabase firebaseDatabase;
@@ -64,6 +64,10 @@ public class UpdateProfile extends AppCompatActivity {
 
     String newName, newAbout,newGender;
 
+    String male = "Male";
+    String female = "Female";
+    String other = "Other";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,8 +76,7 @@ public class UpdateProfile extends AppCompatActivity {
 
 
         mnewabout=findViewById(R.id.getAbout);
-        newGender="";
-
+        mnewgender=findViewById(R.id.getnewGender);
         mtoolbarofUpdateprofile=findViewById(R.id.toolbarOfUpdateProfileActivity);
         mbackbuttonofupdateprofile=findViewById(R.id.backbuttonofUpdateProfile);
         mgetnewimageinimageview=findViewById(R.id.viewuserimageinimageview);
@@ -98,15 +101,7 @@ public class UpdateProfile extends AppCompatActivity {
         });
         mnewabout.setText(intent.getStringExtra("about"));
         mnewusername.setText(intent.getStringExtra("nameofuser"));
-        newGender = (intent.getStringExtra("genderofuser"));
-
-        System.out.println("wiiiiiiio " + newGender);
-        System.out.println("wiiiiiiio " + newGender);
-        System.out.println("wiiiiiiio " + newGender);
-        System.out.println("wiiiiiiio " + newGender);
-        System.out.println("wiiiiiiio " + newGender);
-        System.out.println("wiiiiiiio " + newGender);
-        System.out.println("wiiiiiiio " + newGender);
+        mnewgender.setText(intent.getStringExtra("genderofuser"));
 
 
         DatabaseReference databaseReference=firebaseDatabase.getReference(firebaseAuth.getUid());
@@ -116,9 +111,18 @@ public class UpdateProfile extends AppCompatActivity {
             public void onClick(View v) {
                 newName=mnewusername.getText().toString();
                 newAbout=mnewabout.getText().toString();
+                newGender=mnewgender.getText().toString();
                 if(newName.isEmpty())
                 {
                     Toast.makeText(getApplicationContext(),"name is empty",Toast.LENGTH_SHORT).show();
+                }
+                else if( ! (  newGender.equals(male) ||  newGender.equals(female) || newGender.equals(other) ))
+                {
+                    mnewgender.setError("Enter gender Male/Female/Other");
+                }
+                else if(newAbout.isEmpty())
+                {
+                    mnewabout.setError("About is Empty");
                 }
                 else if(imagepath!=null)
                 {

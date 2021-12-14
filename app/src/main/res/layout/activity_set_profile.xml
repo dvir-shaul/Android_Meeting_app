@@ -56,7 +56,7 @@
         android:layout_centerInParent="true"
         android:layout_marginLeft="70dp"
         android:layout_marginRight="70dp"
-        android:hint="Enter your name here"
+        android:hint="gender: Male/Female/Other "
         android:inputType="textCapWords" />
     <EditText
         android:id="@+id/getAbout"
@@ -81,7 +81,7 @@
         android:layout_below="@id/getAbout"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:background="#0E646C"
+        android:background="@drawable/bg_button"
         android:text="Save Profile"
         android:textColor="#F3F7F8" />
 

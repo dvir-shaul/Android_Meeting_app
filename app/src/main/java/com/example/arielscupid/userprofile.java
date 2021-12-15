@@ -2,18 +2,27 @@ package com.example.arielscupid;
 
 public class userprofile {
 
-    private String username, UserUID,about,gender;
+    private String username, UserUID,about,gender,wantedGender;
 
     public userprofile() {
     }
 
-    public userprofile(String username, String userUID,String About,String Gender) {
+    public userprofile(String username, String userUID,String About,String Gender, String WantedGender) {
         this.username = username;
         this.UserUID = userUID;
         this.about=About;
         this.gender = Gender;
+        this.wantedGender = WantedGender;
 
 
+    }
+
+    public String getWantedGender() {
+        return wantedGender;
+    }
+
+    public void setWantedGender(String wantedGender) {
+        this.wantedGender = wantedGender;
     }
 
     public String getUsername() {

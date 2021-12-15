@@ -62,11 +62,11 @@
         >
 
         <ImageView
+            android:id="@+id/viewuserimageinimageview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/defaultprofile"
-            android:id="@+id/viewuserimageinimageview"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop"
+            android:src="@drawable/defaultprofile" />
 
     </androidx.cardview.widget.CardView>
 
@@ -75,8 +75,8 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_centerInParent="true"
-        android:layout_marginLeft="90dp"
-        android:layout_marginRight="90dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
         android:hint="Enter your new name here"
         android:inputType="textCapWords" />
 
@@ -84,24 +84,39 @@
         android:id="@+id/getnewGender"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="90dp"
-        android:layout_marginRight="90dp"
         android:layout_below="@id/getnewusername"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
         android:hint="Enter your new gender here"
+        android:inputType="textCapWords" />
+
+
+    <EditText
+        android:id="@+id/getWantgender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/getnewGender"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:drawableLeft="@drawable/ic_baseline_plus_one_24"
+        android:hint="wanted gender: Male/Female/Other "
         android:inputType="textCapWords" />
 
     <EditText
         android:id="@+id/getAbout"
         android:layout_width="match_parent"
         android:layout_height="145dp"
-        android:layout_below="@+id/getnewGender"
+        android:layout_below="@+id/getWantgender"
         android:layout_centerInParent="true"
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:gravity="center_vertical|center_horizontal"
         android:hint="Enter your new about here"
         android:inputType="textMultiLine|textNoSuggestions"
+        android:drawableLeft="@drawable/ic_baseline_list_alt_24"
+
         android:isScrollContainer="true"
         />
 
@@ -112,9 +127,9 @@
         android:layout_alignLeft="@id/getnewusername"
         android:layout_centerInParent="true"
         android:layout_marginLeft="-60dp"
+
+
         android:src="@drawable/ic_baseline_person_24"
-
-
         app:tint="#716e6e" />
 
     <android.widget.Button

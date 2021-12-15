@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/getuserimage"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="5dp"
         android:text="Save your profile"
         android:textColor="#0E646C"
         android:textSize="30sp"
@@ -22,7 +22,7 @@
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_above="@+id/getusername"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="50dp"
         android:layout_marginLeft="80dp"
         android:id="@+id/getuserimage"
         android:layout_centerHorizontal="true"
@@ -42,10 +42,11 @@
         android:id="@+id/getusername"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="70dp"
-        android:layout_marginRight="70dp"
+        android:layout_marginLeft="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="40dp"
         android:hint="Enter your name here"
+        android:drawableLeft="@drawable/ic_outline_face_24"
         android:inputType="textCapWords" />
 
     <EditText
@@ -54,24 +55,40 @@
         android:layout_height="50dp"
         android:layout_below="@id/getusername"
         android:layout_centerInParent="true"
-        android:layout_marginLeft="70dp"
-        android:layout_marginRight="70dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
         android:hint="gender: Male/Female/Other "
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+
         android:inputType="textCapWords" />
+
     <EditText
-        android:id="@+id/getAbout"
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
+        android:id="@+id/getwantedGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/getGender"
         android:layout_centerInParent="true"
-        android:hint="Enter your information here"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:drawableLeft="@drawable/ic_baseline_plus_one_24"
+        android:hint="wanted gender: Male/Female/Other "
+        android:inputType="textCapWords" />
+
+    <EditText
+        android:id="@+id/getAbout"
+        android:layout_width="308dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/getwantedGender"
+        android:layout_centerInParent="true"
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:gravity="center_vertical|center_horizontal"
+        android:hint="Enter your information here"
         android:inputType="textMultiLine|textNoSuggestions"
+        android:drawableLeft="@drawable/ic_baseline_list_alt_24"
         android:isScrollContainer="true"
         android:maxLength="240"
-        />
+        android:scrollbars="vertical" />
 
 
     <android.widget.Button

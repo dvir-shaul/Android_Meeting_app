@@ -39,6 +39,9 @@ public final class ActivitySetProfileBinding implements ViewBinding {
   public final EditText getusername;
 
   @NonNull
+  public final EditText getwantedGender;
+
+  @NonNull
   public final ProgressBar progressbarofsetprofile;
 
   @NonNull
@@ -47,13 +50,15 @@ public final class ActivitySetProfileBinding implements ViewBinding {
   private ActivitySetProfileBinding(@NonNull RelativeLayout rootView, @NonNull EditText getAbout,
       @NonNull EditText getGender, @NonNull CardView getuserimage,
       @NonNull ImageView getuserimageinimageview, @NonNull EditText getusername,
-      @NonNull ProgressBar progressbarofsetprofile, @NonNull Button saveprofile) {
+      @NonNull EditText getwantedGender, @NonNull ProgressBar progressbarofsetprofile,
+      @NonNull Button saveprofile) {
     this.rootView = rootView;
     this.getAbout = getAbout;
     this.getGender = getGender;
     this.getuserimage = getuserimage;
     this.getuserimageinimageview = getuserimageinimageview;
     this.getusername = getusername;
+    this.getwantedGender = getwantedGender;
     this.progressbarofsetprofile = progressbarofsetprofile;
     this.saveprofile = saveprofile;
   }
@@ -115,6 +120,12 @@ public final class ActivitySetProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.getwantedGender;
+      EditText getwantedGender = ViewBindings.findChildViewById(rootView, id);
+      if (getwantedGender == null) {
+        break missingId;
+      }
+
       id = R.id.progressbarofsetprofile;
       ProgressBar progressbarofsetprofile = ViewBindings.findChildViewById(rootView, id);
       if (progressbarofsetprofile == null) {
@@ -128,7 +139,8 @@ public final class ActivitySetProfileBinding implements ViewBinding {
       }
 
       return new ActivitySetProfileBinding((RelativeLayout) rootView, getAbout, getGender,
-          getuserimage, getuserimageinimageview, getusername, progressbarofsetprofile, saveprofile);
+          getuserimage, getuserimageinimageview, getusername, getwantedGender,
+          progressbarofsetprofile, saveprofile);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

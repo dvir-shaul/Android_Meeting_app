@@ -39,6 +39,8 @@ public class ChatsFragment extends Fragment {
 
     RecyclerView mrecyclerView;
 
+    String gender;
+
 
 
 
@@ -52,7 +54,7 @@ public class ChatsFragment extends Fragment {
         mrecyclerView=v.findViewById(R.id.recyclerview);
 
 
-        //Query query=firebaseFirestore.collection("Users");   // show everyone on app
+        //Query query2=firebaseFirestore.collection("Users").whereEqualTo("WantedGender");   // show everyone on app
 
         
         Query query=firebaseFirestore.collection("Users").whereNotEqualTo("uid",firebaseAuth.getUid()); // except me
@@ -87,6 +89,9 @@ public class ChatsFragment extends Fragment {
                         intent.putExtra("name",firebasemodel.getName());
                         intent.putExtra("reciveruid",firebasemodel.getUid());
                         intent.putExtra("imageuri",firebasemodel.getImage());
+                        intent.putExtra("getAbout",firebasemodel.getAbout());
+                        intent.putExtra("getQuestions",firebasemodel.getQuestions());
+
                         startActivity(intent);
                     }
                 });

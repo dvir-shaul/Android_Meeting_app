@@ -37,7 +37,7 @@ import java.util.Map;
 public class UpdateProfile extends AppCompatActivity {
 
 
-    private EditText mnewusername,mnewabout,mnewgender;
+    private EditText mnewusername,mnewabout,mnewgender,mnewWantedGender;
 
     private FirebaseAuth firebaseAuth;
     private FirebaseDatabase firebaseDatabase;
@@ -62,7 +62,7 @@ public class UpdateProfile extends AppCompatActivity {
 
     private static int PICK_IMAGE=123;
 
-    String newName, newAbout,newGender;
+    String newName, newAbout,newGender,newwantedgender;
 
     String male = "Male";
     String female = "Female";
@@ -74,7 +74,7 @@ public class UpdateProfile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_profile);
 
-
+        mnewWantedGender = findViewById(R.id.getWantgender);
         mnewabout=findViewById(R.id.getAbout);
         mnewgender=findViewById(R.id.getnewGender);
         mtoolbarofUpdateprofile=findViewById(R.id.toolbarOfUpdateProfileActivity);
@@ -102,7 +102,7 @@ public class UpdateProfile extends AppCompatActivity {
         mnewabout.setText(intent.getStringExtra("about"));
         mnewusername.setText(intent.getStringExtra("nameofuser"));
         mnewgender.setText(intent.getStringExtra("genderofuser"));
-
+        mnewWantedGender.setText(intent.getStringExtra("wantgenderofuser"));
 
         DatabaseReference databaseReference=firebaseDatabase.getReference(firebaseAuth.getUid());
 
@@ -112,6 +112,7 @@ public class UpdateProfile extends AppCompatActivity {
                 newName=mnewusername.getText().toString();
                 newAbout=mnewabout.getText().toString();
                 newGender=mnewgender.getText().toString();
+                newwantedgender = mnewWantedGender.getText().toString();
                 if(newName.isEmpty())
                 {
                     Toast.makeText(getApplicationContext(),"name is empty",Toast.LENGTH_SHORT).show();
@@ -120,6 +121,10 @@ public class UpdateProfile extends AppCompatActivity {
                 {
                     mnewgender.setError("Enter gender Male/Female/Other");
                 }
+                else if( ! (  newwantedgender.equals(male) ||  newwantedgender.equals(female) || newwantedgender.equals(other) ))
+                {
+                    mnewWantedGender.setError("Enter gender Male/Female/Other");
+                }
                 else if(newAbout.isEmpty())
                 {
                     mnewabout.setError("About is Empty");
@@ -127,7 +132,7 @@ public class UpdateProfile extends AppCompatActivity {
                 else if(imagepath!=null)
                 {
                     mprogressBar.setVisibility(View.VISIBLE);
-                    userprofile muserprofile = new userprofile(newName,firebaseAuth.getUid(),newAbout,newGender);
+                    userprofile muserprofile = new userprofile(newName,firebaseAuth.getUid(),newAbout,newGender,newwantedgender);
                     databaseReference.setValue(muserprofile);
                     updateimagetostoarge();
                     Toast.makeText(getApplicationContext(),"Updated",Toast.LENGTH_SHORT).show();
@@ -139,7 +144,7 @@ public class UpdateProfile extends AppCompatActivity {
                 else
                 {
                     mprogressBar.setVisibility(View.VISIBLE);
-                    userprofile muserprofile = new userprofile(newName,firebaseAuth.getUid(),newAbout,newGender);
+                    userprofile muserprofile = new userprofile(newName,firebaseAuth.getUid(),newAbout,newGender,newwantedgender);
                     databaseReference.setValue(muserprofile);
                     updateNameOnCloudFirestore();
                     Toast.makeText(getApplicationContext(),"Updated",Toast.LENGTH_SHORT).show();
@@ -190,7 +195,8 @@ public class UpdateProfile extends AppCompatActivity {
         userdata.put("status","Online");
         userdata.put("questions",0);
         userdata.put("about",newAbout);
-
+        userdata.put("gender",newGender);
+        userdata.put("WantedGender",newwantedgender);
 
 
         documentReference.set(userdata).addOnSuccessListener(new OnSuccessListener<Void>() {

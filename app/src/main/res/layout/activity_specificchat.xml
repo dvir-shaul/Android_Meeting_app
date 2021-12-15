@@ -79,7 +79,6 @@
         android:padding="5dp" />
 
 
-
     <EditText
         android:id="@+id/getmessage"
         android:layout_width="match_parent"

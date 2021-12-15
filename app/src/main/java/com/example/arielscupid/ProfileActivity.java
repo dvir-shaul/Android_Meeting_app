@@ -37,6 +37,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     EditText mviewusername;
     TextView mviewabout,gender;
+    String wantedGender;
 
     FirebaseAuth firebaseAuth;
     FirebaseDatabase firebaseDatabase;
@@ -106,6 +107,7 @@ public class ProfileActivity extends AppCompatActivity {
                 mviewabout.setText(muserprofile.getAbout());
                 gender.setText(muserprofile.getGender());
                 mviewusername.setText(muserprofile.getUsername());
+                wantedGender = muserprofile.getWantedGender();
                 mviewabout.setMovementMethod(new ScrollingMovementMethod());
 
             }
@@ -124,6 +126,8 @@ public class ProfileActivity extends AppCompatActivity {
                 intent.putExtra("nameofuser",mviewusername.getText().toString());
                 intent.putExtra("about",mviewabout.getText().toString());
                 intent.putExtra("genderofuser",gender.getText().toString());
+                intent.putExtra("wantgenderofuser",gender.getText().toString());
+
 
                 startActivity(intent);
             }

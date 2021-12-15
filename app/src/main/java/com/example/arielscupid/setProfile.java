@@ -10,6 +10,7 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -43,7 +44,7 @@ public class setProfile extends AppCompatActivity {
     private EditText mgetusername;
     private android.widget.Button msaveprofile;
     private FirebaseAuth firebaseAuth;
-    private String name,about, gender;
+    private String name,about, gender, wantedgender;
 
     private FirebaseStorage firebaseStorage;
     private StorageReference storageReference;
@@ -56,7 +57,7 @@ public class setProfile extends AppCompatActivity {
     ProgressBar mprogressbarofsetprofile;
 
 
-    private EditText mgetabout, mgetGender;
+    private EditText mgetabout, mgetGender,mgetwantedgender;
 
     String male = "Male";
     String female = "Female";
@@ -77,7 +78,7 @@ public class setProfile extends AppCompatActivity {
         storageReference = firebaseStorage.getReference();
         firebaseFirestore = FirebaseFirestore.getInstance();
 
-
+        mgetwantedgender=findViewById(R.id.getwantedGender);
         mgetusername = findViewById(R.id.getusername);
         mgetuserimage = findViewById(R.id.getuserimage);
         mgetuserimageview = findViewById(R.id.getuserimageinimageview);
@@ -87,7 +88,10 @@ public class setProfile extends AppCompatActivity {
         mgetabout= findViewById(R.id.getAbout);
         mgetGender = findViewById(R.id.getGender);
 
-          //pick a picture from photos on your phone
+        mgetabout.setMovementMethod(new ScrollingMovementMethod());
+
+
+        //pick a picture from photos on your phone
         mgetuserimage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -104,6 +108,7 @@ public class setProfile extends AppCompatActivity {
                 name=mgetusername.getText().toString();
                 about=mgetabout.getText().toString();
                 gender = mgetGender.getText().toString();
+                wantedgender = mgetwantedgender.getText().toString();
                 if(name.isEmpty())
                 {
                     mgetusername.setError("Name is Empty");
@@ -115,6 +120,10 @@ public class setProfile extends AppCompatActivity {
                 else if( ! (  gender.equals(male) ||  gender.equals(female) || gender.equals(other) ))
                 {
                     mgetGender.setError("Enter gender Male/Female/Other");
+                }
+                else if( ! (  wantedgender.equals(male) ||  wantedgender.equals(female) || wantedgender.equals(other) ))
+                {
+                    mgetwantedgender.setError("Enter gender Male/Female/Other");
                 }
                 else if(about.isEmpty())
                 {
@@ -144,13 +153,14 @@ public class setProfile extends AppCompatActivity {
         about = mgetabout.getText().toString().trim();
         name = mgetusername.getText().toString().trim();
         gender = mgetGender.getText().toString().trim();
+        wantedgender = mgetwantedgender.getText().toString().trim();
 
         FirebaseDatabase firebaseDatabase= FirebaseDatabase.getInstance();
         DatabaseReference databaseReference = firebaseDatabase.getReference(firebaseAuth.getUid());
         /**
          * create reference to the userprofile java file we create and their public objects
          */
-        userprofile muserprofile = new userprofile(name,firebaseAuth.getUid(),about,gender);
+        userprofile muserprofile = new userprofile(name,firebaseAuth.getUid(),about,gender,wantedgender);
         databaseReference.setValue(muserprofile);
         Toast.makeText(getApplicationContext(),"User Profile Added Successfully", Toast.LENGTH_SHORT).show();
         sendImagetoStoarge();
@@ -231,6 +241,7 @@ public class setProfile extends AppCompatActivity {
         userdata.put("questions",0);
         userdata.put("about",about);
         userdata.put("gender",gender);
+        userdata.put("WantedGender",wantedgender);
 
 
 

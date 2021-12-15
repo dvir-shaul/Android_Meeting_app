@@ -6,6 +6,8 @@
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.24537037037037038" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable-xxhdpi/reciverchatdrawable.xml" value="0.3263888888888889" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable-xxxhdpi/bg_button.xml" value="0.3141025641025641" />
+        <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/bubble_in.xml" value="0.21452991452991452" />
+        <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/bubble_out.xml" value="0.21452991452991452" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.24537037037037038" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/ic_baseline_arrow_forward_24.xml" value="0.24537037037037038" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.24537037037037038" />
@@ -24,7 +26,7 @@
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/activity_profile.xml" value="0.33" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/activity_profile_acticity.xml" value="0.1699074074074074" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/activity_quiz_main.xml" value="0.2310185185185185" />
-        <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/activity_set_profile.xml" value="0.33" />
+        <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/activity_set_profile.xml" value="0.5" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/activity_specificchat.xml" value="0.33" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/activity_splash_screen.xml" value="0.33" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout/activity_update_profile.xml" value="0.22" />

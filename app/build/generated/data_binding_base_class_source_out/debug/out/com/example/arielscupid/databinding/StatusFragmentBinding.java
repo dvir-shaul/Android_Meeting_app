@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -24,12 +25,16 @@ public final class StatusFragmentBinding implements ViewBinding {
   public final TextView cardQuetion;
 
   @NonNull
+  public final ImageView logo2;
+
+  @NonNull
   public final Button startQuizButton;
 
   private StatusFragmentBinding(@NonNull RelativeLayout rootView, @NonNull TextView cardQuetion,
-      @NonNull Button startQuizButton) {
+      @NonNull ImageView logo2, @NonNull Button startQuizButton) {
     this.rootView = rootView;
     this.cardQuetion = cardQuetion;
+    this.logo2 = logo2;
     this.startQuizButton = startQuizButton;
   }
 
@@ -66,13 +71,20 @@ public final class StatusFragmentBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.logo2;
+      ImageView logo2 = ViewBindings.findChildViewById(rootView, id);
+      if (logo2 == null) {
+        break missingId;
+      }
+
       id = R.id.startQuizButton;
       Button startQuizButton = ViewBindings.findChildViewById(rootView, id);
       if (startQuizButton == null) {
         break missingId;
       }
 
-      return new StatusFragmentBinding((RelativeLayout) rootView, cardQuetion, startQuizButton);
+      return new StatusFragmentBinding((RelativeLayout) rootView, cardQuetion, logo2,
+          startQuizButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

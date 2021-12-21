@@ -19,10 +19,18 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
+import com.google.firebase.firestore.QuerySnapshot;
+import com.google.firebase.firestore.Source;
 import com.squareup.picasso.Picasso;
+
 
 import org.w3c.dom.Text;
 
@@ -39,7 +47,6 @@ public class ChatsFragment extends Fragment {
 
     RecyclerView mrecyclerView;
 
-    String gender;
 
 
 
@@ -54,12 +61,26 @@ public class ChatsFragment extends Fragment {
         mrecyclerView=v.findViewById(R.id.recyclerview);
 
 
-        //Query query2=firebaseFirestore.collection("Users").whereEqualTo("WantedGender");   // show everyone on app
+//        ApiFuture<QuerySnapshot> querySnapshot = qus.get();
+//
+//        for (DocumentSnapshot document : querySnapshot.get().getDocuments()) {
+//            System.out.println("wwwwwwwwwwwwwwwwwwwwwwwwwwwwww" + document.getId());
+//            System.out.println(document.getId());
+//            System.out.println(document.getId());
+//            System.out.println(document.getId());
+//            System.out.println(document.getId());
+//            System.out.println(document.getId());
+//
+//        }
+
+
+        //Query query2=firebaseFirestore.collection("Users").orderBy("uid").whereEqualTo("WantedGender");   // show everyone on app
 
         
         Query query=firebaseFirestore.collection("Users").whereNotEqualTo("uid",firebaseAuth.getUid()); // except me
 
         FirestoreRecyclerOptions<firebasemodel> allUsername = new FirestoreRecyclerOptions.Builder<firebasemodel>().setQuery(query,firebasemodel.class).build();
+
 
         chatAdapter=new FirestoreRecyclerAdapter<firebasemodel, NoteViewHolder>(allUsername) {
             @Override
@@ -95,7 +116,6 @@ public class ChatsFragment extends Fragment {
                         startActivity(intent);
                     }
                 });
-
             }
 
 

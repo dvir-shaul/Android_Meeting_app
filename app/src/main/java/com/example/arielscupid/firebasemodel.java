@@ -8,18 +8,38 @@ public class firebasemodel {
     String status;
     String about;
     Long questions;
+    String gender;
+    String WantGender;
 
 
-    public firebasemodel(String name, String image, String uid, String status,String about,Long questions) {
+    public firebasemodel(String name, String image, String uid, String status,String about,Long questions,String genDer,String WantGender) {
         this.name = name;
         this.image = image;
         this.uid = uid;
         this.status = status;
         this.about = about;
         this.questions = questions;
+        this.gender = genDer;
+        this.WantGender = WantGender;
     }
 
     public firebasemodel() {
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getWantGender() {
+        return WantGender;
+    }
+
+    public void setWantGender(String wantGender) {
+        WantGender = wantGender;
     }
 
     public String getAbout() {

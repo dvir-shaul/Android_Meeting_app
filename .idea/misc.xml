@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.3106837606837607" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.24537037037037038" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable-xxhdpi/reciverchatdrawable.xml" value="0.3263888888888889" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable-xxxhdpi/bg_button.xml" value="0.3141025641025641" />
@@ -10,10 +11,18 @@
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/bubble_out.xml" value="0.21452991452991452" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.24537037037037038" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/ic_baseline_arrow_forward_24.xml" value="0.24537037037037038" />
+        <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/ic_baseline_done_all_24.xml" value="0.21452991452991452" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.24537037037037038" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.24537037037037038" />
+        <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/ic_baseline_list_alt_24.xml" value="0.21452991452991452" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/ic_baseline_more_vert_24.xml" value="0.3356164383561644" />
+        <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.21452991452991452" />
+        <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/ic_baseline_person_add_alt_1_24.xml" value="0.21452991452991452" />
+        <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/ic_baseline_plus_one_24.xml" value="0.21452991452991452" />
+        <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/ic_baseline_whatshot_24.xml" value="0.21452991452991452" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/ic_launcher_background.xml" value="0.24537037037037038" />
+        <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/ic_outline_face_24.xml" value="0.21452991452991452" />
+        <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/ic_sharp_security_24.xml" value="0.21452991452991452" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/messagebackground.xml" value="0.19583333333333333" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/drawable/senderchatdrawable.xml" value="0.3263888888888889" />
         <entry key="..\:/Android_Projects/Ariel's_Cupid/app/src/main/res/layout-v26/activity_profile.xml" value="0.24791666666666667" />

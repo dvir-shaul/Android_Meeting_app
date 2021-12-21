@@ -126,7 +126,7 @@ public class ProfileActivity extends AppCompatActivity {
                 intent.putExtra("nameofuser",mviewusername.getText().toString());
                 intent.putExtra("about",mviewabout.getText().toString());
                 intent.putExtra("genderofuser",gender.getText().toString());
-                intent.putExtra("wantgenderofuser",gender.getText().toString());
+                intent.putExtra("wantgenderofuser",wantedGender);
 
 
                 startActivity(intent);

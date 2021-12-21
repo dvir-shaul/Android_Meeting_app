@@ -3,8 +3,9 @@
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/062745ea000af04162270b449e50753d/transformed/jetified-firebase-measurement-connector-19.0.0/res" />
       <root url="file://$PROJECT_DIR$/../pic/caches/transforms-3/062745ea000af04162270b449e50753d/transformed/jetified-firebase-measurement-connector-19.0.0/res" />
-      <root url="jar://$PROJECT_DIR$/../pic/caches/transforms-3/082dc878fee86c327a38121938c1a7d3/transformed/jetified-firebase-measurement-connector-19.0.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../pic/caches/transforms-3/082dc878fee86c327a38121938c1a7d3/transformed/jetified-firebase-measurement-connector-19.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../pic/caches/transforms-3/3f2cc96fe132fe65f268781db3c9cd82/transformed/jetified-firebase-measurement-connector-19.0.0/res" />
+      <root url="jar://$PROJECT_DIR$/../pic/caches/transforms-3/082dc878fee86c327a38121938c1a7d3/transformed/jetified-firebase-measurement-connector-19.0.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../pic/caches/transforms-3/082dc878fee86c327a38121938c1a7d3/transformed/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>

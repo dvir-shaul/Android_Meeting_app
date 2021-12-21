@@ -14,6 +14,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,7 +39,7 @@ import java.util.Map;
 public class UpdateProfile extends AppCompatActivity {
 
 
-    private EditText mnewusername,mnewabout,mnewgender,mnewWantedGender;
+    private EditText mnewusername,mnewabout;
 
     private FirebaseAuth firebaseAuth;
     private FirebaseDatabase firebaseDatabase;
@@ -60,9 +62,16 @@ public class UpdateProfile extends AppCompatActivity {
     Intent intent;
     android.widget.Button mupdateprofilebutton;
 
+    String gender = "";
+    String wantedGender = "";
+
+    private RadioGroup mgetGender, mgetwantedgender;
+
+    private RadioButton rbGender, rbWanted;
+
     private static int PICK_IMAGE=123;
 
-    String newName, newAbout,newGender,newwantedgender;
+    String newName, newAbout;
 
     String male = "Male";
     String female = "Female";
@@ -74,9 +83,9 @@ public class UpdateProfile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_profile);
 
-        mnewWantedGender = findViewById(R.id.getWantgender);
+        mgetwantedgender = (RadioGroup) findViewById(R.id.getWantGender);
         mnewabout=findViewById(R.id.getAbout);
-        mnewgender=findViewById(R.id.getnewGender);
+        mgetGender = (RadioGroup) findViewById(R.id.getnewGender);
         mtoolbarofUpdateprofile=findViewById(R.id.toolbarOfUpdateProfileActivity);
         mbackbuttonofupdateprofile=findViewById(R.id.backbuttonofUpdateProfile);
         mgetnewimageinimageview=findViewById(R.id.viewuserimageinimageview);
@@ -92,6 +101,42 @@ public class UpdateProfile extends AppCompatActivity {
         intent=getIntent();
         setSupportActionBar(mtoolbarofUpdateprofile);
 
+        mgetGender.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                rbGender = mgetGender.findViewById(checkedId);
+                switch (checkedId) {
+                    case R.id.male:
+                        gender = rbGender.getText().toString();
+                        break;
+                    case R.id.female:
+                        gender = rbGender.getText().toString();
+                        break;
+                    case R.id.other:
+                        gender = rbGender.getText().toString();
+                }
+            }
+        });
+
+        mgetwantedgender.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                rbWanted = mgetwantedgender.findViewById(checkedId);
+                switch (checkedId) {
+                    case R.id.male1:
+                        wantedGender = rbWanted.getText().toString();
+                        break;
+                    case R.id.female1:
+                        wantedGender = rbWanted.getText().toString();
+                        break;
+                    case R.id.other1:
+                        wantedGender = rbWanted.getText().toString();
+                        break;
+                }
+            }
+        });
+
 
         mbackbuttonofupdateprofile.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -101,8 +146,8 @@ public class UpdateProfile extends AppCompatActivity {
         });
         mnewabout.setText(intent.getStringExtra("about"));
         mnewusername.setText(intent.getStringExtra("nameofuser"));
-        mnewgender.setText(intent.getStringExtra("genderofuser"));
-        mnewWantedGender.setText(intent.getStringExtra("wantgenderofuser"));
+//        rbGender.setText(intent.getStringExtra("genderofuser"));
+//        rbWanted.setText(intent.getStringExtra("wantgenderofuser"));
 
         DatabaseReference databaseReference=firebaseDatabase.getReference(firebaseAuth.getUid());
 
@@ -111,19 +156,19 @@ public class UpdateProfile extends AppCompatActivity {
             public void onClick(View v) {
                 newName=mnewusername.getText().toString();
                 newAbout=mnewabout.getText().toString();
-                newGender=mnewgender.getText().toString();
-                newwantedgender = mnewWantedGender.getText().toString();
+                gender = rbGender.getText().toString();
+                wantedGender = rbWanted.getText().toString();
                 if(newName.isEmpty())
                 {
                     Toast.makeText(getApplicationContext(),"name is empty",Toast.LENGTH_SHORT).show();
                 }
-                else if( ! (  newGender.equals(male) ||  newGender.equals(female) || newGender.equals(other) ))
+                else if( ! (  gender.equals(male) ||  gender.equals(female) || gender.equals(other) ))
                 {
-                    mnewgender.setError("Enter gender Male/Female/Other");
+                    rbGender.setError("Enter gender Male/Female/Other");
                 }
-                else if( ! (  newwantedgender.equals(male) ||  newwantedgender.equals(female) || newwantedgender.equals(other) ))
+                else if( ! (  wantedGender.equals(male) ||  wantedGender.equals(female) || wantedGender.equals(other) ))
                 {
-                    mnewWantedGender.setError("Enter gender Male/Female/Other");
+                    rbWanted.setError("Enter gender Male/Female/Other");
                 }
                 else if(newAbout.isEmpty())
                 {
@@ -132,7 +177,7 @@ public class UpdateProfile extends AppCompatActivity {
                 else if(imagepath!=null)
                 {
                     mprogressBar.setVisibility(View.VISIBLE);
-                    userprofile muserprofile = new userprofile(newName,firebaseAuth.getUid(),newAbout,newGender,newwantedgender);
+                    userprofile muserprofile = new userprofile(newName,firebaseAuth.getUid(),newAbout,gender,wantedGender);
                     databaseReference.setValue(muserprofile);
                     updateimagetostoarge();
                     Toast.makeText(getApplicationContext(),"Updated",Toast.LENGTH_SHORT).show();
@@ -144,7 +189,7 @@ public class UpdateProfile extends AppCompatActivity {
                 else
                 {
                     mprogressBar.setVisibility(View.VISIBLE);
-                    userprofile muserprofile = new userprofile(newName,firebaseAuth.getUid(),newAbout,newGender,newwantedgender);
+                    userprofile muserprofile = new userprofile(newName,firebaseAuth.getUid(),newAbout,gender,wantedGender);
                     databaseReference.setValue(muserprofile);
                     updateNameOnCloudFirestore();
                     Toast.makeText(getApplicationContext(),"Updated",Toast.LENGTH_SHORT).show();
@@ -195,8 +240,8 @@ public class UpdateProfile extends AppCompatActivity {
         userdata.put("status","Online");
         userdata.put("questions",0);
         userdata.put("about",newAbout);
-        userdata.put("gender",newGender);
-        userdata.put("WantedGender",newwantedgender);
+        userdata.put("gender",gender);
+        userdata.put("WantedGender",wantedGender);
 
 
         documentReference.set(userdata).addOnSuccessListener(new OnSuccessListener<Void>() {

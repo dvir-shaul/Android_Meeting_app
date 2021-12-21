@@ -8,7 +8,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
@@ -24,10 +27,16 @@ public final class ActivitySetProfileBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
+  public final RadioButton female;
+
+  @NonNull
+  public final RadioButton female1;
+
+  @NonNull
   public final EditText getAbout;
 
   @NonNull
-  public final EditText getGender;
+  public final RadioGroup getGender;
 
   @NonNull
   public final CardView getuserimage;
@@ -39,7 +48,22 @@ public final class ActivitySetProfileBinding implements ViewBinding {
   public final EditText getusername;
 
   @NonNull
-  public final EditText getwantedGender;
+  public final TextView getwantGender;
+
+  @NonNull
+  public final RadioGroup getwantedGender;
+
+  @NonNull
+  public final RadioButton male;
+
+  @NonNull
+  public final RadioButton male1;
+
+  @NonNull
+  public final RadioButton other;
+
+  @NonNull
+  public final RadioButton other1;
 
   @NonNull
   public final ProgressBar progressbarofsetprofile;
@@ -47,18 +71,27 @@ public final class ActivitySetProfileBinding implements ViewBinding {
   @NonNull
   public final Button saveprofile;
 
-  private ActivitySetProfileBinding(@NonNull RelativeLayout rootView, @NonNull EditText getAbout,
-      @NonNull EditText getGender, @NonNull CardView getuserimage,
-      @NonNull ImageView getuserimageinimageview, @NonNull EditText getusername,
-      @NonNull EditText getwantedGender, @NonNull ProgressBar progressbarofsetprofile,
-      @NonNull Button saveprofile) {
+  private ActivitySetProfileBinding(@NonNull RelativeLayout rootView, @NonNull RadioButton female,
+      @NonNull RadioButton female1, @NonNull EditText getAbout, @NonNull RadioGroup getGender,
+      @NonNull CardView getuserimage, @NonNull ImageView getuserimageinimageview,
+      @NonNull EditText getusername, @NonNull TextView getwantGender,
+      @NonNull RadioGroup getwantedGender, @NonNull RadioButton male, @NonNull RadioButton male1,
+      @NonNull RadioButton other, @NonNull RadioButton other1,
+      @NonNull ProgressBar progressbarofsetprofile, @NonNull Button saveprofile) {
     this.rootView = rootView;
+    this.female = female;
+    this.female1 = female1;
     this.getAbout = getAbout;
     this.getGender = getGender;
     this.getuserimage = getuserimage;
     this.getuserimageinimageview = getuserimageinimageview;
     this.getusername = getusername;
+    this.getwantGender = getwantGender;
     this.getwantedGender = getwantedGender;
+    this.male = male;
+    this.male1 = male1;
+    this.other = other;
+    this.other1 = other1;
     this.progressbarofsetprofile = progressbarofsetprofile;
     this.saveprofile = saveprofile;
   }
@@ -90,6 +123,18 @@ public final class ActivitySetProfileBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.female;
+      RadioButton female = ViewBindings.findChildViewById(rootView, id);
+      if (female == null) {
+        break missingId;
+      }
+
+      id = R.id.female1;
+      RadioButton female1 = ViewBindings.findChildViewById(rootView, id);
+      if (female1 == null) {
+        break missingId;
+      }
+
       id = R.id.getAbout;
       EditText getAbout = ViewBindings.findChildViewById(rootView, id);
       if (getAbout == null) {
@@ -97,7 +142,7 @@ public final class ActivitySetProfileBinding implements ViewBinding {
       }
 
       id = R.id.getGender;
-      EditText getGender = ViewBindings.findChildViewById(rootView, id);
+      RadioGroup getGender = ViewBindings.findChildViewById(rootView, id);
       if (getGender == null) {
         break missingId;
       }
@@ -120,9 +165,39 @@ public final class ActivitySetProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.getwantGender;
+      TextView getwantGender = ViewBindings.findChildViewById(rootView, id);
+      if (getwantGender == null) {
+        break missingId;
+      }
+
       id = R.id.getwantedGender;
-      EditText getwantedGender = ViewBindings.findChildViewById(rootView, id);
+      RadioGroup getwantedGender = ViewBindings.findChildViewById(rootView, id);
       if (getwantedGender == null) {
+        break missingId;
+      }
+
+      id = R.id.male;
+      RadioButton male = ViewBindings.findChildViewById(rootView, id);
+      if (male == null) {
+        break missingId;
+      }
+
+      id = R.id.male1;
+      RadioButton male1 = ViewBindings.findChildViewById(rootView, id);
+      if (male1 == null) {
+        break missingId;
+      }
+
+      id = R.id.other;
+      RadioButton other = ViewBindings.findChildViewById(rootView, id);
+      if (other == null) {
+        break missingId;
+      }
+
+      id = R.id.other1;
+      RadioButton other1 = ViewBindings.findChildViewById(rootView, id);
+      if (other1 == null) {
         break missingId;
       }
 
@@ -138,9 +213,9 @@ public final class ActivitySetProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivitySetProfileBinding((RelativeLayout) rootView, getAbout, getGender,
-          getuserimage, getuserimageinimageview, getusername, getwantedGender,
-          progressbarofsetprofile, saveprofile);
+      return new ActivitySetProfileBinding((RelativeLayout) rootView, female, female1, getAbout,
+          getGender, getuserimage, getuserimageinimageview, getusername, getwantGender,
+          getwantedGender, male, male1, other, other1, progressbarofsetprofile, saveprofile);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

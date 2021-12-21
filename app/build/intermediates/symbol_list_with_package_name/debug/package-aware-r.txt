@@ -2543,6 +2543,8 @@ id expand_activities_button
 id expanded_menu
 id fade
 id fastscroll
+id female
+id female1
 id fill
 id fill_horizontal
 id fill_vertical
@@ -2559,7 +2561,8 @@ id getAbout
 id getEmail
 id getGender
 id getNetUserImage
-id getWantgender
+id getNewwantGender
+id getWantGender
 id getmessage
 id getnewGender
 id getnewusername
@@ -2568,6 +2571,7 @@ id getpass2
 id getuserimage
 id getuserimageinimageview
 id getusername
+id getwantGender
 id getwantedGender
 id ghost_view
 id ghost_view_holder
@@ -2638,6 +2642,8 @@ id logo
 id logo2
 id logoofviewprofile
 id maintext
+id male
+id male1
 id masked
 id match_constraint
 id match_parent
@@ -2721,6 +2727,8 @@ id notification_main_column_container
 id off
 id on
 id onInterceptTouchReturnSwipe
+id other
+id other1
 id outline
 id outward
 id overshoot

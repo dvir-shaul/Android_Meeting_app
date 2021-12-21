@@ -42,50 +42,139 @@
         android:id="@+id/getusername"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginLeft="40dp"
         android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
-        android:hint="Enter your name here"
         android:drawableLeft="@drawable/ic_outline_face_24"
+        android:hint="Enter your name here"
         android:inputType="textCapWords" />
 
-    <EditText
+
+    <!--    <EditText-->
+<!--        android:id="@+id/getGender"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_below="@id/getusername"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_marginLeft="40dp"-->
+<!--        android:layout_marginRight="40dp"-->
+<!--        android:drawableLeft="@drawable/ic_baseline_person_24"-->
+<!--        android:hint="gender: Male/Female/Other"-->
+<!--        android:inputType="textCapWords" />-->
+
+    <RadioGroup
         android:id="@+id/getGender"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_below="@id/getusername"
-        android:layout_centerInParent="true"
         android:layout_marginLeft="40dp"
+        android:layout_marginTop="435dp"
         android:layout_marginRight="40dp"
-        android:hint="gender: Male/Female/Other "
-        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal">
 
-        android:inputType="textCapWords" />
+        <!--        <ImageView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center_vertical"-->
+        <!--            android:layout_marginLeft="40dp"-->
+        <!--            android:src="@drawable/ic_baseline_person_24" />-->
 
-    <EditText
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_baseline_person_24" />
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+
+        <RadioButton
+            android:id="@+id/other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other"/>
+
+    </RadioGroup>
+
+
+    <RadioGroup
         android:id="@+id/getwantedGender"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/getGender"
-        android:layout_centerInParent="true"
         android:layout_marginLeft="40dp"
+        android:layout_marginTop="490dp"
         android:layout_marginRight="40dp"
-        android:drawableLeft="@drawable/ic_baseline_plus_one_24"
-        android:hint="wanted gender: Male/Female/Other "
-        android:inputType="textCapWords" />
+        android:layoutDirection="ltr"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/getwantGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_plus_one_24"
+            android:text="Wanted gender:"
+            android:textColor="#03626E"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/male1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="0dp"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/female1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="140dp"
+            android:text="Female" />
+
+        <RadioButton
+            android:id="@+id/other1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/female1"
+            android:layout_marginLeft="140dp"
+            android:text="Other"/>
+
+    </RadioGroup>
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/getwantedGender"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/selectGender"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_marginLeft="40dp"-->
+<!--        android:layout_marginRight="40dp"-->
+<!--        android:drawableLeft="@drawable/ic_baseline_plus_one_24"-->
+<!--        android:hint="wanted gender: Male/Female/Other "-->
+<!--        android:inputType="textCapWords" />-->
 
     <EditText
         android:id="@+id/getAbout"
-        android:layout_width="308dp"
-        android:layout_height="110dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/getwantedGender"
         android:layout_centerInParent="true"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:drawableLeft="@drawable/ic_baseline_list_alt_24"
         android:hint="Enter your information here"
         android:inputType="textMultiLine|textNoSuggestions"
-        android:drawableLeft="@drawable/ic_baseline_list_alt_24"
         android:isScrollContainer="true"
         android:maxLength="240"
         android:scrollbars="vertical" />
@@ -93,8 +182,8 @@
 
     <android.widget.Button
         android:id="@+id/saveprofile"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@id/getAbout"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
@@ -111,9 +200,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:visibility="invisible" />
-
-
-
 
 
 </RelativeLayout>

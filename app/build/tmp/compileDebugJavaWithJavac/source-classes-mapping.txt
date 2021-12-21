@@ -1,13 +1,9 @@
-com/example/arielscupid/BuildConfig.java
- com.example.arielscupid.BuildConfig
-com/example/arielscupid/Messages.java
- com.example.arielscupid.Messages
-com/example/arielscupid/QuizModel.java
- com.example.arielscupid.QuizModel
 com/example/arielscupid/databinding/ScoreBottomSheetsBinding.java
  com.example.arielscupid.databinding.ScoreBottomSheetsBinding
 com/example/arielscupid/databinding/ActivitySetProfileBinding.java
  com.example.arielscupid.databinding.ActivitySetProfileBinding
+com/example/arielscupid/QuizModel.java
+ com.example.arielscupid.QuizModel
 com/example/arielscupid/databinding/StatusFragmentBinding.java
  com.example.arielscupid.databinding.StatusFragmentBinding
 com/example/arielscupid/setProfile.java
@@ -16,14 +12,22 @@ com/example/arielscupid/setProfile.java
  com.example.arielscupid.setProfile$2
  com.example.arielscupid.setProfile$3
  com.example.arielscupid.setProfile$4
- com.example.arielscupid.setProfile$4$1
- com.example.arielscupid.setProfile$4$2
  com.example.arielscupid.setProfile$5
  com.example.arielscupid.setProfile$6
+ com.example.arielscupid.setProfile$6$1
+ com.example.arielscupid.setProfile$6$2
+ com.example.arielscupid.setProfile$7
+ com.example.arielscupid.setProfile$8
+com/example/arielscupid/BuildConfig.java
+ com.example.arielscupid.BuildConfig
 com/example/arielscupid/UpdateProfile.java
  com.example.arielscupid.UpdateProfile
  com.example.arielscupid.UpdateProfile$1
  com.example.arielscupid.UpdateProfile$10
+ com.example.arielscupid.UpdateProfile$10$1
+ com.example.arielscupid.UpdateProfile$10$2
+ com.example.arielscupid.UpdateProfile$11
+ com.example.arielscupid.UpdateProfile$12
  com.example.arielscupid.UpdateProfile$2
  com.example.arielscupid.UpdateProfile$3
  com.example.arielscupid.UpdateProfile$4
@@ -31,9 +35,9 @@ com/example/arielscupid/UpdateProfile.java
  com.example.arielscupid.UpdateProfile$6
  com.example.arielscupid.UpdateProfile$7
  com.example.arielscupid.UpdateProfile$8
- com.example.arielscupid.UpdateProfile$8$1
- com.example.arielscupid.UpdateProfile$8$2
  com.example.arielscupid.UpdateProfile$9
+com/example/arielscupid/Messages.java
+ com.example.arielscupid.Messages
 com/example/arielscupid/QuizMainAct.java
  com.example.arielscupid.QuizMainAct
  com.example.arielscupid.QuizMainAct$1
@@ -52,10 +56,8 @@ com/example/arielscupid/databinding/ActivitySplashScreenBinding.java
  com.example.arielscupid.databinding.ActivitySplashScreenBinding
 com/example/arielscupid/databinding/ActivityOtpAuthenticationBinding.java
  com.example.arielscupid.databinding.ActivityOtpAuthenticationBinding
-com/example/arielscupid/MainActivity.java
- com.example.arielscupid.MainActivity
- com.example.arielscupid.MainActivity$1
- com.example.arielscupid.MainActivity$2
+com/example/arielscupid/firebasemodel.java
+ com.example.arielscupid.firebasemodel
 com/example/arielscupid/PagerAdapter.java
  com.example.arielscupid.PagerAdapter
 com/example/arielscupid/databinding/ChatviewlayoutBinding.java
@@ -92,8 +94,11 @@ com/example/arielscupid/specificchat.java
  com.example.arielscupid.specificchat$4$1$1
 com/example/arielscupid/databinding/ReciverchatlayoutBinding.java
  com.example.arielscupid.databinding.ReciverchatlayoutBinding
-com/example/arielscupid/databinding/ActivityChatBinding.java
- com.example.arielscupid.databinding.ActivityChatBinding
+com/example/arielscupid/ChatsFragment.java
+ com.example.arielscupid.ChatsFragment
+ com.example.arielscupid.ChatsFragment$1
+ com.example.arielscupid.ChatsFragment$1$1
+ com.example.arielscupid.ChatsFragment$NoteViewHolder
 com/example/arielscupid/SplashScreen.java
  com.example.arielscupid.SplashScreen
  com.example.arielscupid.SplashScreen$1
@@ -125,10 +130,9 @@ com/example/arielscupid/watch_specific_profile.java
  com.example.arielscupid.watch_specific_profile$3
 com/example/arielscupid/databinding/ActivityLoginBinding.java
  com.example.arielscupid.databinding.ActivityLoginBinding
-com/example/arielscupid/firebasemodel.java
- com.example.arielscupid.firebasemodel
-com/example/arielscupid/ChatsFragment.java
- com.example.arielscupid.ChatsFragment
- com.example.arielscupid.ChatsFragment$1
- com.example.arielscupid.ChatsFragment$1$1
- com.example.arielscupid.ChatsFragment$NoteViewHolder
+com/example/arielscupid/databinding/ActivityChatBinding.java
+ com.example.arielscupid.databinding.ActivityChatBinding
+com/example/arielscupid/MainActivity.java
+ com.example.arielscupid.MainActivity
+ com.example.arielscupid.MainActivity$1
+ com.example.arielscupid.MainActivity$2

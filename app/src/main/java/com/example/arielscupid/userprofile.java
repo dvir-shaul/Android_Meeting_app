@@ -13,8 +13,6 @@ public class userprofile {
         this.about=About;
         this.gender = Gender;
         this.wantedGender = WantedGender;
-
-
     }
 
     public String getWantedGender() {

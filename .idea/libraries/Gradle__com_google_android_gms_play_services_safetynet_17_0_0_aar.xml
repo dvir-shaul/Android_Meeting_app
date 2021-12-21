@@ -3,9 +3,10 @@
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/de603b97baf987dee0b977ef3448cc81/transformed/jetified-play-services-safetynet-17.0.0/res" />
       <root url="file://$PROJECT_DIR$/../pic/caches/transforms-3/de603b97baf987dee0b977ef3448cc81/transformed/jetified-play-services-safetynet-17.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../pic/caches/transforms-3/95994d7dd271764a28bb2d29428b9481/transformed/jetified-play-services-safetynet-17.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../pic/caches/transforms-3/4362501e8d38b46447fe01df4ba19833/transformed/jetified-play-services-safetynet-17.0.0/res" />
       <root url="jar://$PROJECT_DIR$/../pic/caches/transforms-3/95994d7dd271764a28bb2d29428b9481/transformed/jetified-play-services-safetynet-17.0.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../pic/caches/transforms-3/95994d7dd271764a28bb2d29428b9481/transformed/jetified-play-services-safetynet-17.0.0/AndroidManifest.xml" />
-      <root url="file://$PROJECT_DIR$/../pic/caches/transforms-3/95994d7dd271764a28bb2d29428b9481/transformed/jetified-play-services-safetynet-17.0.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

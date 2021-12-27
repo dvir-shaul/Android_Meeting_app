@@ -23,6 +23,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText eMail;
     EditText ePassword;
     android.widget.Button eLogin;
+    android.widget.Button eLogin2;
 
     FirebaseAuth firebaseAuth;
     FirebaseUser firebaseUser;
@@ -40,6 +41,7 @@ public class LoginActivity extends AppCompatActivity {
         eMail = findViewById(R.id.etMail);
         ePassword = findViewById(R.id.etPassword);
         eLogin = findViewById(R.id.btnLogin);
+        eLogin2 = findViewById(R.id.btnLogin2);
 
         progressDialog = new ProgressDialog(this);
 
@@ -54,7 +56,14 @@ public class LoginActivity extends AppCompatActivity {
                 perforLogin();
             }
         });
-    }
+
+        eLogin2.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            perforLogin();
+        }
+    });
+}
 
     private void perforLogin() {
 
@@ -72,7 +81,7 @@ public class LoginActivity extends AppCompatActivity {
         else
             {
             progressDialog.setMessage("Please wait for login...");
-            progressDialog.setTitle("Login");
+            progressDialog.setTitle("Login as admin");
             progressDialog.setCanceledOnTouchOutside(false);
             progressDialog.show();
 

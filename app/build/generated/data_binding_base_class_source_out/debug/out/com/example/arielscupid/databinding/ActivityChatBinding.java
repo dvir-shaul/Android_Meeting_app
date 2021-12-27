@@ -36,20 +36,16 @@ public final class ActivityChatBinding implements ViewBinding {
   public final TextView myapptext;
 
   @NonNull
-  public final TabItem status;
-
-  @NonNull
   public final Toolbar toolbar;
 
   private ActivityChatBinding(@NonNull RelativeLayout rootView, @NonNull TabItem chat,
       @NonNull ViewPager fragmentcontainer, @NonNull TabLayout include, @NonNull TextView myapptext,
-      @NonNull TabItem status, @NonNull Toolbar toolbar) {
+      @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.chat = chat;
     this.fragmentcontainer = fragmentcontainer;
     this.include = include;
     this.myapptext = myapptext;
-    this.status = status;
     this.toolbar = toolbar;
   }
 
@@ -104,12 +100,6 @@ public final class ActivityChatBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.status;
-      TabItem status = ViewBindings.findChildViewById(rootView, id);
-      if (status == null) {
-        break missingId;
-      }
-
       id = R.id.toolbar;
       Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
       if (toolbar == null) {
@@ -117,7 +107,7 @@ public final class ActivityChatBinding implements ViewBinding {
       }
 
       return new ActivityChatBinding((RelativeLayout) rootView, chat, fragmentcontainer, include,
-          myapptext, status, toolbar);
+          myapptext, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

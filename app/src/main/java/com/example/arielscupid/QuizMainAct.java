@@ -1,5 +1,6 @@
 package com.example.arielscupid;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
@@ -52,18 +53,22 @@ public class QuizMainAct extends AppCompatActivity {
     private FirebaseFirestore firebaseFirestore;
 
 
-
+    ProgressDialog progressDialog;
     private TextView questions, questionNum;
     private Button option1Btn, option2Btn, option3Btn, option4Btn;
     private ArrayList<QuizModel> quizModelArrayList;
     Random random;
     int currentScore = 0, questionAttempted = 0, currentPos;
-    private static int Splash_Timer=3000;
+    private static int Splash_Timer=3500;
+    BottomSheetDialog bottomSheetDialog ;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_main);
+
+        bottomSheetDialog =new BottomSheetDialog(QuizMainAct.this);
 
         firebaseAuth=FirebaseAuth.getInstance();
 
@@ -81,7 +86,7 @@ public class QuizMainAct extends AppCompatActivity {
 
         getQuizQuestion(quizModelArrayList);
 
-        currentPos = random.nextInt(quizModelArrayList.size());
+        currentPos = 0;//random.nextInt(quizModelArrayList.size());
 
         setDataToViews(currentPos);
 
@@ -94,7 +99,7 @@ public class QuizMainAct extends AppCompatActivity {
                 currentScore = currentScore + 10;
 
                 questionAttempted++;
-                currentPos = random.nextInt(quizModelArrayList.size());
+                currentPos +=  1;//random.nextInt(quizModelArrayList.size());
                 setDataToViews(currentPos);
             }
         });
@@ -108,7 +113,7 @@ public class QuizMainAct extends AppCompatActivity {
                 currentScore = currentScore + 75;
 
                 questionAttempted++;
-                currentPos = random.nextInt(quizModelArrayList.size());
+                currentPos +=  1;//random.nextInt(quizModelArrayList.size());
                 setDataToViews(currentPos);
             }
         });
@@ -122,7 +127,7 @@ public class QuizMainAct extends AppCompatActivity {
                 currentScore = currentScore + 200;
 
                 questionAttempted++;
-                currentPos = random.nextInt(quizModelArrayList.size());
+                currentPos +=  1;//random.nextInt(quizModelArrayList.size());
                 setDataToViews(currentPos);
             }
         });
@@ -135,7 +140,7 @@ public class QuizMainAct extends AppCompatActivity {
 //                }
                 currentScore = currentScore + 500;
                 questionAttempted++;
-                currentPos = random.nextInt(quizModelArrayList.size());
+                currentPos +=  1;//random.nextInt(quizModelArrayList.size());
                 setDataToViews(currentPos);
             }
         });
@@ -161,15 +166,19 @@ public class QuizMainAct extends AppCompatActivity {
     }
 
     private void showBottomSheet(){
-        BottomSheetDialog bottomSheetDialog =new BottomSheetDialog(QuizMainAct.this);
+//        progressDialog.setMessage("Please wait while Our AI algorithm find you a match...");
+//        progressDialog.setTitle("Matching");
+//        progressDialog.setCanceledOnTouchOutside(false);
+//        progressDialog.show();
         View bottomSheetView = LayoutInflater.from(getApplicationContext()).inflate(R.layout.score_bottom_sheets, (LinearLayout)findViewById(R.id.idLLScore));
         TextView score = bottomSheetView.findViewById(R.id.idScore);
         Button backQuizBtn = bottomSheetView.findViewById(R.id.idBackQuiz);
-        score.setText("Your score is \n" + currentScore + "/10");
+
+        score.setText("Please wait while Our AI algorithm find you a match on the app based on your answer...");
         backQuizBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                currentPos = random.nextInt(quizModelArrayList.size());
+                currentPos += 1;// random.nextInt(quizModelArrayList.size());
                 setDataToViews(currentPos);
                 questionAttempted = 1;
                 currentScore = 0;
@@ -192,12 +201,21 @@ public class QuizMainAct extends AppCompatActivity {
             documentReference.update("questions", currentScore).addOnSuccessListener(new OnSuccessListener<Void>() {
                 @Override
                 public void onSuccess(Void aVoid) {
-                    Toast.makeText(getApplicationContext(), "Update Score", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getApplicationContext(), "Update Score", Toast.LENGTH_SHORT).show();
                 }
             });
-            Intent intent = new Intent(QuizMainAct.this, chatActivity.class);
-            startActivity(intent);
-            finish();
+
+
+            new Handler().postDelayed(new Runnable() {
+
+                @Override
+                public void run() {
+                    bottomSheetDialog.dismiss();
+                    Intent intent = new Intent( QuizMainAct.this,chatActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+            },Splash_Timer);
         }
         else {
             questions.setText(quizModelArrayList.get(currentPos).getQuestion());
@@ -214,11 +232,17 @@ public class QuizMainAct extends AppCompatActivity {
 
 
     private void getQuizQuestion(ArrayList<QuizModel> quizModelArrayList) {
-        quizModelArrayList.add(new QuizModel("what do you like to eat?", "pizza", "hamburger", "sushi", "pasta", "pasta"));
-        quizModelArrayList.add(new QuizModel("2 + 2 = ?", "0", "1", "2", "4", "4"));
-        quizModelArrayList.add(new QuizModel("6%4 = ? ", "0", "1", "2", "4", "2"));
-        quizModelArrayList.add(new QuizModel("pariz iz in ?  ", "Africa", "Israel", "America", "France", "France"));
-        quizModelArrayList.add(new QuizModel("What green inside and outside ? ", "Watermelon", "strawberry", "apple", "broccoli", "broccoli"));
+        quizModelArrayList.add(new QuizModel("What do you like to eat ?", "pizza", "hamburger", "sushi", "pasta", "pasta"));
+        quizModelArrayList.add(new QuizModel("Where would you live ?", "Tel-Aviv", "Haifa", "Afula", "Nof Ayalon", "Afula"));
+        quizModelArrayList.add(new QuizModel("Any specific qualities you are looking for in your partner?", "Caring", "Respect", "Funny", "Kind", "Respect"));
+        quizModelArrayList.add(new QuizModel("What is your ideal Saturday morning ?", "travel", "sit at home", "picnic", "work", "picnic"));
+        quizModelArrayList.add(new QuizModel("Favorite animal ?  ", "Monkey", "Dog", "Cat", "Lion", "Dog"));
+        quizModelArrayList.add(new QuizModel("Favorite drink ", "Vodka", "Wine", "Tequila", "Whiskey", "Whiskey"));
+
+        quizModelArrayList.add(new QuizModel(" Describe yourself in a tweet:", "Caring", "Respect", "Funny", "Kind", "Funny"));
+        quizModelArrayList.add(new QuizModel(" What’s something you just don’t understand the hype about?", "Football", "Dogs", "Cristiano Ronaldo", "work", "work"));
+        quizModelArrayList.add(new QuizModel("Favorite music genre ?  ", "Rock", "Pop", "Noa Kirel", "Mizrahit", "Mizrahit"));
+        quizModelArrayList.add(new QuizModel("Favorite Movie ", "Spiderman", "Superman", "Horrible Bosses", "american sniper", "american sniper"));
     }
 
 

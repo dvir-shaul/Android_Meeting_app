@@ -81,6 +81,7 @@
         android:background="@drawable/bg_button"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
+        android:textColor="@color/white"
         android:text="Sign up to application"
         android:textSize="15sp"
         android:textStyle="bold" />
@@ -96,6 +97,7 @@
         android:background="@drawable/bg_button"
         android:paddingLeft="30dp"
         android:paddingRight="30dp"
+        android:textColor="@color/white"
         android:text="Login to application"
         android:textSize="15sp"
         android:textStyle="bold" />

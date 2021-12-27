@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_marginTop="0dp"
-        android:background="#0E646C"
+        android:background="#03626E"
         android:id="@+id/toolbarOfUpdateProfileActivity">
 
         <RelativeLayout
@@ -52,15 +52,16 @@
 
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/getNetUserImage"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_above="@+id/getnewusername"
-        android:layout_marginBottom="20dp"
-        android:layout_marginLeft="80dp"
-        android:id="@+id/getNetUserImage"
         android:layout_centerHorizontal="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
         android:layout_marginTop="80dp"
-        >
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="80dp">
 
         <ImageView
             android:id="@+id/viewuserimageinimageview"
@@ -76,64 +77,65 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:drawableLeft="@drawable/ic_outline_face_24"
         android:hint="Enter your new name here"
         android:inputType="textCapWords" />
 
-<!--    <LinearLayout-->
-<!--        android:id="@+id/getnewGender"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@+id/getnewusername"-->
-<!--        android:orientation="horizontal">-->
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/getnewGender"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/getnewusername"-->
+    <!--        android:orientation="horizontal">-->
 
-<!--        <ImageView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center_vertical"-->
-<!--            android:layout_marginLeft="40dp"-->
-<!--            android:src="@drawable/ic_baseline_person_24" />-->
+    <!--        <ImageView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center_vertical"-->
+    <!--            android:layout_marginLeft="40dp"-->
+    <!--            android:src="@drawable/ic_baseline_person_24" />-->
 
-<!--        <RadioButton-->
-<!--            android:id="@+id/male"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_below="@+id/getusername"-->
-<!--            android:layout_marginLeft="10dp"-->
-<!--            android:paddingLeft="10dp"-->
-<!--            android:text="Male" />-->
+    <!--        <RadioButton-->
+    <!--            android:id="@+id/male"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@+id/getusername"-->
+    <!--            android:layout_marginLeft="10dp"-->
+    <!--            android:paddingLeft="10dp"-->
+    <!--            android:text="Male" />-->
 
-<!--        <RadioButton-->
-<!--            android:id="@+id/female"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_below="@+id/getusername"-->
-<!--            android:layout_marginLeft="10dp"-->
-<!--            android:text="Female" />-->
+    <!--        <RadioButton-->
+    <!--            android:id="@+id/female"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@+id/getusername"-->
+    <!--            android:layout_marginLeft="10dp"-->
+    <!--            android:text="Female" />-->
 
-<!--        <RadioButton-->
-<!--            android:id="@+id/other"-->
-<!--            android:layout_width="25dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_below="@+id/getusername"-->
-<!--            android:layout_marginLeft="10dp" />-->
+    <!--        <RadioButton-->
+    <!--            android:id="@+id/other"-->
+    <!--            android:layout_width="25dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@+id/getusername"-->
+    <!--            android:layout_marginLeft="10dp" />-->
 
-<!--        <EditText-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:layout_marginRight="40dp"-->
-<!--            android:hint="Other"-->
-<!--            android:inputType="textCapWords" />-->
+    <!--        <EditText-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_marginRight="40dp"-->
+    <!--            android:hint="Other"-->
+    <!--            android:inputType="textCapWords" />-->
 
-<!--    </LinearLayout>-->
+    <!--    </LinearLayout>-->
 
     <RadioGroup
         android:id="@+id/getnewGender"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_below="@+id/getnewusername"
+        android:layout_below="@+id/getAbout"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="25dp"
         android:layout_marginRight="40dp"
@@ -163,7 +165,7 @@
             android:id="@+id/other"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Other"/>
+            android:text="Other" />
 
     </RadioGroup>
 
@@ -212,74 +214,74 @@
 
     </RadioGroup>
 
-<!--    <EditText-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginLeft="190dp"-->
-<!--        android:layout_marginTop="590dp"-->
-<!--        android:layout_marginRight="140dp"-->
-<!--        android:hint="Other" />-->
-<!--    -->
+    <!--    <EditText-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginLeft="190dp"-->
+    <!--        android:layout_marginTop="590dp"-->
+    <!--        android:layout_marginRight="140dp"-->
+    <!--        android:hint="Other" />-->
+    <!--    -->
 
 
 
-<!--    <ImageView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@+id/getnewGender"-->
-<!--        android:layout_gravity="center_vertical"-->
-<!--        android:layout_marginLeft="40dp"-->
-<!--        android:src="@drawable/ic_baseline_plus_one_24" />-->
+    <!--    <ImageView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/getnewGender"-->
+    <!--        android:layout_gravity="center_vertical"-->
+    <!--        android:layout_marginLeft="40dp"-->
+    <!--        android:src="@drawable/ic_baseline_plus_one_24" />-->
 
 
-<!--    <TextView-->
-<!--        android:id="@+id/getWantgender"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@+id/getnewGender"-->
-<!--        android:layout_marginLeft="70dp"-->
-<!--        android:inputType="textCapWords"-->
-<!--        android:text="Wanted gender:"-->
-<!--        android:textColor="#03626E"-->
-<!--        android:textSize="15dp"/>-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/getWantgender"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/getnewGender"-->
+    <!--        android:layout_marginLeft="70dp"-->
+    <!--        android:inputType="textCapWords"-->
+    <!--        android:text="Wanted gender:"-->
+    <!--        android:textColor="#03626E"-->
+    <!--        android:textSize="15dp"/>-->
 
-<!--    <RadioButton-->
-<!--        android:id="@+id/male1"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@+id/getnewGender"-->
-<!--        android:layout_marginLeft="200dp"-->
-<!--        android:paddingLeft="10dp"-->
-<!--        android:text="Male" />-->
+    <!--    <RadioButton-->
+    <!--        android:id="@+id/male1"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/getnewGender"-->
+    <!--        android:layout_marginLeft="200dp"-->
+    <!--        android:paddingLeft="10dp"-->
+    <!--        android:text="Male" />-->
 
-<!--    <RadioButton-->
-<!--        android:id="@+id/female1"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@+id/male1"-->
-<!--        android:layout_marginLeft="200dp"-->
-<!--        android:text="Female" />-->
+    <!--    <RadioButton-->
+    <!--        android:id="@+id/female1"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/male1"-->
+    <!--        android:layout_marginLeft="200dp"-->
+    <!--        android:text="Female" />-->
 
-<!--    <RadioButton-->
-<!--        android:id="@+id/other1"-->
-<!--        android:layout_width="25dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@+id/female1"-->
-<!--        android:layout_marginLeft="200dp"/>-->
+    <!--    <RadioButton-->
+    <!--        android:id="@+id/other1"-->
+    <!--        android:layout_width="25dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/female1"-->
+    <!--        android:layout_marginLeft="200dp"/>-->
 
-<!--    <EditText-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@+id/female1"-->
-<!--        android:layout_marginLeft="227dp"-->
-<!--        android:layout_marginRight="40dp"-->
-<!--        android:hint="Other"/>-->
+    <!--    <EditText-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/female1"-->
+    <!--        android:layout_marginLeft="227dp"-->
+    <!--        android:layout_marginRight="40dp"-->
+    <!--        android:hint="Other"/>-->
 
     <EditText
         android:id="@+id/getAbout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/getWantGender"
+        android:layout_below="@+id/getnewusername"
         android:layout_centerInParent="true"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
@@ -295,7 +297,7 @@
         android:id="@+id/updateprofilebutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/getAbout"
+        android:layout_below="@id/getWantGender"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="@drawable/bg_button"

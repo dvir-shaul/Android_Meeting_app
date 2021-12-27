@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="Back Quiz"
+        android:text="Change answers"
         android:textAllCaps="false"/>
 
 </LinearLayout>

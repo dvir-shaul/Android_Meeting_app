@@ -13,6 +13,9 @@
             android:name=".watch_specific_profile"
             android:exported="false" />
         <activity
+            android:name=".status_fragment"
+            android:exported="false" />
+        <activity
             android:name=".specificchat"
             android:exported="false" />
         <activity

@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_marginTop="0dp"
-        android:background="#075e54"
+        android:background="#03626E"
         android:id="@+id/toolbar">
 
         <RelativeLayout
@@ -26,7 +26,7 @@
                 android:text="Ariel's Cupid"
                 android:textSize="25sp"
                 android:textStyle="bold"
-                android:textColor="#F44336"
+                android:textColor="#F85656"
                 android:layout_centerHorizontal="true"
                 android:id="@+id/myapptext">
 
@@ -43,7 +43,7 @@
         android:layout_height="?attr/actionBarSize"
         android:layout_below="@id/toolbar"
         android:layout_marginTop="0dp"
-        android:backgroundTint="#075e54"
+        android:backgroundTint="#03626E"
         app:tabIndicatorColor="@color/white"
         app:tabIndicatorHeight="3dp"
         app:tabSelectedTextColor="@color/white"
@@ -55,13 +55,9 @@
             android:id="@+id/chat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Chats"></com.google.android.material.tabs.TabItem>
+            android:text="chat"></com.google.android.material.tabs.TabItem>
 
-        <com.google.android.material.tabs.TabItem
-            android:id="@+id/status"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="question"></com.google.android.material.tabs.TabItem>
+
 
     </com.google.android.material.tabs.TabLayout>
 

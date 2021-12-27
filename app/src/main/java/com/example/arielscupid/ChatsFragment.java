@@ -19,6 +19,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
@@ -27,12 +28,15 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.google.firebase.firestore.Source;
 import com.squareup.picasso.Picasso;
 
 
 import org.w3c.dom.Text;
+
+import java.util.Objects;
 
 public class ChatsFragment extends Fragment {
 
@@ -43,58 +47,62 @@ public class ChatsFragment extends Fragment {
 
     ImageView mimageviewofuser;
 
-    FirestoreRecyclerAdapter<firebasemodel,NoteViewHolder> chatAdapter;
+    FirestoreRecyclerAdapter<firebasemodel, NoteViewHolder> chatAdapter;
 
     RecyclerView mrecyclerView;
 
 
-
-
+    double ratio = 0.6;
+    double amount, amount_top,amount_bottom;
+    String Amountl, want_gen;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v=inflater.inflate(R.layout.chats_fragment,container,false);
+        View v = inflater.inflate(R.layout.chats_fragment, container, false);
 
-        firebaseAuth=FirebaseAuth.getInstance();
-        firebaseFirestore=FirebaseFirestore.getInstance();
-        mrecyclerView=v.findViewById(R.id.recyclerview);
+        firebaseAuth = FirebaseAuth.getInstance();
+        firebaseFirestore = FirebaseFirestore.getInstance();
+        mrecyclerView = v.findViewById(R.id.recyclerview);
 
-
-//        ApiFuture<QuerySnapshot> querySnapshot = qus.get();
-//
-//        for (DocumentSnapshot document : querySnapshot.get().getDocuments()) {
-//            System.out.println("wwwwwwwwwwwwwwwwwwwwwwwwwwwwww" + document.getId());
-//            System.out.println(document.getId());
-//            System.out.println(document.getId());
-//            System.out.println(document.getId());
-//            System.out.println(document.getId());
-//            System.out.println(document.getId());
-//
-//        }
+        CollectionReference users_db = firebaseFirestore.collection("Users");
 
 
-        //Query query2=firebaseFirestore.collection("Users").orderBy("uid").whereEqualTo("WantedGender");   // show everyone on app
+//        users_db.whereEqualTo("uid", firebaseAuth.getUid())
+//                .get()
+//                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+//                    @Override
+//                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+//                        if (task.isSuccessful()) {
+//                            for (QueryDocumentSnapshot document : task.getResult()) {
+//                                Amountl = Objects.requireNonNull(document.getData().get("questions")).toString();
+//                                amount = Double.parseDouble(Amountl);
+//                                amount_top = amount + (amount * ratio);
+//                                amount_bottom = amount - (amount * ratio);
+//                                want_gen = Objects.requireNonNull(document.getData().get("WantedGender")).toString();
+//                            }
+//                        }
+//                    }
+//                });
+//                            Query query = firebaseFirestore.collection("Users").whereNotEqualTo("uid", firebaseAuth.getUid())
+//                                    .whereEqualTo("WantedGender", want_gen); // except me
 
-        
-        Query query=firebaseFirestore.collection("Users").whereNotEqualTo("uid",firebaseAuth.getUid()); // except me
 
-        FirestoreRecyclerOptions<firebasemodel> allUsername = new FirestoreRecyclerOptions.Builder<firebasemodel>().setQuery(query,firebasemodel.class).build();
+        Query query = firebaseFirestore.collection("Users").whereNotEqualTo("uid", firebaseAuth.getUid()).limit(1); // except me
+
+        FirestoreRecyclerOptions<firebasemodel> allUsername = new FirestoreRecyclerOptions.Builder<firebasemodel>().setQuery(query, firebasemodel.class).build();
 
 
-        chatAdapter=new FirestoreRecyclerAdapter<firebasemodel, NoteViewHolder>(allUsername) {
+        chatAdapter = new FirestoreRecyclerAdapter<firebasemodel, NoteViewHolder>(allUsername) {
             @Override
             protected void onBindViewHolder(@NonNull NoteViewHolder noteViewHolder, int i, @NonNull firebasemodel firebasemodel) {
                 noteViewHolder.paticularusername.setText(firebasemodel.getName());
                 String uri = firebasemodel.getImage();
                 Picasso.get().load(uri).into(mimageviewofuser);
-                if(firebasemodel.getStatus().equals("Online"))
-                {
+                if (firebasemodel.getStatus().equals("Online")) {
                     noteViewHolder.statusofuser.setText(firebasemodel.getStatus());
                     noteViewHolder.statusofuser.setTextColor(GREEN);
-                }
-                else
-                {
+                } else {
                     noteViewHolder.statusofuser.setText(firebasemodel.getStatus());
                 }
 
@@ -106,12 +114,12 @@ public class ChatsFragment extends Fragment {
                 noteViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent(getActivity(),specificchat.class);
-                        intent.putExtra("name",firebasemodel.getName());
-                        intent.putExtra("reciveruid",firebasemodel.getUid());
-                        intent.putExtra("imageuri",firebasemodel.getImage());
-                        intent.putExtra("getAbout",firebasemodel.getAbout());
-                        intent.putExtra("getQuestions",firebasemodel.getQuestions());
+                        Intent intent = new Intent(getActivity(), specificchat.class);
+                        intent.putExtra("name", firebasemodel.getName());
+                        intent.putExtra("reciveruid", firebasemodel.getUid());
+                        intent.putExtra("imageuri", firebasemodel.getImage());
+                        intent.putExtra("getAbout", firebasemodel.getAbout());
+                        intent.putExtra("getQuestions", firebasemodel.getQuestions());
 
                         startActivity(intent);
                     }
@@ -119,20 +127,17 @@ public class ChatsFragment extends Fragment {
             }
 
 
-
             @NonNull
             @Override
             public NoteViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-                View view=LayoutInflater.from(parent.getContext()).inflate(R.layout.chatviewlayout,parent,false);
+                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.chatviewlayout, parent, false);
                 return new NoteViewHolder(view);
             }
         };
 
 
-
-
         mrecyclerView.setHasFixedSize(true);
-        linearLayoutManager=new LinearLayoutManager(getContext());
+        linearLayoutManager = new LinearLayoutManager(getContext());
         linearLayoutManager.setOrientation(RecyclerView.VERTICAL);
         mrecyclerView.setLayoutManager(linearLayoutManager);
         mrecyclerView.setAdapter(chatAdapter);
@@ -144,25 +149,20 @@ public class ChatsFragment extends Fragment {
      * how to show the name and status on chats fragment
      */
 
-    public class NoteViewHolder extends RecyclerView.ViewHolder{
+    public class NoteViewHolder extends RecyclerView.ViewHolder {
 
         private TextView paticularusername;
         private TextView statusofuser;
 
         public NoteViewHolder(@NonNull View itemView) {
             super(itemView);
-            paticularusername=itemView.findViewById(R.id.nameofuser);
-            statusofuser=itemView.findViewById(R.id.statusofuser);
-            mimageviewofuser=itemView.findViewById(R.id.imageviewofuser);
+            paticularusername = itemView.findViewById(R.id.nameofuser);
+            statusofuser = itemView.findViewById(R.id.statusofuser);
+            mimageviewofuser = itemView.findViewById(R.id.imageviewofuser);
         }
 
     }
 
-
-
-
-
-    
 
     @Override
     public void onStart() {
@@ -173,7 +173,7 @@ public class ChatsFragment extends Fragment {
     @Override
     public void onStop() {
         super.onStop();
-        if(chatAdapter!=null){
+        if (chatAdapter != null) {
             chatAdapter.stopListening();
         }
     }

@@ -26,9 +26,6 @@ public class PagerAdapter extends FragmentPagerAdapter {
             case 0:
                 return new ChatsFragment();
 
-            case 1:
-                return new status_fragment();
-
 
             default:
                 return null;

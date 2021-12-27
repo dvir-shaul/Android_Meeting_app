@@ -2445,6 +2445,7 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id btnLogin
+id btnLogin2
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2641,6 +2642,7 @@ id list_item
 id logo
 id logo2
 id logoofviewprofile
+id logout
 id maintext
 id male
 id male1
@@ -2754,6 +2756,7 @@ id progress_horizontal
 id progressbarofmain
 id progressbarofotpauth
 id progressbarofsetprofile
+id quiz_up
 id radio
 id ratio
 id rectangles
@@ -2835,7 +2838,6 @@ id startToEnd
 id startVertical
 id staticLayout
 id staticPostLayout
-id status
 id status_bar_latest_event_content
 id statusofuser
 id stop

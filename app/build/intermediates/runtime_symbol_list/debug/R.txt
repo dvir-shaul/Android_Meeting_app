@@ -2444,6 +2444,7 @@ int id browser_actions_menu_item_text 0x7f0900b6
 int id browser_actions_menu_items 0x7f0900b7
 int id browser_actions_menu_view 0x7f0900b8
 int id btnLogin 0x7f0900b9
+int id btnLogin2 0x7f0902aa
 int id buttonPanel 0x7f0900ba
 int id cache_measures 0x7f0900bb
 int id callMeasure 0x7f0900bc
@@ -2640,6 +2641,7 @@ int id list_item 0x7f090176
 int id logo 0x7f090177
 int id logo2 0x7f090178
 int id logoofviewprofile 0x7f090179
+int id logout 0x7f0902ad
 int id maintext 0x7f09017a
 int id male 0x7f0902a6
 int id male1 0x7f0902a7
@@ -2753,6 +2755,7 @@ int id progress_horizontal 0x7f0901e3
 int id progressbarofmain 0x7f0901e4
 int id progressbarofotpauth 0x7f0901e5
 int id progressbarofsetprofile 0x7f0901e6
+int id quiz_up 0x7f0902ab
 int id radio 0x7f0901e7
 int id ratio 0x7f0901e8
 int id rectangles 0x7f0901e9
@@ -2834,7 +2837,6 @@ int id startToEnd 0x7f090234
 int id startVertical 0x7f090235
 int id staticLayout 0x7f090236
 int id staticPostLayout 0x7f090237
-int id status 0x7f090238
 int id status_bar_latest_event_content 0x7f090239
 int id statusofuser 0x7f09023a
 int id stop 0x7f09023b

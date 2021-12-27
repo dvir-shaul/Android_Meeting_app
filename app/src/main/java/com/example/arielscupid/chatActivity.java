@@ -52,7 +52,7 @@ public class chatActivity extends AppCompatActivity {
 
         tabLayout = findViewById(R.id.include);
         mchat = findViewById(R.id.chat);
-        mstatus = findViewById(R.id.status);
+//        mstatus = findViewById(R.id.status);
         viewPager = findViewById(R.id.fragmentcontainer);
 
 
@@ -93,6 +93,15 @@ public class chatActivity extends AppCompatActivity {
         {
             case R.id.profile:
                 Intent intent = new Intent(chatActivity.this, ProfileActivity.class);
+                startActivity(intent);
+                break;
+
+            case R.id.quiz_up:
+                intent = new Intent(chatActivity.this, status_fragment.class);
+                startActivity(intent);
+                break;
+            case R.id.logout:
+                intent = new Intent(chatActivity.this, MainActivity.class);
                 startActivity(intent);
                 break;
             case R.id.setting:

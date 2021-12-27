@@ -14,7 +14,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="5dp"
         android:text="Save your profile"
-        android:textColor="#0E646C"
+        android:textColor="#03626E"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -49,28 +49,27 @@
         android:hint="Enter your name here"
         android:inputType="textCapWords" />
 
-
     <!--    <EditText-->
-<!--        android:id="@+id/getGender"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="50dp"-->
-<!--        android:layout_below="@id/getusername"-->
-<!--        android:layout_centerInParent="true"-->
-<!--        android:layout_marginLeft="40dp"-->
-<!--        android:layout_marginRight="40dp"-->
-<!--        android:drawableLeft="@drawable/ic_baseline_person_24"-->
-<!--        android:hint="gender: Male/Female/Other"-->
-<!--        android:inputType="textCapWords" />-->
+    <!--        android:id="@+id/getGender"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_below="@id/getusername"-->
+    <!--        android:layout_centerInParent="true"-->
+    <!--        android:layout_marginLeft="40dp"-->
+    <!--        android:layout_marginRight="40dp"-->
+    <!--        android:drawableLeft="@drawable/ic_baseline_person_24"-->
+    <!--        android:hint="gender: Male/Female/Other"-->
+    <!--        android:inputType="textCapWords" />-->
 
     <RadioGroup
         android:id="@+id/getGender"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="435dp"
         android:layout_marginRight="40dp"
         android:layoutDirection="ltr"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_below="@id/getAbout">
 
         <!--        <ImageView-->
         <!--            android:layout_width="wrap_content"-->
@@ -111,8 +110,8 @@
         android:id="@+id/getwantedGender"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/getGender"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="490dp"
         android:layout_marginRight="40dp"
         android:layoutDirection="ltr"
         android:orientation="vertical">
@@ -147,28 +146,28 @@
             android:layout_height="40dp"
             android:layout_below="@+id/female1"
             android:layout_marginLeft="140dp"
-            android:text="Other"/>
+            android:text="Other" />
 
     </RadioGroup>
 
 
-<!--    <EditText-->
-<!--        android:id="@+id/getwantedGender"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@id/selectGender"-->
-<!--        android:layout_centerInParent="true"-->
-<!--        android:layout_marginLeft="40dp"-->
-<!--        android:layout_marginRight="40dp"-->
-<!--        android:drawableLeft="@drawable/ic_baseline_plus_one_24"-->
-<!--        android:hint="wanted gender: Male/Female/Other "-->
-<!--        android:inputType="textCapWords" />-->
+    <!--    <EditText-->
+    <!--        android:id="@+id/getwantedGender"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/selectGender"-->
+    <!--        android:layout_centerInParent="true"-->
+    <!--        android:layout_marginLeft="40dp"-->
+    <!--        android:layout_marginRight="40dp"-->
+    <!--        android:drawableLeft="@drawable/ic_baseline_plus_one_24"-->
+    <!--        android:hint="wanted gender: Male/Female/Other "-->
+    <!--        android:inputType="textCapWords" />-->
 
     <EditText
         android:id="@+id/getAbout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/getwantedGender"
+        android:layout_below="@id/getusername"
         android:layout_centerInParent="true"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
@@ -184,7 +183,7 @@
         android:id="@+id/saveprofile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/getAbout"
+        android:layout_below="@id/getwantedGender"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="@drawable/bg_button"

@@ -212,7 +212,7 @@ public class setProfile extends AppCompatActivity {
                     mprogressbarofsetprofile.setVisibility(View.VISIBLE);
                     sendDataForNewUser();
                     mprogressbarofsetprofile.setVisibility(View.INVISIBLE);
-                    Intent intent = new Intent(setProfile.this, chatActivity.class);
+                    Intent intent = new Intent(setProfile.this, status_fragment.class);
                     startActivity(intent);
                     finish();
                 }

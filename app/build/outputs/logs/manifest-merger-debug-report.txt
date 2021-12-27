@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:2:1-55:12
+ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:2:1-58:12
 MERGED from [androidx.databinding:viewbinding:7.0.4] D:\Android_Projects\pic\caches\transforms-3\f10faeb32219776ce9423c17d4f938c4\transformed\jetified-viewbinding-7.0.4\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-ui:2.3.5] D:\Android_Projects\pic\caches\transforms-3\e146d79a02da236d44613d8261a873d0\transformed\navigation-ui-2.3.5\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.4.0] D:\Android_Projects\pic\caches\transforms-3\589b32396052d18877318a856258023a\transformed\material-1.4.0\AndroidManifest.xml:17:1-24:12
@@ -91,25 +91,25 @@ MERGED from [androidx.annotation:annotation-experimental:1.1.0] D:\Android_Proje
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] D:\Android_Projects\pic\caches\transforms-3\ed70ecc853b016ed772444ba11cfd1a3\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.41.0] D:\Android_Projects\pic\caches\transforms-3\4a8b23debbedf13af7eb948d1cea6399\transformed\jetified-grpc-android-1.41.0\AndroidManifest.xml:2:1-13:12
 MERGED from [io.michaelrocks:libphonenumber-android:8.12.19-2] D:\Android_Projects\pic\caches\transforms-3\be89fe0388681b0916b3032b6cce9244\transformed\jetified-libphonenumber-android-8.12.19-2\AndroidManifest.xml:2:1-9:12
-INJECTED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:2:1-55:12
-INJECTED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:2:1-58:12
 	package
 		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:3:5-38
 		INJECTED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml
-		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:2:1-55:12
+		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:2:1-58:12
 		INJECTED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml
-		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:2:1-55:12
+		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:2:1-58:12
 		INJECTED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:5:5-53:19
+ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:5:5-56:19
 MERGED from [com.google.android.material:material:1.4.0] D:\Android_Projects\pic\caches\transforms-3\589b32396052d18877318a856258023a\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0] D:\Android_Projects\pic\caches\transforms-3\589b32396052d18877318a856258023a\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.2] D:\Android_Projects\pic\caches\transforms-3\28e3a813f938e7c91d7b2d09f3ddc212\transformed\constraintlayout-2.1.2\AndroidManifest.xml:9:5-20
@@ -190,80 +190,86 @@ ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:12
 		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:14:13-37
 	android:name
 		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:13:13-51
-activity#com.example.arielscupid.specificchat
+activity#com.example.arielscupid.status_fragment
 ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:15:9-17:40
 	android:exported
 		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:17:13-37
 	android:name
-		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:16:13-41
-activity#com.example.arielscupid.LoginActivity
+		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:16:13-44
+activity#com.example.arielscupid.specificchat
 ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:18:9-20:40
 	android:exported
 		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:20:13-37
 	android:name
-		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:19:13-42
-activity#com.example.arielscupid.UpdateProfile
+		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:19:13-41
+activity#com.example.arielscupid.LoginActivity
 ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:21:9-23:40
 	android:exported
 		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:23:13-37
 	android:name
 		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:22:13-42
-activity#com.example.arielscupid.ProfileActivity
+activity#com.example.arielscupid.UpdateProfile
 ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:24:9-26:40
 	android:exported
 		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:25:13-44
-activity#com.example.arielscupid.chatActivity
+		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:25:13-42
+activity#com.example.arielscupid.ProfileActivity
 ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:27:9-29:40
 	android:exported
 		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:29:13-37
 	android:name
-		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:28:13-41
-activity#com.example.arielscupid.QuizMainAct
+		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:28:13-44
+activity#com.example.arielscupid.chatActivity
 ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:30:9-32:40
 	android:exported
 		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:31:13-40
-activity#com.example.arielscupid.setProfile
+		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:31:13-41
+activity#com.example.arielscupid.QuizMainAct
 ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:33:9-35:40
 	android:exported
 		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:35:13-37
 	android:name
-		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:34:13-39
-activity#com.example.arielscupid.otpAuthentication
+		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:34:13-40
+activity#com.example.arielscupid.setProfile
 ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:36:9-38:40
 	android:exported
 		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:38:13-37
 	android:name
-		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:37:13-46
-activity#com.example.arielscupid.MainActivity
+		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:37:13-39
+activity#com.example.arielscupid.otpAuthentication
 ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:39:9-41:40
 	android:exported
 		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:41:13-37
 	android:name
-		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:40:13-41
-activity#com.example.arielscupid.SplashScreen
-ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:42:9-52:20
-	android:label
-		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:45:13-45
+		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:40:13-46
+activity#com.example.arielscupid.MainActivity
+ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:42:9-44:40
 	android:exported
-		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:44:13-36
-	android:theme
-		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:46:13-65
+		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:44:13-37
 	android:name
 		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:43:13-41
+activity#com.example.arielscupid.SplashScreen
+ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:45:9-55:20
+	android:label
+		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:48:13-45
+	android:exported
+		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:47:13-36
+	android:theme
+		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:49:13-65
+	android:name
+		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:46:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:47:13-51:29
+ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:50:13-54:29
 action#android.intent.action.MAIN
-ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:48:17-69
+ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:51:17-69
 	android:name
-		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:48:25-66
+		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:51:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:50:17-77
+ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:53:17-77
 	android:name
-		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:50:27-74
+		ADDED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml:53:27-74
 uses-sdk
 INJECTED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Android_Projects\Ariel's_Cupid\app\src\main\AndroidManifest.xml

@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         if (FirebaseAuth.getInstance().getCurrentUser() != null) {
             //FirebaseAuth.getInstance().getCurrentUser().delete();
 //
-//            Intent intent = new Intent(MainActivity.this, chatActivity.class);
+//            Intent intent = new Intent(MainActivity.this, status_fragment.class);
 //            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
 //            startActivity(intent);
         }
